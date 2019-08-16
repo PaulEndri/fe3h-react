@@ -20,9 +20,8 @@ const Layout = ({children}: LayoutProps) => (
                 </Container>
             </Sidebar.Pusher>
         </Sidebar.Pushable>
-        <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+        <Responsive maxWidth={Responsive.onlyMobile.maxWidth} style={{marginTop: '2em'}}>
             <Header />
-
         </Responsive>
     </div>
 )

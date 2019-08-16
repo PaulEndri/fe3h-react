@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.jpg'; // tslint:disable-line
-import { Image, Container } from 'semantic-ui-react';
+import { Image, Container, Responsive, Grid } from 'semantic-ui-react';
+import houses from '../../data/houses';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -10,8 +12,20 @@ function App() {
           Character Companion
         </p>
         <p>
-          Click on a house to begin your journey to find gifts, stats, and more!
+          Click on a faction to begin your journey to find gifts, stats, and more!
         </p>
+        <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+          <Grid columns={2}>
+            {houses.map((house) => (
+              <Grid.Column>
+                <Link to={`/house/${house.stub.toLowerCase()}`}>
+                  <Image fluid src={house.banner}></Image>
+
+                </Link>
+              </Grid.Column>
+            ))}
+          </Grid>
+        </Responsive>
     </Container>
   );
 }
