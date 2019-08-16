@@ -39,7 +39,7 @@ class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionPro
         if (this.state.activeClasses['Base Growth'] !== this.props.character.growthRates) {
             this.setState({
                 activeClasses: {
-                    "Base Growth": this.props.character.growthRates;
+                    "Base Growth": this.props.character.growthRates
                 }
             })
         }
