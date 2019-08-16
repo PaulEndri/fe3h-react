@@ -35,6 +35,15 @@ class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionPro
         this.updateSelectedClass.bind(this);
     }
 
+    componentDidUpdate() {
+        if (this.state.activeClasses['Base Growth'] !== this.props.character.growthRates) {
+            this.setState({
+                activeClasses: {
+                    "Base Growth": this.props.character.growthRates;
+                }
+            })
+        }
+    }
     generateGrowthRate(job: IClass): IGrowthRate {
         const base = this.state.activeClasses["Base Growth"];
 
