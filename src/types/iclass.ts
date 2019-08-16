@@ -1,3 +1,8 @@
+export interface IClassRequirement {
+    name: string;
+    level: string;
+}
+
 export interface IClass {
     HP: number;
     STR: number;
@@ -9,5 +14,6 @@ export interface IClass {
     RES: number;
     CHA: number;
     Name: string;
+    Requirements?: IClassRequirement[];
     Tier: "unique" | "beginner" | "intermediate" | "advanced" | "master"
 }

@@ -8,13 +8,14 @@ import { Gilbert } from '../characters/gilbert';
 // import { Jeralt } from '../characters/jeralt';
 import { Shamir } from '../characters/shamir';
 import { Catherine } from '../characters/catherine';
+import { Alois } from '../characters/alois';
 
 export const ChurchOfSeiros: IHouse = {
   name: 'Church Of Seiros',
   stub: 'seiros',
   color: 'grey',
   leader: Rhea,
-  students: [Cyril, Seteth, Flayn, Gilbert, Shamir, Catherine],
+  students: [Alois, Cyril, Seteth, Flayn, Gilbert, Shamir, Catherine],
   banner: ChurchOfSeirosBanner,
   motto: 'and the Knights of Seiros'
 };
