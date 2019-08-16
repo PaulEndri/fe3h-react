@@ -44,9 +44,8 @@ export const CharacterView = ({match}: CharacterViewProps) => {
                     </Header.Subheader>
                 </Header.Content>
                 <Segment color={house.house.color} inverted>
-            
                         {students.map((student) => (
-                            <Button as={Link}>
+                            <Button as={Link} to={`/house/${house.house.stub.toLowerCase()}/character/${student.character.firstName.toLowerCase()}`}>
                                 <Image height="75" width="75" src={student.getThumbnail()} />
                             </Button>
                         ))}

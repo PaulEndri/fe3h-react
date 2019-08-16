@@ -26,7 +26,7 @@ const HouseView = ({match, history}: HouseViewProps) => {
 
     return (
         <Container as="div" fluid textAlign="center">
-            <Header as="h2" color={house.color} textAlign="center" attached="top" style={{border: '0px'}}>
+            <Header as="h2" color={house.color} gtextAlign="center" attached="top" style={{border: '0px'}}>
                 <Image src={house.banner} fluid/>
                 <Header.Content>
                     {house.name}
@@ -61,7 +61,7 @@ const HouseView = ({match, history}: HouseViewProps) => {
                         {house.students.map((student: ICharacter) => (
                             <Table.Row key={student.firstName} onClick={() => navAction(student.firstName.toLowerCase())}>
                                 <Table.Cell collapsing textAlign="center">
-                                    <Image rounded src={`${process.env.PUBLIC_URL}/assets/characters/thumbnails/${student.firstName}.jpg`} />
+                                    <Image rounded src={`${process.env.PUBLIC_URL}/assets/characters/thumbnails/${student.firstName.toLowerCase()}.jpg`} />
                                 </Table.Cell>
                                 <Table.Cell textAlign="center">
                                     {student.gift.map((gift, i) => <div key={i}>{gift},</div>)}
