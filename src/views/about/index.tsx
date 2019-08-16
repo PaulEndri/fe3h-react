@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import { Segment, Header } from 'semantic-ui-react';
+import { Segment, Header, Container } from 'semantic-ui-react';
 
 const About = () => {
   return (
