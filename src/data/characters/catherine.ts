@@ -6,7 +6,7 @@ export const Catherine: ICharacter = {
 	name: 'Catherine',
 	birthday: '9/15',
 	skill: '-',
-	stat: '-',
+	stat: 'Level 15',
 	flower: [],
 	crest: 'Charon',
 	tea: ['Rose Petal Blend'],

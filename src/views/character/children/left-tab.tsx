@@ -32,11 +32,11 @@ export const LeftTab = ({character, characterService}: Props) => (
                             <List.Content floated="right">{character.birthday}</List.Content>
                         </List.Item>
                         <List.Item>
-                            <List.Content floated="left">Stat Required: </List.Content>
+                            <List.Content floated="left">Recruitment Stat Required: </List.Content>
                             <List.Content floated="right">{character.stat}</List.Content>
                         </List.Item>
                         <List.Item>
-                            <List.Content floated="left">Skill Required: </List.Content>
+                            <List.Content floated="left">Recruitment Skill Required: </List.Content>
                             <List.Content floated="right">{character.skill}</List.Content>
                         </List.Item>
                     </List>

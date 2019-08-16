@@ -6,7 +6,7 @@ export const Cyril: ICharacter = {
 	name: 'Cyril',
 	birthday: '10/25',
 	skill: '-',
-	stat: '-',
+	stat: 'Level 10',
 	flower: ['Baby\'s Breath'],
 	gift: ['Hunting Dagger', 'Smoked Meat', 'Watering Can'],
 	tea: ['Almyran Pine Needles'],

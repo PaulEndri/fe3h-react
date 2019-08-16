@@ -7,7 +7,7 @@ export const Alois: ICharacter = {
 	crest: 'None',
 	birthday: '12/1',
 	skill: '-',
-	stat: '-',
+	stat: 'Level 15',
 	flower: ['Sunflower'],
 	tea: ['Crescent-Moon Tea', 'Honeyed-Fruit Blend'],
 	gift: ['Ancient Coin', 'Floral Adornment', 'Fishing Float'],

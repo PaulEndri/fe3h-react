@@ -6,7 +6,7 @@ export const Hanneman: ICharacter = {
 	name: 'Hanneman von Essar',
 	birthday: '2/8',
 	skill: '-',
-	stat: '-',
+	stat: 'Level 15',
 	flower: [],
 	gift: ['Arithmetic Textbook', 'Book of Crest Designs', 'Dapper Handkerchief', 'Tea Leaves'],
 	tea: ['Bergamot', 'Sweet-Apple Blend', 'Honeyed-Fruit Blend', 'Cinnamon Blend'],

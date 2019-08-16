@@ -5,7 +5,7 @@ export const Shamir: ICharacter = {
 	alliance: 'Church of Seiros',
 	name: 'Shamir Nevrand',
 	skill: '-',
-	stat: '-',
+	stat: 'Level 15',
 	flower: ['Sunflower'],
 	tea: ['Crescent-Moon Tea', 'Chamomile'],
 	crest: 'None',

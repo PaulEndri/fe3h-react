@@ -6,7 +6,7 @@ export const Manuela: ICharacter = {
 	name: 'Manuela Casagranda',
 	birthday: '8/3',
 	skill: '-',
-	stat: '-',
+	stat: 'Level 15',
 	flower: [],
 	gift: ['Blue Cheese', 'Book of Sheet Music', 'Gemstone Beads', 'Goddess Statuette'],
 	lostItems: ['Clean Dusting Cloth', 'Light Purple Beil', 'Wellness Herbs'],
