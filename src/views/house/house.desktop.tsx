@@ -4,7 +4,7 @@ import { ICharacter } from '../../types/icharacter';
 import { History } from 'history';
 import { HouseService } from '../../services/house';
 
-interface HouseViewProps {
+interface HouseDesktopViewProps {
     match: {
         params: {
             house: string
@@ -13,7 +13,7 @@ interface HouseViewProps {
     history: History;
 }
 
-const HouseView = ({match, history}: HouseViewProps) => {
+const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
     const houseService = HouseService.getHouse(match.params.house);
 
     if (!houseService || !houseService.house) {
@@ -26,7 +26,7 @@ const HouseView = ({match, history}: HouseViewProps) => {
 
     return (
         <Container as="div" fluid textAlign="center">
-            <Header as="h2" textAlign="center" attached="top" style={{border: '0px'}}>
+            <Header as="h2" color={house.color} gtextAlign="center" attached="top" style={{border: '0px'}}>
                 <Image src={house.banner} fluid/>
                 <Header.Content>
                     {house.name}
@@ -41,6 +41,7 @@ const HouseView = ({match, history}: HouseViewProps) => {
                         <Table.Row>
                             <Table.HeaderCell rowSpan="2"></Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={2} >Gifts</Table.HeaderCell>
+                            <Table.HeaderCell rowSpan="2" width={1} >Flowers</Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={2} singleLine >Lost Items</Table.HeaderCell>
                             <Table.HeaderCell colSpan="9" collapsing textAlign="center" >Base Stat Growths</Table.HeaderCell>
                         </Table.Row>
@@ -60,10 +61,13 @@ const HouseView = ({match, history}: HouseViewProps) => {
                         {house.students.map((student: ICharacter) => (
                             <Table.Row key={student.firstName} onClick={() => navAction(student.firstName.toLowerCase())}>
                                 <Table.Cell collapsing textAlign="center">
-                                    <Image rounded src={`${process.env.PUBLIC_URL}/assets/characters/thumbnails/${student.firstName}.jpg`} />
+                                    <Image rounded src={`${process.env.PUBLIC_URL}/assets/characters/thumbnails/${student.firstName.toLowerCase()}.jpg`} />
                                 </Table.Cell>
                                 <Table.Cell textAlign="center">
                                     {student.gift.map((gift, i) => <div key={i}>{gift},</div>)}
+                                </Table.Cell>
+                                <Table.Cell textAlign="center">
+                                    {student.tea.map((gift, i) => <div key={i}>{gift},</div>)}
                                 </Table.Cell>
                                 <Table.Cell textAlign="center">
                                     {student.lostItems.map((item, i) => <div key={i}>{item},</div>)}
@@ -104,4 +108,4 @@ const HouseView = ({match, history}: HouseViewProps) => {
     );
 }
 
-export default HouseView;
+export default HouseDesktopView;

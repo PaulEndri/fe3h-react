@@ -2,7 +2,7 @@ import React from 'react';
 import { ICharacter } from '../../../types/icharacter';
 import { IClass } from '../../../types/iclass';
 import JobService, { IFilteredJobs } from '../../../services/job';
-import { Grid, Segment, Header, Rail } from 'semantic-ui-react';
+import { Grid, Segment, Header, Responsive } from 'semantic-ui-react';
 import CharacterRadarChart from './character-radar-chart';
 import ClassTable from './class-table';
 import { IGrowthRate } from '../../../types/igrowthRate';
@@ -19,6 +19,9 @@ interface CharacterGrowthsSectionState {
     classes: IFilteredJobs,
     activeClasses: IActiveClasses
 }
+
+
+const IS_MOBILE = window.innerWidth <= Responsive.onlyMobile.maxWidth;
 
 class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionProps, CharacterGrowthsSectionState> {
     constructor(props: CharacterGrowthsSectionProps) {
@@ -92,26 +95,25 @@ class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionPro
 
 
     render() {
-        const {character} = this.props;
-        const {activeClasses, classes} = this.state;
+        const {activeClasses} = this.state;
         const classNames = Object.keys(activeClasses);
  
         return (
             <Grid.Row>
-                <Grid.Column stretched width="5">
+                <Grid.Column stretched width={IS_MOBILE ? 16 : 5}>
                     <Segment>
-                        <Header as="h4">Growth Rates</Header>
+                        <Header as="h4" textAlign="center">Growth Rates</Header>
                         <CharacterRadarChart statBlocks={Object.values(activeClasses)} statBlockNames={classNames} />
                         {Object.keys(activeClasses).length >= 10 && <Segment color="red" inverted>
                             You may only have up to 10 classes selected, please remove some to add more
                         </Segment>}
                     </Segment>
                 </Grid.Column>
-                <Grid.Column stretched width="11">
+                {!IS_MOBILE && <Grid.Column stretched width={11}>
                     <Segment>
                         <ClassTable selectedClasses={classNames} classes={this.state.classes} updateSelectedClass={(v: string, c: IClass) => this.updateSelectedClass(v, c)} />
                     </Segment>
-                </Grid.Column>
+                </Grid.Column>}
             </Grid.Row>
         )
     }

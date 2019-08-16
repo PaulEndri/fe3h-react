@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Segment, Image, Header, Table } from 'semantic-ui-react';
-import { ICharacter } from '../../types/icharacter';
+import { Container, Segment, Image, Header, Item, List } from 'semantic-ui-react';
 import { History } from 'history';
 import { HouseService } from '../../services/house';
+import { Link } from 'react-router-dom';
 
-interface HouseViewProps {
+interface HouseMobileViewProps {
     match: {
         params: {
             house: string
@@ -13,7 +13,7 @@ interface HouseViewProps {
     history: History;
 }
 
-const HouseView = ({match, history}: HouseViewProps) => {
+const HouseMobileView = ({match, history}: HouseMobileViewProps) => {
     const houseService = HouseService.getHouse(match.params.house);
 
     if (!houseService || !houseService.house) {
@@ -21,12 +21,15 @@ const HouseView = ({match, history}: HouseViewProps) => {
     }
 
     const house = houseService.house;
-    const houseName = house.stub.toLowerCase();
-    const navAction = (name: string) => history.push(`/house/${houseName}/character/${name}`);
+    const students = houseService.getStudents();
+
+    if (!students) {
+        return <div>Wut You Do</div>;
+    }
 
     return (
         <Container as="div" fluid textAlign="center">
-            <Header as="h2" textAlign="center" attached="top" style={{border: '0px'}}>
+            <Header color={house.color} as="h2" textAlign="center" attached="top" style={{border: '0px'}}>
                 <Image src={house.banner} fluid/>
                 <Header.Content>
                     {house.name}
@@ -35,73 +38,30 @@ const HouseView = ({match, history}: HouseViewProps) => {
                     </Header.Subheader>
                 </Header.Content>
             </Header>
-            <Segment secondary textAlign="center" style={{display: 'flex', justifyContent: 'center'}}>
-                <Table collapsing celled striped structured selectable>
-                    <Table.Header>
-                        <Table.Row>
-                            <Table.HeaderCell rowSpan="2"></Table.HeaderCell>
-                            <Table.HeaderCell rowSpan="2" width={2} >Gifts</Table.HeaderCell>
-                            <Table.HeaderCell rowSpan="2" width={2} singleLine >Lost Items</Table.HeaderCell>
-                            <Table.HeaderCell colSpan="9" collapsing textAlign="center" >Base Stat Growths</Table.HeaderCell>
-                        </Table.Row>
-                        <Table.Row>
-                            <Table.HeaderCell width={1} >HP</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >STR</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >MAG</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >DEX</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >SPD</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >LCK</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >DEF</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >RES</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >CHA</Table.HeaderCell>
-                        </Table.Row>
-                    </Table.Header>
-                    <Table.Body>
-                        {house.students.map((student: ICharacter) => (
-                            <Table.Row key={student.firstName} onClick={() => navAction(student.firstName.toLowerCase())}>
-                                <Table.Cell collapsing textAlign="center">
-                                    <Image rounded src={`${process.env.PUBLIC_URL}/assets/characters/thumbnails/${student.firstName}.jpg`} />
-                                </Table.Cell>
-                                <Table.Cell textAlign="center">
-                                    {student.gift.map((gift, i) => <div key={i}>{gift},</div>)}
-                                </Table.Cell>
-                                <Table.Cell textAlign="center">
-                                    {student.lostItems.map((item, i) => <div key={i}>{item},</div>)}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.HP}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.STR}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.MAG}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.DEX}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.SPD}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.LCK}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.DEF}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.RES}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.CHA}
-                                </Table.Cell>
-                            </Table.Row>
-                        ))}
-                    </Table.Body>
-                </Table>
+            <Segment color={house.color} textAlign="left" style={{display: 'flex', justifyContent: 'center'}}>
+                <Item.Group link unstackable divided>
+                    {students.map((student) => (
+                        <Item key={student.character.firstName} as={Link} to={student.getLink(house.stub)}>
+                            <Item.Image size='tiny' src={student.getThumbnail()}/>
+                            <Item.Content>
+                                <Item.Header>{student.character.name}</Item.Header>
+                                <Item.Description>
+                                    <List>
+                                        <List.Item>
+                                            <b>Lost Items:</b> {student.character.lostItems.join(', ')}
+                                        </List.Item>
+                                        <List.Item>
+                                            <b>Gifts:</b> {student.character.gift.join(', ')}
+                                        </List.Item>
+                                    </List>
+                                </Item.Description>
+                            </Item.Content>
+                        </Item>
+                    ))}
+                </Item.Group>
             </Segment>
         </Container>
     );
 }
 
-export default HouseView;
+export default HouseMobileView;

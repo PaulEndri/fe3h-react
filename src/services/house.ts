@@ -22,6 +22,10 @@ export class HouseService {
         this.house = houseData;
     }
 
+    getLink() {
+        return this.house ? `/house/${this.house.stub.toLowerCase()}` : '';
+    }
+
     getStudent(name: string): CharacterService|undefined {
         if (!this.house) {
             return;
