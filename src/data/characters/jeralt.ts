@@ -12,16 +12,10 @@ export const Jeralt: ICharacter = {
 	crest: 'None',
 	tea: ['Yo Momma'],
 	trainings: ['Lance', 'Authority', 'Riding'],
-	lectures: [
-		{
-			question: '',
-			 answer: ''
-		},
-		{
-			question: '',
-			answer: ''
-		}
-	],
+	lectures: [],
+	skillProficiencies: [],
+	skillWeaknesses: [],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 40,
 		STR: 35,

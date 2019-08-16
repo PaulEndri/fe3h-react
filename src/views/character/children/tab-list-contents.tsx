@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, List } from 'semantic-ui-react';
+import { Segment, List, Header } from 'semantic-ui-react';
 
 interface Props {
     name: string,
@@ -14,7 +14,7 @@ const TabListContents = ({name, displayItems}: Props) => {
     return (
         <Segment.Group>
             <Segment color="violet">
-                {name}
+                <Header as="h4">{name}</Header>
             </Segment>
             <Segment>
                 <List>

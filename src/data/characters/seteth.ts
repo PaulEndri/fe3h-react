@@ -15,14 +15,17 @@ export const Seteth: ICharacter = {
 	trainings: ['Sword', 'Lance', 'Axe', 'Authority', 'Flying'],
 	lectures: [
 		{
-			question: '',
-			 answer: ''
+			question: 'I am staggered by how routinely the students seem to neglect their studies in favor of petty romance. You should get this under control.',
+			 answer: 'We need to set a better example.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Fishing is what truly calms me, but it is time-consuming. What do you think should I do when a visit to the pond is too inconvenient?',
+			answer: 'Write a story about someone fishing'
 		}
 	],
+	skillProficiencies: ['Sword', 'Axe', 'Lance', 'Flying', 'Authority'],
+	skillWeaknesses: ['Riding'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 50,
 		STR: 45,

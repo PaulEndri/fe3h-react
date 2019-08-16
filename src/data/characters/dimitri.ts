@@ -19,10 +19,13 @@ export const Dimitri: ICharacter = {
 			 answer: 'Try focusing on one skill at a time, at least for a while.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Those from northern Faerghus are used to the frigid cold. Although Garreg Mach is located atop a mountain, the summer heat can be quite unbearable for soldiers from the north. What can I do to boost their morale?',
+			answer: 'Cooling off in a nearby river is always a good option.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Lance', 'Authority'],
+	skillWeaknesses: ['Axe', 'Reason'],
+	hiddenTalents: ['Riding'],
 	growthRates: {
 		HP: 55,
 		STR: 60,

@@ -12,16 +12,10 @@ export const Gilbert: ICharacter = {
 	gift: ['Ceremonial Sword', 'Fishing Float', 'Goddess Statuette'],
 	lostItems: ['Carving Hammer', 'Noseless Puppet', 'Silver Necklace'],
 	trainings: ['Lance', 'Axe', 'Heavy Armor', 'Riding'],
-	lectures: [
-		{
-			question: '',
-			 answer: ''
-		},
-		{
-			question: '',
-			answer: ''
-		}
-	],
+	lectures: [],
+	skillProficiencies: ['Axe', 'Lance', 'Heavy Armor', 'Riding'],
+	skillWeaknesses: [],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 55,
 		STR: 45,

@@ -19,10 +19,13 @@ export const Marianne: ICharacter = {
 			 answer: 'You might be right. You should be careful.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Soon a day will come when we must all part ways. I get so sad thinking about it.... It\'s not practical to keep focusing on this though, is it?',
+			answer: 'The goddess will always protect everyone.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Faith', 'Riding', 'Flying'],
+	skillWeaknesses: ['Authority', 'Heavy Armor'],
+	hiddenTalents: ['Lance'],
 	growthRates: {
 		HP: 35,
 		STR: 20,

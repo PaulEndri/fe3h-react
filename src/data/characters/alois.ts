@@ -15,14 +15,21 @@ export const Alois: ICharacter = {
 	trainings: ['Axe', 'Brawl', 'Heavy Armor'],
 	lectures: [
 		{
-			question: '',
-			 answer: ''
+			question: 'The anniversary of Jeralt’s death is coming up. I’d like to put something on his grave, so that he knows we’re all thinking of him. What item would make him happiest?',
+			 answer: 'The best bottle of booze you can find.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'As a member of the knights, I sometimes travel by ship for my missions. But I have a bit of a weak stomach...What can I do to tamp down my sea sickness?',
+			answer: 'Medicine and magic should help'
 		}
 	],
+	skillProficiencies: [
+		'Axe', 'Brawling', 'Heavy Armor'
+	],
+	skillWeaknesses: [
+		'Reason', 'Flying'
+	],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 45,
 		STR: 45,

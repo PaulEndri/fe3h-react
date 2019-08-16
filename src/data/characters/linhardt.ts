@@ -19,10 +19,13 @@ export const Linhardt: ICharacter = {
 			 answer: 'No need to fight it. You can’t help it.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I sometimes find books written in languages I’ve never seen before. I’d love to read them somehow, but I don’t even know where to start… Do you have any ideas?',
+			answer: 'Piece things together using linguistic clues.'
 		}
 	],
+	skillProficiencies: ['Reason', 'Faith'],
+	skillWeaknesses: ['Axe', 'Brawling'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 35,
 		STR: 35,

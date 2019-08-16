@@ -17,12 +17,11 @@ export const Flayn: ICharacter = {
 		{
 			question: 'I want to be able to talk to males and make friends with them, but my brother always causes such a fuss when I do. Do you have any advice for me?',
 			 answer: 'You should have an honest talk with your brother.'
-		},
-		{
-			question: '',
-			answer: ''
 		}
 	],
+	skillProficiencies: ['Lance', 'Faith'],
+	skillWeaknesses: ['Riding'],
+	hiddenTalents: ['Reason'],
 	growthRates: {
 		HP: 25,
 		STR: 25,

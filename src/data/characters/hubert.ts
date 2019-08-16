@@ -19,10 +19,13 @@ export const Hubert: ICharacter = {
 			 answer: 'I’d take the time to study the subject before teaching it.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'The weak-willed care little for how they are governed, but lady Edelgard wishes to open their eyes. How would you achieve this, in her position?',
+			answer: 'The only way to help them is to educate them.'
 		}
 	],
+	skillProficiencies: ['Bow', 'Reason', 'Authority'],
+	skillWeaknesses: ['Axe', 'Faith'],
+	hiddenTalents: ['Lance'],
 	growthRates: {
 		HP: 35,
 		STR: 30,

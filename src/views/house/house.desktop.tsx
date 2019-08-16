@@ -61,7 +61,7 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
                         {house.students.map((student: ICharacter) => (
                             <Table.Row key={student.firstName} onClick={() => navAction(student.firstName.toLowerCase())}>
                                 <Table.Cell collapsing textAlign="center">
-                                    <Image rounded src={`${process.env.PUBLIC_URL}/assets/characters/thumbnails/${student.firstName.toLowerCase()}.jpg`} />
+                                    <Image rounded src={`${process.env.PUBLIC_URL}/assets/characters/thumbnails/${student.firstName.toLowerCase()}.png`} />
                                 </Table.Cell>
                                 <Table.Cell textAlign="center">
                                     {student.gift.map((gift, i) => <div key={i}>{gift},</div>)}

@@ -100,8 +100,8 @@ class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionPro
  
         return (
             <Grid.Row>
-                <Grid.Column stretched width={IS_MOBILE ? 16 : 5}>
-                    <Segment>
+                <Grid.Column stretched computer={5} mobile={16}>
+                    <Segment color="violet">
                         <Header as="h4" textAlign="center">Growth Rates</Header>
                         <CharacterRadarChart statBlocks={Object.values(activeClasses)} statBlockNames={classNames} />
                         {Object.keys(activeClasses).length >= 10 && <Segment color="red" inverted>

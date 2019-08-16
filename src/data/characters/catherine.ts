@@ -15,14 +15,17 @@ export const Catherine: ICharacter = {
 	trainings: ['Sword', 'Brawl'],
 	lectures: [
 		{
-			question: '',
-			 answer: ''
+			question: 'One of your students keeps challenging me to fight him, but he has no idea how to wield a sword. It\'s a waste of time for both of us. What am I supposed to do?',
+			 answer: 'Drop a hint that he needs a new training partner.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I have a tactical question, Professor. Let’s say you’re leading an army and the enemy, whose forces greatly outnumber your own, has you surrounded. What would you do in that situation?',
+			answer: 'Push forward. Punch a hold in their formation.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Brawling'],
+	skillWeaknesses: ['Reason'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 50,
 		STR: 50,

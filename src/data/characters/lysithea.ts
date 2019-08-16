@@ -19,10 +19,13 @@ export const Lysithea: ICharacter = {
 			 answer: 'Sleeping when you’re tired is best for you.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I heard rumors about ghosts roaming the monastery…. I’m certainly not scared, nor do I have time to worry about it, but...uh… You should probably do something about it, for the sake of the others!',
+			answer: 'Let’s bring more candles to the halls to brighten things up.'
 		}
 	],
+	skillProficiencies: ['Reason', 'Faith', 'Authority'],
+	skillWeaknesses: ['Sword', 'Axe', 'Bow', 'Heavy Armor'],
+	hiddenTalents: ['Sword'],
 	growthRates: {
 		HP: 20,
 		STR: 15,

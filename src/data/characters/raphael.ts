@@ -19,10 +19,13 @@ export const Raphael: ICharacter = {
 			 answer: 'Eating vegetable will help your muscles grow.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I had to leave my grandpa in charge of taking care of my little sis while I\'m away. I was thinking I should send him something nice to say thanks. Any suggestions?',
+			answer: 'A tough-looking hat.'
 		}
 	],
+	skillProficiencies: ['Axe', 'Brawling', 'Heavy Armor'],
+	skillWeaknesses: ['Bow', 'Reason', 'Riding'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 65,
 		STR: 50,

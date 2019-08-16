@@ -17,12 +17,11 @@ export const Dedue: ICharacter = {
 		{
 			question: 'Though I have served His Highness for four years, he has eluded my every attempt to learn his favorite foods.',
 			 answer: 'Maybe he just likes everything.'
-		},
-		{
-			question: '',
-			answer: ''
 		}
 	],
+	skillProficiencies: ['Axe', 'Brawling', 'Lance', 'Heavy Armor'],
+	skillWeaknesses: ['Riding', 'Flying'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 60,
 		STR: 50,

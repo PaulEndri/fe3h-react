@@ -23,6 +23,9 @@ export const Bernadetta: ICharacter = {
 			answer: 'Try using an eagle\'s head, a lion\'s body, and a deer\'s tail.'
 		}
 	],
+	skillProficiencies: ['Lance', 'Bow'],
+	skillWeaknesses: ['Sword', 'Axe', 'Brawling', 'Heavy Armor'],
+	hiddenTalents: ['Riding'],
 	growthRates: {
 		HP: 35,
 		STR: 35,

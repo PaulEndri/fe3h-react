@@ -19,10 +19,13 @@ export const Petra: ICharacter = {
 			 answer: 'Try studying the movements of others for improvement.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'As I am fighting more, my arrows are decreasing in quality. They are not flying as far and have less accuracy. What can I be doing differently?',
+			answer: 'New bowstrings could help you shoot with more force.New bowstrings could help you shoot with more force.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Axe', 'Bow', 'Flying'],
+	skillWeaknesses: ['Reason', 'Faith'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 45,
 		STR: 40,

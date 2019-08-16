@@ -19,10 +19,13 @@ export const Leonie: ICharacter = {
 			 answer: 'They’re wrong, pay them no mind'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'People call Captain Jeralt the Blade Breaker. I figure, if I want to be a top-tier mercenary like him, I’m going to need a tough-sounding title of my own. Help me out?',
+			answer: 'The Executioner'
 		}
 	],
+	skillProficiencies: ['Lance', 'Bow', 'Riding'],
+	skillWeaknesses: [],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 40,
 		STR: 40,

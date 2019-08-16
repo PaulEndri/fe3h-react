@@ -19,10 +19,13 @@ export const Mercedes: ICharacter = {
 			 answer: 'Maybe you need a ritual to summon one.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Seeing the cathedral in such a run-down state makes me feel so sorry for the goddess… As soon as this way is finally over, I’m going to devote myself to making this place more beautiful than ever!',
+			answer: 'Let’s plant flowers to make it more colorful'
 		}
 	],
+	skillProficiencies: ['Reason', 'Faith'],
+	skillWeaknesses: ['Sword', 'Lance', 'Axe'],
+	hiddenTalents: ['Bow'],
 	growthRates: {
 		HP: 30,
 		STR: 25,

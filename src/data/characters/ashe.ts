@@ -19,10 +19,13 @@ export const Ashe: ICharacter = {
 			 answer: 'Think of it as training for night marches.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I haven’t been able to see my brother and sister lately, so I’m sending them gifts instead. My brother’s not one to ask for anything, though. I don’t know what to give him?',
+			answer: 'Maybe you should send him some books.'
 		}
 	],
+	skillProficiencies: ['Axe', 'Bow'],
+	skillWeaknesses: ['Reason'],
+	hiddenTalents: ['Lance'],
 	growthRates: {
 		HP: 35,
 		STR: 35,

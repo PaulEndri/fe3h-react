@@ -18,10 +18,13 @@ export const Edelgard: ICharacter = {
 			 answer: 'Perhaps we should make lectures optional.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I know this is highly unlikely, but on the off chance that Rhea surrenders to my terms, what should I do? I would appreciate your thoughts on the matter…',
+			answer: 'Strip her of her power so she can’t interfere in politics.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Axe', 'Heavy Armor', 'Authority'],
+	skillWeaknesses: ['Bow', 'Faith'],
+	hiddenTalents: ['Reason'],
 	growthRates: {
 		HP: 40,
 		STR: 55,

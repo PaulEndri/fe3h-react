@@ -14,14 +14,17 @@ export const Shamir: ICharacter = {
 	trainings: ['Lance', 'Bow'],
 	lectures: [
 		{
-			question: '',
-			 answer: ''
+			question: 'Some people hate spiders or centipedes, but they have no strong feelings towards flies or crickets. Why is that?',
+			 answer: 'They may all be bugs, but they’re such different species.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I prefer to use stealth tactics to assassinate my foes on the battlefield, but you take a different approach. Why is that?',
+			answer: 'Those tactics don’t give the enemy a chance to surrender.'
 		}
 	],
+	skillProficiencies: ['Lance', 'Bow'],
+	skillWeaknesses: ['Faith'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 35,
 		STR: 40,

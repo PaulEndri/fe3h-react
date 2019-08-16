@@ -19,10 +19,13 @@ export const Dorothea: ICharacter = {
 			 answer: 'Fancy meals are boring if you eat them every day.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Songs are so powerless, Professor. No matter how much on sings, there’s no soldier on the battlefield who will listen. It’s horrible that one can only sing of peace in times of peace.',
+			answer: 'If we can achieve peace, those songs won’t be powerless.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Reason'],
+	skillWeaknesses: ['Faith'],
+	hiddenTalents: ['Faith'],
 	growthRates: {
 		HP: 40,
 		STR: 20,

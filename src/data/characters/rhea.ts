@@ -13,16 +13,10 @@ export const Rhea: ICharacter = {
 	tea: ['Crescent-Moon Tea', 'Angelica Tea', 'Chamomile'],
 	lostItems: [],
 	trainings: ['Sword', 'Brawl', 'Reason', 'Faith'],
-	lectures: [
-		{
-			question: '',
-			 answer: ''
-		},
-		{
-			question: '',
-			answer: ''
-		}
-	],
+	lectures: [],
+	skillProficiencies: ['Sword', 'Brawl', 'Reason', 'Faith'],
+	skillWeaknesses: [],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 50,
 		STR: 45,
@@ -33,5 +27,5 @@ export const Rhea: ICharacter = {
 		DEF: 30,
 		RES: 25,
 		CHA: 45,
-	}
+	},
 };

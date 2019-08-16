@@ -24,9 +24,7 @@ export class CharacterService {
             return '';
         }
 
-        const suffix = key === 'thumbnails' ? 'jpg' : 'png';
-
-        return `${process.env.PUBLIC_URL}/assets/characters/${key}/${this.character.firstName.toLowerCase()}.${suffix}`;
+        return `${process.env.PUBLIC_URL}/assets/characters/${key}/${this.character.firstName.toLowerCase()}.png`;
     }
 }
 

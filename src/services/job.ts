@@ -48,7 +48,7 @@ class JobService {
             beginner: service.beginnerClasses,
             intermediate: service.intermediateClasses,
             advanced: service.advancedClasses,
-            master: service.advancedClasses
+            master: service.masterClasses
         }
     }
 }

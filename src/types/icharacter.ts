@@ -19,5 +19,8 @@ export interface ICharacter {
   lostItems: string[];
   trainings?: string[];
   lectures: Lecture[];
+  skillProficiencies: string[];
+  skillWeaknesses: string[];
+  hiddenTalents: string[];
   growthRates: IGrowthRate;
 }

@@ -21,10 +21,10 @@
 }
 
 img.child-view-portrait {
-  background-color: #937f66 !important;
+  background-color: #b4a18a !important;
   padding: 5px;
-  border: 5px !important;
-  border-color: #815fa9 !important;
+  border: 2px solid #815fa9!important;
+  max-width: 200px !important;
 }
 
 .justified-content {

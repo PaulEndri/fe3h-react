@@ -18,10 +18,13 @@ export const Ignatz: ICharacter = {
 			 answer: 'They’ll appreciate your opinion. Let yourself be heard.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Some of the children were admiring a painting of mine. I’d like to paint a new piece. Something just for them, to make them happy. What do you think I ought to paint?',
+			answer: 'Woodland creatures.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Bow', 'Authority', 'Flying'],
+	skillWeaknesses: [],
+	hiddenTalents: ['Reason'],
 	growthRates: {
 		HP: 35,
 		STR: 35,

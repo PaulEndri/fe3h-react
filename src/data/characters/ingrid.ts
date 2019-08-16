@@ -23,6 +23,9 @@ export const Ingrid: ICharacter = {
 			answer: 'Maybe the cart will open back up if the war ends.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Lance', 'Riding', 'Flying'],
+	skillWeaknesses: [],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 40,
 		STR: 35,

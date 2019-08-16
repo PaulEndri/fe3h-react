@@ -19,10 +19,13 @@ export const Felix: ICharacter = {
 			 answer: 'Knowing magic will make you a stronger swordsman.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I’ve had this sword for a long time. It is as much a part of me as the hand that holds it. But a good swordsmith could craft a weapon that’s more effective and durable. Should I stick with my old, familiar sword, or acquire a better one?',
+			answer: 'Get the new weapon. Give yourself time to train with it.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Bow', 'Brawling'],
+	skillWeaknesses: ['Reason', 'Authority'],
+	hiddenTalents: ['Reason'],
 	growthRates: {
 		HP: 45,
 		STR: 55,

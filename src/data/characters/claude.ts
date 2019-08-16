@@ -19,10 +19,13 @@ export const Claude: ICharacter = {
 			 answer: 'Try going for a stroll around the monastery.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I’ve been thinking it would be nice to throw a big feast for everyone, but we’re lacking in surplus supplies. Do you have any recommendations for cheap yet tasty food?',
+			answer: 'You should go hunting for what you need in the forest.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Bow', 'Authority', 'Flying', 'Riding'],
+	skillWeaknesses: ['Lance', 'Faith'],
+	hiddenTalents: ['Axe'],
 	growthRates: {
 		HP: 35,
 		STR: 40,

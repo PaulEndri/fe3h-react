@@ -19,10 +19,13 @@ export const Ferdinand: ICharacter = {
 			 answer: 'Ask a blacksmith to teach you how to craft your own.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Death is an inevitable result of military conflict. Not only soldiers, but also warhorses, who have no say in their line of work, lay down their lives on the battlefield. What steps can a commander take to minimize this loss of life?',
+			answer: 'Adopt new tactics that increase survivability.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Axe', 'Lance', 'Riding'],
+	skillWeaknesses: [],
+	hiddenTalents: ['Heavy Armor'],
 	growthRates: {
 		HP: 50,
 		STR: 45,

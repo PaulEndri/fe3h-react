@@ -14,7 +14,7 @@ export const ChurchOfSeiros: IHouse = {
   stub: 'seiros',
   color: 'grey',
   leader: Rhea,
-  students: [Rhea, Cyril, Seteth, Flayn, Gilbert, Shamir, Catherine],
+  students: [Cyril, Seteth, Flayn, Gilbert, Shamir, Catherine],
   banner: ChurchOfSeirosBanner,
   motto: 'and the Knights of Seiros'
 };

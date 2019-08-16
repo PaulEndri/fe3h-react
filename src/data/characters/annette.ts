@@ -19,10 +19,13 @@ export const Annette: ICharacter = {
 			 answer: 'Bring along a snack, just in case.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Just thinking about how, even now, someone out there is fighting for something, I just can’t seem to sit still, even during my breaks. What should I do at times like that?',
+			answer: 'You could assist with my daily tasks, if you’d like'
 		}
 	],
+	skillProficiencies: ['Axe', 'Reason', 'Authority'],
+	skillWeaknesses: ['Heavy Armor', 'Bow'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 25,
 		STR: 30,

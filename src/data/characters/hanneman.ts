@@ -19,10 +19,13 @@ export const Hanneman: ICharacter = {
 			 answer: 'Make the "Experiment" a "job" and pay them handsomely.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'When I do nothing but fight, my spirits falter and I lose the will to keep things tidy. This is when my room falls to disorder, and my spirits falter even more Is there no way to break this cycle?',
+			answer: 'Take a short break to do something that raises your spirits.'
 		}
 	],
+	skillProficiencies: ['Bow', 'Reason', 'Riding'],
+	skillWeaknesses: ['Heavy Armor', 'Flying'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 40,
 		STR: 30,

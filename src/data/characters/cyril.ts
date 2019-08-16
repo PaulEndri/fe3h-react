@@ -19,10 +19,13 @@ export const Cyril: ICharacter = {
 			 answer: 'Show them how happy you are working here.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I don’t think there’s much difference between Almyra and Fodlan. But everyone else seems to think Almyra is so completely different. Why’s that.',
+			answer: 'It’s prejudice towards unknown places, nothing more.'
 		}
 	],
+	skillProficiencies: ['Axe', 'Lance', 'Brawling', 'Riding', 'Flying'],
+	skillWeaknesses: ['Reason', 'Faith'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 35,
 		STR: 20,

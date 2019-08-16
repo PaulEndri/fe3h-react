@@ -19,10 +19,13 @@ export const Caspar: ICharacter = {
 			 answer: 'You should just enjoy what you’ve got.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Hey, Professor! I think I’m ready… I think it’s time you finally gave me a nickname! What’s a guy gotta do to earn one?',
+			answer: 'You actually have one, but it’s too scary to say out loud.'
 		}
 	],
+	skillProficiencies: ['Axe', 'Brawling'],
+	skillWeaknesses: ['Bow', 'Reason', 'Authority'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 55,
 		STR: 45,

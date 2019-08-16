@@ -19,10 +19,13 @@ export const Manuela: ICharacter = {
 			 answer: 'Men have unrealistic expectations'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I think alcohol consumption increases as we continue to fight, day after day after day after… Oh, I mean for the monastery. As a whole, dear. Not just for me. Still, is it something we should be careful about?',
+			answer: 'Focus on your own intake. I\'ll worry about everyone else.'
 		}
 	],
+	skillProficiencies: ['Sword', 'Faith', 'Flying'],
+	skillWeaknesses: ['Reason'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 50,
 		STR: 35,

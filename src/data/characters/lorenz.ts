@@ -19,10 +19,13 @@ export const Lorenz: ICharacter = {
 			 answer: 'Sounds like it’s their problem, not yours.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'I have always been confident in my exceptional skill, but... lately I will admit I have experienced some minor doubts. What can I do to restore my confidence?Win your battles consistently. Confidence will come.',
+			answer: 'Win your battles consistently. Confidence will come.'
 		}
 	],
+	skillProficiencies: ['Lance', 'Reason', 'Riding'],
+	skillWeaknesses: ['Brawling'],
+	hiddenTalents: [],
 	growthRates: {
 		HP: 55,
 		STR: 40,

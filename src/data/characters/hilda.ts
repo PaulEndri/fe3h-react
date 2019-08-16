@@ -19,10 +19,13 @@ export const Hilda: ICharacter = {
 			 answer: 'Ask somebody who’s good at cleaning.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'Whenever I visit home, my brother yammers on and on about all the things I\'m doing wrong. It\'s SO exhausting, I wish he\'d back off and let me live my life. What do you think I should do?',
+			answer: 'Yammer back at him! See how he likes it!'
 		}
 	],
+	skillProficiencies: ['Lance', 'Axe'],
+	skillWeaknesses: ['Authority', 'Faith'],
+	hiddenTalents: ['Heavy Armor'],
 	growthRates: {
 		HP: 50,
 		STR: 45,

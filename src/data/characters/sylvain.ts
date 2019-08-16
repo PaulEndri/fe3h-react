@@ -19,10 +19,13 @@ export const Sylvain: ICharacter = {
 			 answer: 'Stay away for a while so she starts to miss you.'
 		},
 		{
-			question: '',
-			answer: ''
+			question: 'All this savagery, day after day, is depressing. Do you have any ideas for fun things I could do to feel better, Professor?',
+			answer: 'Why don’t you ask a girl out?'
 		}
 	],
+	skillProficiencies: ['Lance', 'Axe', 'Riding'],
+	skillWeaknesses: ['Bow'],
+	hiddenTalents: ['Reason'],
 	growthRates: {
 		HP: 55,
 		STR: 45,
