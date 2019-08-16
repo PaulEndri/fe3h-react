@@ -9,6 +9,8 @@ export const Cyril: ICharacter = {
 	stat: '-',
 	flower: ['Baby\'s Breath'],
 	gift: ['Hunting Dagger', 'Smoked Meat', 'Watering Can'],
+	tea: ['Almyran Pine Needles'],
+	crest: 'None',
 	lostItems: ['Old Cleaning Cloth', 'Portrait Of Rhea', 'Well-Used Hatchet'],
 	trainings: [],
 	lectures: [

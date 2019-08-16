@@ -9,6 +9,8 @@ export const Ingrid: ICharacter = {
 	stat: 'DEX',
 	flower: [],
 	gift: ['Legends of Chivalry', 'Riding Boots', 'Smoked Meat'],
+	tea: ['Mint Leaves', 'Chamomile'],
+	crest: 'Daphnel',
 	lostItems: ['Curry Comb', 'Jousting Almanac', 'Pegasus Horseshoes'],
 	trainings: [],
 	lectures: [

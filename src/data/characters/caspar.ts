@@ -5,6 +5,8 @@ export const Caspar: ICharacter = {
 	alliance: 'Black Eagles',
 	name: 'Caspar von Bergliez',
 	birthday: '7/1',
+	tea: ['Ginger Tea'],
+	crest: 'None',
 	skill: 'Brawl',
 	stat: 'STR',
 	flower: [],

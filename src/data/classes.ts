@@ -1,17 +1,6 @@
-[
-    {
-      "Name": "None Selected",
-      "HP": 0,
-      "STR": 0,
-      "MAG": 0,
-      "DEX": 0,
-      "SPD": 0,
-      "LCK": 0,
-      "DEF": 0,
-      "RES": 0,
-      "CHA": 0,
-      "Tier": "unique"
-    },
+import { IClass } from "../types/iclass";
+
+const classes: IClass[] = [
     {
       "Name": "Noble",
       "HP": 0,
@@ -623,4 +612,6 @@
       "CHA": 10,
       "Tier": "master"
     }
-]
+];
+
+export default classes;

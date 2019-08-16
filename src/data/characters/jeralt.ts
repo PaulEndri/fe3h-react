@@ -9,6 +9,8 @@ export const Jeralt: ICharacter = {
 	flower: ['-'],
 	gift: ['-'],
 	lostItems: ['Wooden Flask'],
+	crest: 'None',
+	tea: ['Yo Momma'],
 	trainings: ['Lance', 'Authority', 'Riding'],
 	lectures: [
 		{

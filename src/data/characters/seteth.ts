@@ -7,6 +7,8 @@ export const Seteth: ICharacter = {
 	birthday: '12/27',
 	skill: '-',
 	stat: '-',
+	tea: ['Four-Spice Blend', 'Ginger Tea', 'Angelica Tea'],
+	crest: 'Cichol',
 	flower: [],
 	gift: ['Fishing Float', 'Dapper Handkerchief', 'The History of Fodlan'],
 	lostItems: ['Old Fishing Rod', 'Snapping Writing Quill', 'Unfinished Fable'],

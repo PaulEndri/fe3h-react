@@ -5,6 +5,8 @@ export const Hubert: ICharacter = {
 	alliance: 'Black Eagles',
 	birthday: '4/17',
 	name: 'Hubert von Vestra',
+	crest: 'None',
+	tea: ['Dagda Fruit Blend', 'Cinnamon Blend'],
 	skill: '-',
 	stat: '-',
 	flower: [],

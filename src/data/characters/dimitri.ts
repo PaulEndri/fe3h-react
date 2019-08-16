@@ -8,6 +8,8 @@ export const Dimitri: ICharacter = {
 	skill: '-',
 	stat: '-',
 	flower: [],
+	tea: ['Chamomile'],
+	crest: 'Blaiddyd',
 	gift: ['Whetstone', 'Training Weight', 'Riding Boots', 'Ceremonial Sword'],
 	lostItems: ['Black Leather Gloves', 'Dulled Longsword', 'Training Logbook'],
 	trainings: [],

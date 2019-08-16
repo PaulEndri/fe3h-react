@@ -8,6 +8,8 @@ export const Hilda: ICharacter = {
 	skill: 'Axe',
 	stat: 'CHA',
 	flower: ['Anemone'],
+	tea: ['Albinean Berry Blend', 'Southern Fruit Blend', 'Rose Petal Blend', 'Mint Leaves'],
+	crest: 'Goneril',
 	gift: ['Armored Bear Stuffy', 'Dapper Handkerchief', 'Gemstone Beads', 'Stylish Hair Clip'],
 	lostItems: ['Handmade Hair Clip', 'Spotless Bandage', 'Used Bottle of Perfume'],
 	trainings: [],

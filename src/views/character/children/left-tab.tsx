@@ -24,23 +24,19 @@ export const LeftTab = ({character, characterService}: Props) => (
                 <Grid.Column>
                     <List verticalAlign="bottom">
                         <List.Item>
-                            Crest:
-                            <List.Content floated="right">Reigan</List.Content>
+                            <List.Content floated="left">Crest:</List.Content>
+                            <List.Content floated="right">{character.crest}</List.Content>
                         </List.Item>
                         <List.Item>
-                            Birthday: 
+                            <List.Content floated="left">Birthday: </List.Content>
                             <List.Content floated="right">{character.birthday}</List.Content>
                         </List.Item>
                         <List.Item>
-                            Favorite Tea: 
-                            <List.Content floated="right">Who Knows</List.Content>
-                        </List.Item>
-                        <List.Item>
-                            Stat Required: 
+                            <List.Content floated="left">Stat Required: </List.Content>
                             <List.Content floated="right">{character.stat}</List.Content>
                         </List.Item>
                         <List.Item>
-                            Skill Required: 
+                            <List.Content floated="left">Skill Required: </List.Content>
                             <List.Content floated="right">{character.skill}</List.Content>
                         </List.Item>
                     </List>

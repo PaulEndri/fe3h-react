@@ -8,6 +8,8 @@ export const Dedue: ICharacter = {
 	skill: '-',
 	stat: '-',
 	flower: [],
+	tea: ['Cinnamon Blend', 'Four-Spice Blend', 'Ginger Tea'],
+	crest: 'None',
 	gift: ['Floral Adornment', 'Watering Can', 'Exotic Spices'],
 	lostItems: ['Cooking Pot', 'Gardening Shears', 'Gold Earring'],
 	trainings: [],

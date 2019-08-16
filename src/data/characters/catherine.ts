@@ -8,6 +8,8 @@ export const Catherine: ICharacter = {
 	skill: '-',
 	stat: '-',
 	flower: [],
+	crest: 'Charon',
+	tea: ['Rose Petal Blend'],
 	gift: ['Blue Cheese', 'Legends of Chivalry', 'Training Weight', 'Whetstone'],
 	lostItems: ['Badge Of Graduation', 'Letter To Rhea', 'Weathered Cloak'],
 	trainings: ['Sword', 'Brawl'],

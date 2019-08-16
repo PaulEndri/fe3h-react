@@ -8,6 +8,8 @@ export const Petra: ICharacter = {
 	skill: 'Riding',
 	stat: 'DEX',
 	flower: ['Sunflower'],
+	tea: ['Four-Spice Blend', 'Ginger Tea'],
+	crest: 'None',
 	gift: ['Exotic Spices', 'Hunting Dagger', 'Smoked Meat'],
 	lostItems: ['Annotated Dictionary', 'Exotic Feather', 'Small Tan Hide'],
 	trainings: [],

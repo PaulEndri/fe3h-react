@@ -10,6 +10,8 @@ export const Claude: ICharacter = {
 	flower: [],
 	gift: ['Board Game Piece', 'Exotic Spices', 'Riding Boots'],
 	lostItems: ['Leather Bow Sheath', 'Mild Stomach Poison', 'Board Game Piece'],
+	tea: ['Almyran Pine Needles', 'Chamomile'],
+	crest: 'Reigan',
 	trainings: [],
 	lectures: [
 		{

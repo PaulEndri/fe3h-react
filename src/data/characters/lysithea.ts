@@ -8,6 +8,8 @@ export const Lysithea: ICharacter = {
 	skill: 'Faith',
 	stat: 'MAG',
 	flower: ['Lily'],
+	tea: ['Sweet-Apple Blend', 'Southern Fruit Blend', 'Crescent-Moon Tea', 'Honeyed-Fruit Blend'],
+	crest: 'Charon, Gloucester',
 	gift: ['Arithmetic Textbook', 'Armored Bear Stuffy', 'Book of Crest Designs', 'Tasty Baked Treat'],
 	lostItems: ['Encyclopedia of Sweets', 'New Bottle of Perfume', 'Princess Doll'],
 	trainings: [],

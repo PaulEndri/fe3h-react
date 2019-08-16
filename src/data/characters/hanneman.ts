@@ -9,6 +9,8 @@ export const Hanneman: ICharacter = {
 	stat: '-',
 	flower: [],
 	gift: ['Arithmetic Textbook', 'Book of Crest Designs', 'Dapper Handkerchief', 'Tea Leaves'],
+	tea: ['Bergamot', 'Sweet-Apple Blend', 'Honeyed-Fruit Blend', 'Cinnamon Blend'],
+	crest: 'Indech',
 	lostItems: ['Hammer and Chisel', 'Lens Cloth', 'Sketch of a Sigil'],
 	trainings: ['Bow', 'Reason', 'Riding'],
 	lectures: [

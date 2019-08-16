@@ -9,6 +9,8 @@ export const Leonie: ICharacter = {
 	stat: 'STR',
 	flower: [],
 	gift: ['Fishing Float', 'Hunting Dagger', 'Training Weight'],
+	tea: ['Four-Spice Blend', 'Angelica Tea'],
+	crest: 'None',
 	lostItems: ['Crude Arrow Heads', 'Fur Scarf', 'Hand Drawn Map'],
 	trainings: [],
 	lectures: [

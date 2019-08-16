@@ -16,5 +16,5 @@ export const ChurchOfSeiros: IHouse = {
   leader: Rhea,
   students: [Rhea, Cyril, Seteth, Flayn, Gilbert, Shamir, Catherine],
   banner: ChurchOfSeirosBanner,
-  motto: 'Adrestian Empire'
+  motto: 'and the Knights of Seiros'
 };

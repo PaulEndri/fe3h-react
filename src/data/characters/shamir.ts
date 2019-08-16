@@ -7,6 +7,8 @@ export const Shamir: ICharacter = {
 	skill: '-',
 	stat: '-',
 	flower: ['Sunflower'],
+	tea: ['Crescent-Moon Tea', 'Chamomile'],
+	crest: 'None',
 	gift: ['Book of Sheet Music', 'Coffee Beans', 'Exotic Spices', 'Hunting Dagger', 'Ancient Coin'],
 	lostItems: ['Animal Bone Dice', 'Bundle of Dry Hemp', 'Centipede Picture'],
 	trainings: ['Lance', 'Bow'],

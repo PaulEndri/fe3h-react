@@ -7,6 +7,8 @@ export const Gilbert: ICharacter = {
 	skill: '-',
 	stat: '-',
 	flower: [],
+	tea: ['Almond Blend', 'Lavender Blend'],
+	crest: 'None',
 	gift: ['Ceremonial Sword', 'Fishing Float', 'Goddess Statuette'],
 	lostItems: ['Carving Hammer', 'Noseless Puppet', 'Silver Necklace'],
 	trainings: ['Lance', 'Axe', 'Heavy Armor', 'Riding'],

@@ -9,5 +9,5 @@ export interface IClass {
     RES: number;
     CHA: number;
     Name: string;
-    type: "unique" | "beginner" | "intermediate" | "advanced" | "master"
+    Tier: "unique" | "beginner" | "intermediate" | "advanced" | "master"
 }

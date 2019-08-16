@@ -8,6 +8,8 @@ export const Mercedes: ICharacter = {
 	skill: 'Bow',
 	stat: 'MAG',
 	flower: ['Lavender'],
+	tea: ['Albinean Berry Blend', 'Southern Fruit Blend', 'Crescent Moon Tea'],
+	crest: 'Lamine',
 	gift: ['Armored Bear Stuffy', 'Gemstone Beads', 'Goddess Statuette', 'Tasty Baked Treat'],
 	lostItems: ['Book of Ghost Stories', 'Fruit Preserves', 'How to Bake Sweets'],
 	trainings: [],

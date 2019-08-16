@@ -10,6 +10,8 @@ export const Manuela: ICharacter = {
 	flower: [],
 	gift: ['Blue Cheese', 'Book of Sheet Music', 'Gemstone Beads', 'Goddess Statuette'],
 	lostItems: ['Clean Dusting Cloth', 'Light Purple Beil', 'Wellness Herbs'],
+	tea: ['Mint Leaves', 'Lavender Blend'],
+	crest: 'None',
 	trainings: ['Sword', 'Faith', 'Flying'],
 	lectures: [
 		{

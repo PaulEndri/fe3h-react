@@ -8,6 +8,8 @@ export const Sylvain: ICharacter = {
 	skill: 'Reason',
 	stat: 'CHA',
 	flower: [],
+	tea: ['Bergamot', 'Seiros Tea'],
+	crest: 'Gautier',
 	gift: ['Board Game', 'Dapper Handkerchief', 'Landscape Painting'],
 	lostItems: ['Crumpled Love Letter', 'The History of Sreng', 'Unused Lipstick'],
 	trainings: [],

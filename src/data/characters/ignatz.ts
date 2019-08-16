@@ -7,6 +7,8 @@ export const Ignatz: ICharacter = {
 	skill: 'Authority',
 	stat: 'DEX',
 	flower: ['Forget-me-nots'],
+	tea: ['Dagda Fruit Blend', 'Seiros Tea', 'Lavender Blend'],
+	crest: 'None',
 	gift: ['Ancient Coin', 'Ceremonial Sword', 'Goddess Statuette', 'Landscape Painting'],
 	lostItems: ['Art Book', 'Blue Stone', 'Letter to the Goddess'],
 	trainings: [],

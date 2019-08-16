@@ -5,6 +5,8 @@ export const Ferdinand: ICharacter = {
 	alliance: 'Black Eagles',
 	name: 'Ferdinand von Aegir',
 	birthday: '4/30',
+	crest: 'Cichol',
+	tea: ['Almyran Pine Needles', 'Southern Fruit Blend', 'Seiros Tea'],
 	skill: 'Hvy. A',
 	stat: 'DEX',
 	flower: [],

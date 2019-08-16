@@ -9,6 +9,8 @@ export const Rhea: ICharacter = {
 	stat: '-',
 	flower: [],
 	gift: ['Goddess Statuette', 'Landscape Painting', 'Ancient Coin'],
+	crest: 'Seiros',
+	tea: ['Crescent-Moon Tea', 'Angelica Tea', 'Chamomile'],
 	lostItems: [],
 	trainings: ['Sword', 'Brawl', 'Reason', 'Faith'],
 	lectures: [

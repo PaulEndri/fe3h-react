@@ -6,6 +6,8 @@ export const Dorothea: ICharacter = {
 	name: 'Dorothea Arnault',
 	birthday: '9/29',
 	skill: 'Authority',
+	tea: ['Sweet-Apple Blend', 'Albinean Berry Blend'],
+	crest: 'None',
 	stat: 'CHA',
 	flower: [],
 	gift: ['Book of Sheet Music', 'Gemstone Beads', 'Stylish Hair Clip'],

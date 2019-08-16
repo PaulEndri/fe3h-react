@@ -8,6 +8,8 @@ export const Felix: ICharacter = {
 	skill: 'Sword',
 	stat: 'SPD',
 	flower: [],
+	tea: ['Almyran Pine Needles', 'Four-Spice Blend'],
+	crest: 'None',
 	gift: ['Ceremonial Sword', 'Hunting Dagger', 'Smoked Meat', 'Training Weight'],
 	lostItems: ['Black Iron Spur', 'Sword Belt Fragment', 'Toothed Dagger'],
 	trainings: [],

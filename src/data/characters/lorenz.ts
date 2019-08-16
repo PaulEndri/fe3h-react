@@ -8,6 +8,8 @@ export const Lorenz: ICharacter = {
 	skill: 'Reason',
 	stat: 'CHA',
 	flower: ['Rose'],
+	tea: ['Bergamot', 'Rose Petal Blend', 'Seiros Tea'],
+	crest: 'Gloucester',
 	gift: ['Book of Sheet Music', 'Floral Adornment', 'Tea Leaves'],
 	lostItems: ['A Treatise On Etiquette', 'Artificial Flower', 'Silk Handkerchief'],
 	trainings: [],

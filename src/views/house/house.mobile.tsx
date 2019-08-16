@@ -26,7 +26,7 @@ const HouseView = ({match, history}: HouseViewProps) => {
 
     return (
         <Container as="div" fluid textAlign="center">
-            <Header as="h2" color={house.color} textAlign="center" attached="top" style={{border: '0px'}}>
+            <Header as="h2" textAlign="center" attached="top" style={{border: '0px'}}>
                 <Image src={house.banner} fluid/>
                 <Header.Content>
                     {house.name}
@@ -41,7 +41,6 @@ const HouseView = ({match, history}: HouseViewProps) => {
                         <Table.Row>
                             <Table.HeaderCell rowSpan="2"></Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={2} >Gifts</Table.HeaderCell>
-                            <Table.HeaderCell rowSpan="2" width={1} >Flowers</Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={2} singleLine >Lost Items</Table.HeaderCell>
                             <Table.HeaderCell colSpan="9" collapsing textAlign="center" >Base Stat Growths</Table.HeaderCell>
                         </Table.Row>
@@ -65,9 +64,6 @@ const HouseView = ({match, history}: HouseViewProps) => {
                                 </Table.Cell>
                                 <Table.Cell textAlign="center">
                                     {student.gift.map((gift, i) => <div key={i}>{gift},</div>)}
-                                </Table.Cell>
-                                <Table.Cell textAlign="center">
-                                    {student.tea.map((gift, i) => <div key={i}>{gift},</div>)}
                                 </Table.Cell>
                                 <Table.Cell textAlign="center">
                                     {student.lostItems.map((item, i) => <div key={i}>{item},</div>)}

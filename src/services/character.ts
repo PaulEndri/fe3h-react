@@ -20,7 +20,9 @@ export class CharacterService {
             return '';
         }
 
-        return `${process.env.PUBLIC_URL}/assets/characters/${key}/${this.character.firstName.toLowerCase()}.png`;
+        const suffix = key === 'thumbnails' ? 'jpg' : 'png';
+
+        return `${process.env.PUBLIC_URL}/assets/characters/${key}/${this.character.firstName.toLowerCase()}.${suffix}`;
     }
 }
 

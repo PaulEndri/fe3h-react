@@ -5,6 +5,8 @@ export const Linhardt: ICharacter = {
 	alliance: 'Black Eagles',
 	name: 'Linhardt von Hevring',
 	birthday: '11/7',
+	crest: 'Cethleann',
+	tea: ['Almyran Pine Needles', 'Angelica Tea'],
 	skill: 'Reason',
 	stat: 'MAG',
 	flower: [],

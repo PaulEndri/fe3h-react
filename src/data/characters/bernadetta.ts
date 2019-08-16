@@ -5,6 +5,8 @@ export const Bernadetta: ICharacter = {
 	alliance: 'Black Eagles',
 	name: 'Bernadetta von Varley',
 	birthday: '12/12',
+	crest: 'Indech',
+	tea: ['Albinean Berry Blend', 'Honeyed-Fruit Blend'],
 	skill: 'Bow',
 	stat: 'STR',
 	flower: ['Pitcher Plant'],

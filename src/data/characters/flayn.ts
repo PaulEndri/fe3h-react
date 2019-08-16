@@ -10,6 +10,8 @@ export const Flayn: ICharacter = {
 	flower: ['Forget-me-nots'],
 	gift: ['Armored Bear Stuffy', 'Dapper Handkerchief', 'Stylish Hair Clip', 'Tasty Baked Treat'],
 	lostItems: ['Antique Clasp', 'Dusty Book of Fables', 'Old Map of Enbarr'],
+	tea: ['Sweet-Apple Blend', 'Crescent-Moon Tea', 'Almond Blend'],
+	crest: 'Cethleann',
 	trainings: [],
 	lectures: [
 		{

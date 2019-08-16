@@ -9,6 +9,8 @@ export const Marianne: ICharacter = {
 	stat: 'MAG',
 	flower: ['Lily of the Valley'],
 	gift: ['Armored Bear Stuffy', 'Dapper Handkerchief', 'Floral Adornment'],
+	tea: ['Dagda Fruit Blend', 'Cinnamon Blend', 'Lavender Blend'],
+	crest: 'Beast',
 	lostItems: ['Bag of Seeds', 'Confessional Letter', 'How to be Tidy'],
 	trainings: [],
 	lectures: [

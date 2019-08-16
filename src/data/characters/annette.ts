@@ -5,10 +5,12 @@ export const Annette: ICharacter = {
 	alliance: 'Blue Lions',
 	name: 'Annette Fantine Dominic',
 	birthday: '5/9',
+	crest: 'Dominic',
 	skill: 'Faith',
 	stat: 'MAG',
 	flower: [],
 	gift: ['Arithmetic Textbook', 'Book of Sheet Music', 'Stylish Hair Clip'],
+	tea: ['Sweet-Apple Blend', 'Rose Petal Blend', 'Almond Blend'],
 	lostItems: ['School of Sorcery Book', 'Unfinished Score', 'Wax Diptych'],
 	trainings: [],
 	lectures: [

@@ -7,7 +7,7 @@ function App() {
     <div className="app-home-view">
         <Image fluid src={logo} className="App-logo" alt="logo" />
         <p>
-          ICharacter Companion
+          Character Companion
         </p>
         <p>
           Click on a house to begin your journey to find gifts, stats, and more!
