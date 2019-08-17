@@ -7,7 +7,7 @@ export const Caspar: ICharacter = {
 	birthday: '7/1',
 	tea: ['Ginger Tea'],
 	crest: 'None',
-	skill: 'C Brawl',
+	skill: 'C Brawling',
 	stat: '10 STR',
 	flower: [],
 	gift: ['Smoked Meat', 'Training Weight', 'Whetstone'],

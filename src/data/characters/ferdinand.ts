@@ -7,7 +7,7 @@ export const Ferdinand: ICharacter = {
 	birthday: '4/30',
 	crest: 'Cichol',
 	tea: ['Almyran Pine Needles', 'Southern Fruit Blend', 'Seiros Tea'],
-	skill: 'C Hvy. A',
+	skill: 'C Heavy Armor',
 	stat: '10 DEX',
 	flower: [],
 	gift: ['Riding Boots', 'Tea Leaves', 'Whetstone'],

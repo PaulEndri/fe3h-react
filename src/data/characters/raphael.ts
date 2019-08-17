@@ -5,7 +5,7 @@ export const Raphael: ICharacter = {
 	alliance: 'Golden Deer',
 	name: 'Raphael Kirsten',
 	birthday: '5/19',
-	skill: 'C Hvy. A',
+	skill: 'C Heavy Armor',
 	stat: '20 STR',
 	flower: [],
 	gift: ['Smoked Meat', 'Tasty Baked Treat', 'Training Weight'],

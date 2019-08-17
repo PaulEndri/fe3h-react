@@ -24,7 +24,7 @@ export const Hubert: ICharacter = {
 		}
 	],
 	skillProficiencies: ['Bow', 'Reason', 'Authority'],
-	skillWeaknesses: ['Axe', 'Faith'],
+	skillWeaknesses: ['Axe', 'Faith', 'Flying'],
 	hiddenTalents: ['Lance'],
 	growthRates: {
 		HP: 35,

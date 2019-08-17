@@ -43,18 +43,15 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
                             <Table.HeaderCell rowSpan="2" width={2} >Gifts</Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={1} >Flowers</Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={2} singleLine >Lost Items</Table.HeaderCell>
-                            <Table.HeaderCell colSpan="9" collapsing textAlign="center" >Base Stat Growths</Table.HeaderCell>
+                            <Table.HeaderCell colSpan="2" width={2} singleLine textAlign="center" >Recruitment</Table.HeaderCell>
+                            <Table.HeaderCell colSpan="3" width={6} singleLine textAlign="center" >Skills</Table.HeaderCell>
                         </Table.Row>
                         <Table.Row>
-                            <Table.HeaderCell width={1} >HP</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >STR</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >MAG</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >DEX</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >SPD</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >LCK</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >DEF</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >RES</Table.HeaderCell>
-                            <Table.HeaderCell width={1} >CHA</Table.HeaderCell>
+                            <Table.HeaderCell width={1} >Stat</Table.HeaderCell>
+                            <Table.HeaderCell width={1} >Skill</Table.HeaderCell>
+                            <Table.HeaderCell width={2} >Strengths</Table.HeaderCell>
+                            <Table.HeaderCell width={2} >Weaknesses</Table.HeaderCell>
+                            <Table.HeaderCell width={2} >Hidden Talents</Table.HeaderCell>
                         </Table.Row>
                     </Table.Header>
                     <Table.Body>
@@ -73,31 +70,25 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
                                     {student.lostItems.map((item, i) => <div key={i}>{item},</div>)}
                                 </Table.Cell>
                                 <Table.Cell width={1} >
-                                    {student.growthRates.HP}
+                                    {student.stat}
                                 </Table.Cell>
                                 <Table.Cell width={1} >
-                                    {student.growthRates.STR}
+                                    {student.skill}
+                                </Table.Cell>
+                                <Table.Cell width={2} >
+                                    {student.skillProficiencies.map((skill) =>
+                                        <Image style={{marginRight: '2px'}} height="25" width="25" inline src={`${process.env.PUBLIC_URL}/assets/icons/${skill.toLowerCase().replace(' ', '-')}.png`} />
+                                    )}
+                                </Table.Cell>
+                                <Table.Cell width={2} >
+                                    {student.skillWeaknesses.map((skill) =>
+                                        <Image style={{marginRight: '2px'}} height="25" width="25" inline src={`${process.env.PUBLIC_URL}/assets/icons/${skill.toLowerCase().replace(' ', '-')}.png`} />
+                                    )}
                                 </Table.Cell>
                                 <Table.Cell width={1} >
-                                    {student.growthRates.MAG}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.DEX}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.SPD}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.LCK}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.DEF}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.RES}
-                                </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.growthRates.CHA}
+                                    {student.hiddenTalents.map((skill) =>
+                                        <Image style={{marginRight: '2px'}} height="25" width="25" inline src={`${process.env.PUBLIC_URL}/assets/icons/${skill.toLowerCase().replace(' ', '-')}.png`} />
+                                    )}
                                 </Table.Cell>
                             </Table.Row>
                         ))}
