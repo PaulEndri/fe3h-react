@@ -1,14 +1,20 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Dorothea: ICharacter = {
     firstName: 'Dorothea',
 	alliance: 'Black Eagles',
 	name: 'Dorothea Arnault',
 	birthday: '9/29',
-	skill: 'B Authority',
 	tea: ['Sweet-Apple Blend', 'Albinean Berry Blend'],
 	crest: 'None',
-	stat: '25 CHA',
+	skill: {
+		name: 'Authority',
+		value: 'B'
+	},
+	stat: {
+		name: 'CHA',
+		value: 25
+	},
 	flower: [],
 	gift: ['Book of Sheet Music', 'Gemstone Beads', 'Stylish Hair Clip'],
 	lostItems: ['Lovely Comb', 'Silver Brooch', 'Songstress Poster'],

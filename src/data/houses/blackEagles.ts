@@ -1,4 +1,4 @@
-import { IHouse } from '../../types/ihouse';
+import { IHouse } from '../../interfaces/iHouse';
 import { Edelgard } from '../characters/edelgard';
 import { Ferdinand } from '../characters/ferdinand';
 import { Bernadetta } from '../characters/bernadetta';

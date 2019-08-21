@@ -1,4 +1,4 @@
-import { IHouse } from '../../types/ihouse';
+import { IHouse } from '../../interfaces/iHouse';
 import ChurchOfSeirosBanner from './seirosBanner.png';
 import { Rhea } from '../characters/rhea';
 import { Cyril } from '../characters/cyril';

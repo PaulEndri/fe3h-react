@@ -1,12 +1,12 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Rhea: ICharacter = {
     firstName: 'Rhea',
 	alliance: 'Church of Seiros',
 	name: 'Rhea',
 	birthday: '1/11',
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	flower: [],
 	gift: ['Goddess Statuette', 'Landscape Painting', 'Ancient Coin'],
 	crest: 'Seiros',
@@ -14,7 +14,7 @@ export const Rhea: ICharacter = {
 	lostItems: [],
 	trainings: ['Sword', 'Brawl', 'Reason', 'Faith'],
 	lectures: [],
-	skillProficiencies: ['Sword', 'Brawl', 'Reason', 'Faith'],
+	skillProficiencies: ['Sword', 'Brawling', 'Reason', 'Faith'],
 	skillWeaknesses: [],
 	hiddenTalents: [],
 	growthRates: {

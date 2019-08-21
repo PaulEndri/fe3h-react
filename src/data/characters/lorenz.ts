@@ -1,12 +1,18 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Lorenz: ICharacter = {
     firstName: 'Lorenz',
 	alliance: 'Golden Deer',
 	name: 'Lorenz Hellman Gloucester',
 	birthday: '6/13',
-	skill: 'C Reason',
-	stat: '20 CHA',
+	skill: {
+		name: 'Reason',
+		value: 'C'
+	},
+	stat: {
+		name: 'CHA',
+		value: 20
+	},
 	flower: ['Rose'],
 	tea: ['Bergamot', 'Rose Petal Blend', 'Seiros Tea'],
 	crest: 'Gloucester',

@@ -1,12 +1,18 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Lysithea: ICharacter = {
     firstName: 'Lysithea',
 	alliance: 'Golden Deer',
 	name: 'Lysithea von Ordelia',
 	birthday: '2/28',
-	skill: 'B Faith',
-	stat: '15 MAG',
+	skill: {
+		name: 'Faith',
+		value: 'B'
+	},
+	stat: {
+		name: 'MAG',
+		value: 15
+	},
 	flower: ['Lily'],
 	tea: ['Sweet-Apple Blend', 'Southern Fruit Blend', 'Crescent-Moon Tea', 'Honeyed-Fruit Blend'],
 	crest: 'Charon, Gloucester',

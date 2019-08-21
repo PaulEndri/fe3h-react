@@ -1,4 +1,4 @@
-import { IClass } from "../types/iclass";
+import { IClass } from "../interfaces/iClass";
 import classes from "../data/classes";
 
 export interface IFilteredJobs {

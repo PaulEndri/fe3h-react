@@ -1,12 +1,15 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Hanneman: ICharacter = {
     firstName: 'Hanneman',
 	alliance: 'Church of Seiros',
 	name: 'Hanneman von Essar',
 	birthday: '2/8',
-	skill: '-',
-	stat: 'Level 15',
+	skill: null,
+	stat: {
+		name: 'Level',
+		value: 15
+	},
 	flower: [],
 	gift: ['Arithmetic Textbook', 'Book of Crest Designs', 'Dapper Handkerchief', 'Tea Leaves'],
 	tea: ['Bergamot', 'Sweet-Apple Blend', 'Honeyed-Fruit Blend', 'Cinnamon Blend'],

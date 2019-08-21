@@ -1,4 +1,4 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Ferdinand: ICharacter = {
     firstName: 'Ferdinand',
@@ -7,8 +7,14 @@ export const Ferdinand: ICharacter = {
 	birthday: '4/30',
 	crest: 'Cichol',
 	tea: ['Almyran Pine Needles', 'Southern Fruit Blend', 'Seiros Tea'],
-	skill: 'C Heavy Armor',
-	stat: '10 DEX',
+	skill: {
+		name: 'Heavy Armor',
+		value: 'C'
+	},
+	stat: {
+		name: 'DEX',
+		value: 10
+	},
 	flower: [],
 	gift: ['Riding Boots', 'Tea Leaves', 'Whetstone'],
 	lostItems: ['Agricultural Survey', 'Bag of Tea Leaves', 'Maintenance Oil'],

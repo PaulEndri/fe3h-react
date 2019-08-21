@@ -1,4 +1,4 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Hubert: ICharacter = {
     firstName: 'Hubert',
@@ -7,8 +7,8 @@ export const Hubert: ICharacter = {
 	name: 'Hubert von Vestra',
 	crest: 'None',
 	tea: ['Dagda Fruit Blend', 'Cinnamon Blend'],
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	flower: [],
 	gift: ['Board Game', 'Coffee Beans', 'The History of Fodlan'],
 	lostItems: ['Folding Razor', 'Hresvelg Treatise', 'Noxious Handkerchief'],

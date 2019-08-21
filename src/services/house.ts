@@ -1,6 +1,6 @@
 
-import { ICharacter } from "../types/icharacter";
-import { IHouse } from "../types/ihouse";
+import { ICharacter } from "../interfaces/iCharacter";
+import { IHouse } from "../interfaces/iHouse";
 import houses from "../data/houses";
 import { CharacterService } from "./character";
 

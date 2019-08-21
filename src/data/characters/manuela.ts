@@ -1,12 +1,15 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Manuela: ICharacter = {
     firstName: 'Manuela',
 	alliance: 'Church of Seiros',
 	name: 'Manuela Casagranda',
 	birthday: '8/3',
-	skill: '-',
-	stat: 'Level 15',
+	skill: null,
+	stat: {
+		name: 'Level',
+		value: '15'
+	},
 	flower: [],
 	gift: ['Blue Cheese', 'Book of Sheet Music', 'Gemstone Beads', 'Goddess Statuette'],
 	lostItems: ['Clean Dusting Cloth', 'Light Purple Beil', 'Wellness Herbs'],

@@ -1,12 +1,18 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Ingrid: ICharacter = {
     firstName: 'Ingrid',
 	alliance: 'Blue Lions',
 	name: 'Ingrid Brandl Galatea',
 	birthday: '1/4',
-	skill: 'D Flying',
-	stat: '15 DEX',
+	skill: {
+		name: 'Flying',
+		value: 'D'
+	},
+	stat: {
+		name: 'DEX',
+		value: 15
+	},
 	flower: [],
 	gift: ['Legends of Chivalry', 'Riding Boots', 'Smoked Meat'],
 	tea: ['Mint Leaves', 'Chamomile'],

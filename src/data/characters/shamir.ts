@@ -1,11 +1,14 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Shamir: ICharacter = {
     firstName: 'Shamir',
 	alliance: 'Church of Seiros',
 	name: 'Shamir Nevrand',
-	skill: '-',
-	stat: 'Level 15',
+	skill: null,
+	stat: {
+		name: 'Level',
+		value: 15
+	},
 	flower: ['Sunflower'],
 	tea: ['Crescent-Moon Tea', 'Chamomile'],
 	crest: 'None',

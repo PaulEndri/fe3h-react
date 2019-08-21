@@ -1,11 +1,17 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Ignatz: ICharacter = {
     firstName: 'Ignatz',
 	alliance: 'Golden Deer',
 	name: 'Ignatz Victor',
-	skill: 'B Authority',
-	stat: '10 DEX',
+	skill: {
+		name: 'Authority',
+		value: 'B'
+	},
+	stat: {
+		name: 'DEX',
+		value: 10
+	},
 	flower: ['Forget-me-nots'],
 	tea: ['Dagda Fruit Blend', 'Seiros Tea', 'Lavender Blend'],
 	crest: 'None',

@@ -1,12 +1,12 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Flayn: ICharacter = {
     firstName: 'Flayn',
 	alliance: 'Church of Seiros',
 	name: 'Flayn',
 	birthday: '7/12',
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	flower: ['Forget-me-nots'],
 	gift: ['Armored Bear Stuffy', 'Dapper Handkerchief', 'Stylish Hair Clip', 'Tasty Baked Treat'],
 	lostItems: ['Antique Clasp', 'Dusty Book of Fables', 'Old Map of Enbarr'],

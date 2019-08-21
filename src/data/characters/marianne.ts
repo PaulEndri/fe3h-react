@@ -1,12 +1,18 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Marianne: ICharacter = {
     firstName: 'Marianne',
 	alliance: 'Golden Deer',
 	name: 'Marianne von Edmund',
 	birthday: '11/23',
-	skill: 'C Riding',
-	stat: '10 MAG',
+	skill: {
+		name: 'Riding',
+		value: 'C'
+	},
+	stat: {
+		name: 'MAG',
+		value: 10
+	},
 	flower: ['Lily of the Valley'],
 	gift: ['Armored Bear Stuffy', 'Dapper Handkerchief', 'Floral Adornment'],
 	tea: ['Dagda Fruit Blend', 'Cinnamon Blend', 'Lavender Blend'],

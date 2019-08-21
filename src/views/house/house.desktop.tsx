@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Segment, Image, Header, Table } from 'semantic-ui-react';
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 import { History } from 'history';
 import { HouseService } from '../../services/house';
 
@@ -41,17 +41,17 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
                         <Table.Row>
                             <Table.HeaderCell rowSpan="2"></Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={2} >Gifts</Table.HeaderCell>
-                            <Table.HeaderCell rowSpan="2" width={1} >Flowers</Table.HeaderCell>
+                            <Table.HeaderCell rowSpan="2" width={1} >Favorite Tea</Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={2} singleLine >Lost Items</Table.HeaderCell>
                             <Table.HeaderCell colSpan="2" width={2} singleLine textAlign="center" >Recruitment</Table.HeaderCell>
-                            <Table.HeaderCell colSpan="3" width={6} singleLine textAlign="center" >Skills</Table.HeaderCell>
+                            <Table.HeaderCell colSpan="3" width={5} singleLine textAlign="center" >Skills</Table.HeaderCell>
                         </Table.Row>
                         <Table.Row>
                             <Table.HeaderCell width={1} >Stat</Table.HeaderCell>
                             <Table.HeaderCell width={1} >Skill</Table.HeaderCell>
                             <Table.HeaderCell width={2} >Strengths</Table.HeaderCell>
                             <Table.HeaderCell width={2} >Weaknesses</Table.HeaderCell>
-                            <Table.HeaderCell width={2} >Hidden Talents</Table.HeaderCell>
+                            <Table.HeaderCell width={1} >Hidden Talents</Table.HeaderCell>
                         </Table.Row>
                     </Table.Header>
                     <Table.Body>
@@ -70,10 +70,10 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
                                     {student.lostItems.map((item, i) => <div key={i}>{item},</div>)}
                                 </Table.Cell>
                                 <Table.Cell width={1} >
-                                    {student.stat}
+                                    {student.stat.name} {student.stat.value}
                                 </Table.Cell>
                                 <Table.Cell width={1} >
-                                    {student.skill}
+                                    {student.skill.name} {student.skill.value}
                                 </Table.Cell>
                                 <Table.Cell width={2} >
                                     {student.skillProficiencies.map((skill) =>

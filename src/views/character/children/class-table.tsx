@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tab, Table, Checkbox } from 'semantic-ui-react';
 import { IFilteredJobs } from '../../../services/job';
-import { IClass } from '../../../types/iclass';
+import { IClass } from '../../../interfaces/iClass';
 
 interface Props {
     classes: IFilteredJobs,

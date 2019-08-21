@@ -1,4 +1,4 @@
-import { IClass } from "../types/iclass";
+import { IClass } from "../interfaces/iClass";
 
 const classes: IClass[] = [
     {
@@ -58,7 +58,7 @@ const classes: IClass[] = [
       "Requirements": [
         {
           name: "Sword",
-          level: "D"
+          value: "D"
         }
       ]
     },
@@ -77,7 +77,7 @@ const classes: IClass[] = [
       "Requirements": [
         {
           name: "Lance",
-          level: "D"
+          value: "D"
         }
       ]
     },
@@ -96,15 +96,15 @@ const classes: IClass[] = [
       "Requirements": [
         {
           name: "Axe",
-          level: "D"
+          value: "D"
         },
         {
           name: "Bow",
-          level: "D"
+          value: "D"
         },
         {
           name: "Brawling",
-          level: "D"
+          value: "D"
         }
       ]
     },
@@ -123,11 +123,11 @@ const classes: IClass[] = [
       "Requirements": [
         {
           name: "Reason",
-          level: "D"
+          value: "D"
         },
         {
           name: "Faith",
-          level: "D"
+          value: "D"
         }
       ]
     },
@@ -142,7 +142,7 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 10,
-      "Tier": "intermediate"
+      "Tier": "unique"
     },
     {
       "Name": "Mercenary",

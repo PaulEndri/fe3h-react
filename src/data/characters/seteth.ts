@@ -1,12 +1,12 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Seteth: ICharacter = {
     firstName: 'Seteth',
 	alliance: 'Church of Seiros',
 	name: 'Seteth',
 	birthday: '12/27',
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	tea: ['Four-Spice Blend', 'Ginger Tea', 'Angelica Tea'],
 	crest: 'Cichol',
 	flower: [],

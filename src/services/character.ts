@@ -1,4 +1,4 @@
-import { ICharacter } from "../types/icharacter";
+import { ICharacter } from "../interfaces/iCharacter";
 
 export class CharacterService {
     public character? : ICharacter;

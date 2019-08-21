@@ -1,11 +1,11 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Edelgard: ICharacter = {
     firstName: 'Edelgard',
 	alliance: 'Black Eagles',
 	name: 'Edelgard von Hresvelg',
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	crest: 'Seiros, Flames',
 	flower: ['Carnation'],
 	gift: ['Armored Bear Stuffy', 'Board Game', 'Monarch Studies Book'],

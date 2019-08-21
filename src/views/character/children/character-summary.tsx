@@ -1,5 +1,5 @@
 import React from 'react';
-import { ICharacter } from '../../../types/icharacter';
+import { ICharacter } from '../../../interfaces/iCharacter';
 import { Grid, Segment, Image, Header, List } from 'semantic-ui-react';
 import CharacterService from '../../../services/character';
 import InitialGrowthTable from './initial-growth-table';
@@ -34,11 +34,11 @@ export const CharacterSummary = ({color, character, characterService}: Props) =>
                         </List.Item>
                         <List.Item>
                             <List.Content floated="left">Recruitment Stat Required: </List.Content>
-                            <List.Content floated="right">{character.stat}</List.Content>
+                            <List.Content floated="right">{character.stat.name} {character.stat.value}</List.Content>
                         </List.Item>
                         <List.Item>
                             <List.Content floated="left">Recruitment Skill Required: </List.Content>
-                            <List.Content floated="right">{character.skill}</List.Content>
+                            <List.Content floated="right">{character.skill.name} {character.skill.value}</List.Content>
                         </List.Item>
                         <List.Item>
                             <List.Content floated="left">
@@ -82,7 +82,7 @@ export const CharacterSummary = ({color, character, characterService}: Props) =>
                         <Segment color="violet" >
                             <Header as="h4" >Base Stat Growths</Header>
                         </Segment>
-                        <Segment se>
+                        <Segment>
                             <InitialGrowthTable growths={character.growthRates} />
                         </Segment>
                     </Segment.Group>

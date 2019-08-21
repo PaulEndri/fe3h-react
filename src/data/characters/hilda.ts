@@ -1,12 +1,18 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Hilda: ICharacter = {
     firstName: 'Hilda',
 	alliance: 'Golden Deer',
 	name: 'Hilda Valentine Goneril',
 	birthday: '2/3',
-	skill: 'C Axe',
-	stat: '30 CHA',
+	skill: {
+		name: 'Axe',
+		value: 'C'
+	},
+	stat: {
+		name: 'CHA',
+		value: 30
+	},
 	flower: ['Anemone'],
 	tea: ['Albinean Berry Blend', 'Southern Fruit Blend', 'Rose Petal Blend', 'Mint Leaves'],
 	crest: 'Goneril',

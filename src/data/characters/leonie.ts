@@ -1,12 +1,18 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Leonie: ICharacter = {
     firstName: 'Leonie',
 	alliance: 'Golden Deer',
 	name: 'Leonie Pinelli',
 	birthday: '8/21',
-	skill: 'C Lance',
-	stat: '15 STR',
+	skill: {
+		name: 'Lance',
+		value: 'C'
+	},
+	stat: {
+		name: 'STR',
+		value: 16
+	},
 	flower: [],
 	gift: ['Fishing Float', 'Hunting Dagger', 'Training Weight'],
 	tea: ['Four-Spice Blend', 'Angelica Tea'],

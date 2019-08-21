@@ -1,12 +1,18 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Petra: ICharacter = {
     firstName: 'Petra',
 	alliance: 'Black Eagles',
 	name: 'Petra Macneary',
 	birthday: '9/7',
-	skill: 'C Riding',
-	stat: '10 DEX',
+	skill: {
+		name: 'Riding',
+		value: 'C'
+	},
+	stat: {
+		name: 'DEX',
+		value: 10
+	},
 	flower: ['Sunflower'],
 	tea: ['Four-Spice Blend', 'Ginger Tea'],
 	crest: 'None',

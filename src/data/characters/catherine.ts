@@ -1,12 +1,15 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Catherine: ICharacter = {
     firstName: 'Catherine',
 	alliance: 'Church of Seiros',
 	name: 'Catherine',
 	birthday: '9/15',
-	skill: '-',
-	stat: 'Level 15',
+	skill: null,
+	stat: {
+		name: 'Level',
+		value: 15
+	},
 	flower: [],
 	crest: 'Charon',
 	tea: ['Rose Petal Blend'],
