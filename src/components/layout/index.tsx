@@ -10,16 +10,16 @@ interface LayoutProps {
 const Layout = ({children}: LayoutProps) => (
     <div className="app-base-view">
         <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
-            <Sidebar.Pushable as={Segment} style={{margin: '0px', borderRadius: '0px', border: '0px'}}>
+            <Sidebar.Pushable as={Segment} style={{borderRadius: '0px', border: '0px'}}>
                 <AppSidebar />
             <Sidebar.Pusher>
-                <Container fluid className="app-base-content">
+                <Container textAlign="center" padded className="app-base-content">
                     {children}
                 </Container>
             </Sidebar.Pusher>
         </Sidebar.Pushable>
         </Responsive>
-        <Responsive maxWidth={Responsive.onlyMobile.maxWidth} style={{marginTop: '2em'}}>
+        <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
             <Header />
             <Container fluid className="app-base-content">
                 {children}

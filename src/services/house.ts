@@ -8,6 +8,10 @@ export class HouseService {
     static HOUSES: IHouse[] = houses;
     public house?: IHouse;
 
+    static getAll(): HouseService[] {
+        return houses.map((house) => new HouseService(house));
+    }
+
     static getHouse(name: string): HouseService|undefined {
         const house = HouseService.HOUSES.find(({stub}: IHouse) => stub.toLowerCase() === name.toLowerCase());
 

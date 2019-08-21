@@ -10,6 +10,8 @@ interface Props {
     characterService: CharacterService
 }
 
+const getSkillIcon = (name: string) => `${process.env.PUBLIC_URL}/assets/icons/${name.toLowerCase().replace(' ', '-')}.png`
+
 export const CharacterSummary = ({color, character, characterService}: Props) => (
     <Segment color={color}>
         <Grid columns={2}>
@@ -34,11 +36,11 @@ export const CharacterSummary = ({color, character, characterService}: Props) =>
                         </List.Item>
                         <List.Item>
                             <List.Content floated="left">Recruitment Stat Required: </List.Content>
-                            <List.Content floated="right">{character.stat.name} {character.stat.value}</List.Content>
+                            <List.Content floated="right">{character.stat && character.stat.name} {character.stat && character.stat.value}</List.Content>
                         </List.Item>
                         <List.Item>
                             <List.Content floated="left">Recruitment Skill Required: </List.Content>
-                            <List.Content floated="right">{character.skill.name} {character.skill.value}</List.Content>
+                            <List.Content floated="right">{character.skill && getSkillIcon(character.skill.name)} {character.skill && character.skill.value}</List.Content>
                         </List.Item>
                         <List.Item>
                             <List.Content floated="left">
@@ -47,7 +49,7 @@ export const CharacterSummary = ({color, character, characterService}: Props) =>
                             </List.Content>
                             <List.Content floated="right">
                                 {character.skillProficiencies.map((skill) =>
-                                    <Image style={{marginRight: '2px'}} height="25" width="25" inline src={`${process.env.PUBLIC_URL}/assets/icons/${skill.toLowerCase().replace(' ', '-')}.png`} />
+                                    <Image style={{marginRight: '2px'}} height="25" width="25" inline src={getSkillIcon(skill)} />
                                 )}
                             </List.Content>
                         </List.Item>
@@ -58,7 +60,7 @@ export const CharacterSummary = ({color, character, characterService}: Props) =>
                             </List.Content>
                             <List.Content floated="right">
                                 {character.skillWeaknesses.map((skill) =>
-                                    <Image style={{marginRight: '2px'}} height="25" width="25" inline src={`${process.env.PUBLIC_URL}/assets/icons/${skill.toLowerCase().replace(' ', '-')}.png`} />
+                                    <Image style={{marginRight: '2px'}} height="25" width="25" inline src={getSkillIcon(skill)} />
                                 )}
                             </List.Content>
                         </List.Item>
@@ -69,7 +71,7 @@ export const CharacterSummary = ({color, character, characterService}: Props) =>
                             </List.Content>
                             <List.Content floated="right">
                                 {character.hiddenTalents.map((skill) =>
-                                    <Image style={{marginRight: '2px'}} height="25" width="25" inline src={`${process.env.PUBLIC_URL}/assets/icons/${skill.toLowerCase().replace(' ', '-')}.png`} />
+                                    <Image style={{marginRight: '2px'}} height="25" width="25" inline src={getSkillIcon(skill)} />
                                 )}
                             </List.Content>
                         </List.Item>

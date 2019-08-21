@@ -142,7 +142,17 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 10,
-      "Tier": "unique"
+      "Tier": "unique",
+      "Requirements": [
+        {
+          name: "Sword",
+          value: "D+"
+        },
+        {
+          name: "Authority",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Mercenary",
@@ -155,7 +165,11 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": -5,
       "CHA": 5,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      Requirements:[{
+        name: "Sword",
+        value: "C"
+      }]
     },
     {
       "Name": "Thief",
@@ -168,7 +182,13 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 5,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Sword",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Armored Knight",
@@ -181,7 +201,17 @@ const classes: IClass[] = [
       "DEF": 10,
       "RES": -5,
       "CHA": 5,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Axe",
+          value: "C"
+        },
+        {
+          name: "Heavy Armor",
+          value: "D"
+        }
+      ]
     },
     {
       "Name": "Cavalier",
@@ -194,7 +224,17 @@ const classes: IClass[] = [
       "DEF": 5,
       "RES": 0,
       "CHA": 5,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Lance",
+          value: "C"
+        },
+        {
+          name: "Riding",
+          value: "D"
+        }
+      ]
     },
     {
       "Name": "Brigand",
@@ -207,7 +247,13 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": -5,
       "CHA": 5,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Axe",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Archer",
@@ -220,7 +266,13 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 5,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Bow",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Brawler",
@@ -233,7 +285,13 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": -10,
       "CHA": 5,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Brawling",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Mage",
@@ -246,7 +304,13 @@ const classes: IClass[] = [
       "DEF": -5,
       "RES": 5,
       "CHA": 5,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Reason",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Dark Mage",
@@ -259,7 +323,13 @@ const classes: IClass[] = [
       "DEF": -5,
       "RES": 5,
       "CHA": 0,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Reason",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Priest",
@@ -272,7 +342,13 @@ const classes: IClass[] = [
       "DEF": -5,
       "RES": 10,
       "CHA": 10,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Faith",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Pegasus Knight",
@@ -285,7 +361,17 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 5,
       "CHA": 10,
-      "Tier": "intermediate"
+      "Tier": "intermediate",
+      "Requirements": [
+        {
+          name: "Lance",
+          value: "C"
+        },
+        {
+          name: "Flying",
+          value: "D"
+        }
+      ]
     },
     {
       "Name": "Armored Lord",
@@ -337,7 +423,18 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": -5,
       "CHA": 5,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Gender": "M",
+      "Requirements": [
+        {
+          name: "Sword",
+          value: "B"
+        },
+        {
+          name: "Axe",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Swordmaster",
@@ -350,7 +447,13 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": -5,
       "CHA": 5,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Sword",
+          value: "A"
+        }
+      ]
     },
     {
       "Name": "Assassin",
@@ -363,7 +466,17 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 0,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Sword",
+          value: "B"
+        },
+        {
+          name: "Bow",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Fortress Knight",
@@ -376,7 +489,17 @@ const classes: IClass[] = [
       "DEF": 15,
       "RES": 0,
       "CHA": 5,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Axe",
+          value: "B"
+        },
+        {
+          name: "Heavy Armor",
+          value: "B"
+        }
+      ]
     },
     {
       "Name": "Paladin",
@@ -389,7 +512,17 @@ const classes: IClass[] = [
       "DEF": 5,
       "RES": 5,
       "CHA": 5,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Lance",
+          value: "B"
+        },
+        {
+          name: "Riding",
+          value: "B"
+        }
+      ]
     },
     {
       "Name": "Wyvern Rider",
@@ -402,7 +535,17 @@ const classes: IClass[] = [
       "DEF": 5,
       "RES": -5,
       "CHA": 5,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Axe",
+          value: "B"
+        },
+        {
+          name: "Flying",
+          value: "C"
+        }
+      ]
     },
     {
       "Name": "Warrior",
@@ -415,7 +558,13 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 5,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Axe",
+          value: "A"
+        }
+      ]
     },
     {
       "Name": "Sniper",
@@ -428,7 +577,13 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 5,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Bow",
+          value: "A"
+        }
+      ]
     },
     {
       "Name": "Grappler",
@@ -441,7 +596,14 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 5,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Gender": "F",
+      "Requirements": [
+        {
+          name: "Brawling",
+          value: "A"
+        }
+      ]
     },
     {
       "Name": "Warlock",
@@ -454,7 +616,13 @@ const classes: IClass[] = [
       "DEF": -5,
       "RES": 5,
       "CHA": 5,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Reason",
+          value: "A"
+        }
+      ]
     },
     {
       "Name": "Dark Bishop",
@@ -467,7 +635,13 @@ const classes: IClass[] = [
       "DEF": -5,
       "RES": 5,
       "CHA": 0,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Reason",
+          value: "A"
+        }
+      ]
     },
     {
       "Name": "Bishop",
@@ -480,7 +654,13 @@ const classes: IClass[] = [
       "DEF": -5,
       "RES": 5,
       "CHA": 10,
-      "Tier": "advanced"
+      "Tier": "advanced",
+      "Requirements": [
+        {
+          name: "Faith",
+          value: "A"
+        }
+      ]
     },
     {
       "Name": "Enlightened One",
@@ -545,7 +725,21 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 5,
       "CHA": 10,
-      "Tier": "master"
+      "Tier": "master",
+      "Requirements": [
+        {
+          name: "Sword",
+          value: "C"
+        },
+        {
+          name: "Lance",
+          value: "A"
+        },
+        {
+          name: "Flying",
+          value: "B+"
+        }
+      ]
     },
     {
       "Name": "Wyvern Lord",
@@ -558,7 +752,21 @@ const classes: IClass[] = [
       "DEF": 5,
       "RES": 0,
       "CHA": 5,
-      "Tier": "master"
+      "Tier": "master",
+      "Requirements": [
+        {
+          name: "Lance",
+          value: "C"
+        },
+        {
+          name: "Axe",
+          value: "A"
+        },
+        {
+          name: "Flying",
+          value: "A"
+        }
+      ]
     },
     {
       "Name": "Mortal Savant",
@@ -571,7 +779,17 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 5,
-      "Tier": "master"
+      "Tier": "master",
+      "Requirements": [
+        {
+          name: "Sword",
+          value: "A"
+        },
+        {
+          name: "Reason",
+          value: "B+"
+        }
+      ]
     },
     {
       "Name": "Great Knight",
@@ -584,7 +802,21 @@ const classes: IClass[] = [
       "DEF": 5,
       "RES": -5,
       "CHA": 5,
-      "Tier": "master"
+      "Tier": "master",
+      "Requirements": [
+        {
+          name: "Axe",
+          value: "B+"
+        },
+        {
+          name: "Heavy Armor",
+          value: "A"
+        },
+        {
+          name: "Riding",
+          value: "B+"
+        }
+      ]
     },
     {
       "Name": "Bow Knight",
@@ -597,7 +829,21 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 5,
-      "Tier": "master"
+      "Tier": "master",
+      "Requirements": [
+        {
+          name: "Lance",
+          value: "C"
+        },
+        {
+          name: "Bow",
+          value: "A"
+        },
+        {
+          name: "Riding",
+          value: "B+"
+        }
+      ]
     },
     {
       "Name": "Dark Knight",
@@ -610,7 +856,21 @@ const classes: IClass[] = [
       "DEF": 5,
       "RES": 10,
       "CHA": 5,
-      "Tier": "master"
+      "Tier": "master",
+      "Requirements": [
+        {
+          name: "Lance",
+          value: "C"
+        },
+        {
+          name: "Reason",
+          value: "B+"
+        },
+        {
+          name: "Riding",
+          value: "A+"
+        }
+      ]
     },
     {
       "Name": "Holy Knight",
@@ -623,7 +883,21 @@ const classes: IClass[] = [
       "DEF": 5,
       "RES": 10,
       "CHA": 10,
-      "Tier": "master"
+      "Tier": "master",
+      "Requirements": [
+        {
+          name: "Lance",
+          value: "C"
+        },
+        {
+          name: "Riding",
+          value: "A"
+        },
+        {
+          name: "Faith",
+          value: "B+"
+        }
+      ]
     },
     {
       "Name": "War Master",
@@ -636,7 +910,18 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 0,
       "CHA": 5,
-      "Tier": "master"
+      "Tier": "master",
+      Gender: "M",
+      "Requirements": [
+        {
+          name: "Axe",
+          value: "A"
+        },
+        {
+          name: "Brawling",
+          value: "A"
+        }
+      ]
     },
     {
       "Name": "Gremory",
@@ -649,7 +934,18 @@ const classes: IClass[] = [
       "DEF": 0,
       "RES": 5,
       "CHA": 10,
-      "Tier": "master"
+      "Tier": "master",
+      Gender: "F",
+      "Requirements": [
+        {
+          name: "Reason",
+          value: "A"
+        },
+        {
+          name: "Faith",
+          value: "A"
+        }
+      ]
     }
 ];
 

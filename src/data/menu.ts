@@ -39,23 +39,25 @@ export const MenuData: IMenuItem[] = [
         ]
     },
     {
-        name: 'Classes',
-        to: '/classes',
-        key: 'classes',
-        children: []
-    },
-    {
-        name: 'Lost Items',
-        to: '/lostItems',
-        key: 'lostItems',
-        children: []
-    },
-    {
-        name: 'About',
-        to: '/about',
-        key: 'about',
-        children: []
+        name: 'Extra',
+        to: '/',
+        key: 'extra',
+        children: [
+            {
+                name: 'Classes',
+                to: '/classes',
+                key: 'classes',
+                children: []
+            },
+            // {
+            //     name: 'Lost Items',
+            //     to: '/lostItems',
+            //     key: 'lostItems',
+            //     children: []
+            // }
+        ]
     }
-]
+    
+];
 
-export default Menu
+export default MenuData;

@@ -1,7 +1,7 @@
 import React from 'react'
-import { Menu, Responsive, Image, Dropdown } from 'semantic-ui-react';
+import { Menu, Dropdown } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import { HouseService } from '../../services/house';
+import { MenuData } from '../../data/menu';
 
 const headerStyles = {
     margin: '0em',
@@ -10,27 +10,30 @@ const headerStyles = {
 
 
 const Header = () => (
-    <Menu as="div" inverted className="app-header" style={headerStyles}>
-        <Responsive as="span" maxWidth={Responsive.onlyMobile.maxWidth} style={{display: 'contents'}}>
-            {HouseService.HOUSES.map((house) => (
-                <Menu.Item as={Link} to={`/house/${house.stub.toLowerCase()}`}>
-                    <Image src={house.banner} height={50} />
-                </Menu.Item>
-            ))}
-            <Menu.Item position="right">
-                <Dropdown icon="ellipsis vertical" floating inline direction="left">
+    <Menu as="div" inverted style={headerStyles} attached="top" fluid>
+        {MenuData.map(({to, key, name, children}, index) => {
+            if (children.length === 0) {
+                return <Menu.Item as={Link} to={to} key={key}>{name}</Menu.Item>
+            }
+
+            const extra: any = {};
+
+            if (index === MenuData.length - 1) {
+                extra.direction = 'left';
+            }
+
+            return (
+                <Dropdown key={key} text={name} pointing className="link item" {...extra}>
                     <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to="/">Home</Dropdown.Item>
-                        <Dropdown.Item as={Link} to ="/about">About</Dropdown.Item>
+                        {children.map((childItem) => (
+                            <Dropdown.Item key={childItem.key} as={Link} to={childItem.to}>
+                                {childItem.name}
+                            </Dropdown.Item>
+                        ))}
                     </Dropdown.Menu>
                 </Dropdown>
-            </Menu.Item>
-        </Responsive>
-        <Responsive as="span" minWidth={Responsive.onlyMobile.maxWidth} style={{display: 'contents'}}>
-            <Menu.Item position="right" name="home" as={Link} to="/" />
-            <Menu.Item as={Link} to="/about" >About</Menu.Item>
-
-        </Responsive>
+            )
+        })}
     </Menu>
 )
 

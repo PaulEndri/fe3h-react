@@ -2,7 +2,6 @@ import React from 'react';
 import { Menu, Sidebar } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 import { MenuData } from '../../data/menu';
-import { IMenuItem } from '../../interfaces/iMenuItem';
 
 const sideBarStyles = {
     border: '0px !important'
@@ -10,13 +9,15 @@ const sideBarStyles = {
 
 const AppSidebar = () => {
     return (
-        <Sidebar as={Menu} animation="push" inverted visible vertical width="thin" style={sideBarStyles}>
+        <Sidebar as={Menu} animation={window.innerWidth <= 1400 ? "push" : "overlay"} inverted visible vertical width="thin" style={sideBarStyles}>
             {MenuData.map((menuItem) => {
                 if (menuItem.children.length <= 0) {
-                    return <Menu.Header as={NavLink} to={menuItem.to}>{menuItem.name}</Menu.Header>
+                    return (<Menu.Item key={menuItem.key}>
+                        <Menu.Header as={NavLink} to={menuItem.to}>{menuItem.name}</Menu.Header>
+                    </Menu.Item>)
                 }
 
-                return (<React.Fragment>
+                return (<Menu.Item key={menuItem.key}>
                     <Menu.Header>{menuItem.name}</Menu.Header>
                     <Menu.Menu>
                         {menuItem.children.map((childMenuItem) => (
@@ -25,7 +26,7 @@ const AppSidebar = () => {
                             </Menu.Item>
                         ))}
                     </Menu.Menu>
-                </React.Fragment>);
+                </Menu.Item>);
             })}
         </Sidebar>
     );

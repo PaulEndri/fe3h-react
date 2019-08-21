@@ -12,6 +12,7 @@ export interface IClass {
     RES: number;
     CHA: number;
     Name: string;
+    Gender?: "M" | "F";
     Requirements?: IRequirement[];
     Tier: "unique" | "beginner" | "intermediate" | "advanced" | "master"
 }
