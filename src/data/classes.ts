@@ -841,7 +841,7 @@ const classes: IClass[] = [
         },
         {
           name: "Riding",
-          value: "B+"
+          value: "A"
         }
       ]
     },
