@@ -70,13 +70,14 @@ export class ClassesView extends React.Component<any, ClassesViewState> {
         return classes.filter((job) => {
             let match = false;
 
-            if (skills.length > 0 && !match) {
+            if (skills.length > 0) {
                 match = this.matchToRequirement(skills, job.Requirements);
             }
 
-            if (tiers.length > 0 && !match) {
+            if (tiers.length > 0) {
                 match = tiers.includes(job.Tier);
             }
+
             return match;
         })
     }

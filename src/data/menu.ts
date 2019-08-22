@@ -49,12 +49,12 @@ export const MenuData: IMenuItem[] = [
                 key: 'classes',
                 children: []
             },
-            // {
-            //     name: 'Lost Items',
-            //     to: '/lostItems',
-            //     key: 'lostItems',
-            //     children: []
-            // }
+            {
+                name: 'Lost Items',
+                to: '/lostItems',
+                key: 'lostItems',
+                children: []
+            }
         ]
     }
     
