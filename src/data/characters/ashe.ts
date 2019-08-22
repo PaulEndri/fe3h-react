@@ -1,4 +1,4 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Ashe: ICharacter = {
     firstName: 'Ashe',
@@ -6,8 +6,14 @@ export const Ashe: ICharacter = {
 	name: 'Ashe Ubert',
 	birthday: '10/17',
 	crest: 'None',
-	skill: 'C Lance',
-	stat: '15 CHA',
+	skill: {
+		name: 'Lance',
+		value: 'C'
+	},
+	stat: {
+		name: 'CHA',
+		value: 15
+	},
 	flower: ['Violet'],
 	tea: ['Mint Leaves', 'Angelica Tea'],
 	gift: ['Ancient Coin', 'Exotic Spices', 'Legends of Chivalry', 'Tasty Baked Treat'],

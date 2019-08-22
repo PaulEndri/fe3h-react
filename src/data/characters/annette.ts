@@ -1,4 +1,4 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Annette: ICharacter = {
     firstName: 'Annette',
@@ -6,8 +6,14 @@ export const Annette: ICharacter = {
 	name: 'Annette Fantine Dominic',
 	birthday: '5/9',
 	crest: 'Dominic',
-	skill: 'B Faith',
-	stat: '10 MAG',
+	skill: {
+		name: 'Faith',
+		value: 'B'
+	},
+	stat: {
+		name: 'MAG',
+		value: 10
+	},
 	flower: [],
 	gift: ['Arithmetic Textbook', 'Book of Sheet Music', 'Stylish Hair Clip'],
 	tea: ['Sweet-Apple Blend', 'Rose Petal Blend', 'Almond Blend'],

@@ -5,6 +5,8 @@ import HouseView from "./views/house";
 import Layout from "./components/layout";
 import CharacterView from "./views/character"
 import About from "./views/about";
+import CharactersView from "./views/characters";
+import ClassesView from "./views/classes";
 
 class AppRouter extends React.Component<any, any> {
     render() {
@@ -15,6 +17,8 @@ class AppRouter extends React.Component<any, any> {
                     <Route exact path="/house/:house" component={HouseView} />
                     <Route exact path="/house/:house/character/:character" component={CharacterView} />
                     <Route exact path="/about" component={About} />
+                    <Route exact path="/characters" component={CharactersView} />
+                    <Route exact path="/classes" component={ClassesView} />
                 </Layout>
             </Router>
         );

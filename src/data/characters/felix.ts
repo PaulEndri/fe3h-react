@@ -1,12 +1,18 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Felix: ICharacter = {
     firstName: 'Felix',
 	alliance: 'Blue Lions',
 	name: 'Felix Hugo Fraldarius',
 	birthday: '2/20',
-	skill: 'C Sword',
-	stat: '15 SPD',
+	skill: {
+		name: 'Sword',
+		value: 'C'
+	},
+	stat: {
+		name: 'SPD',
+		value: 15
+	},
 	flower: [],
 	tea: ['Almyran Pine Needles', 'Four-Spice Blend'],
 	crest: 'None',

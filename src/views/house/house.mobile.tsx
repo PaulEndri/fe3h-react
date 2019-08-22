@@ -28,7 +28,7 @@ const HouseMobileView = ({match, history}: HouseMobileViewProps) => {
     }
 
     return (
-        <Container as="div" fluid textAlign="center">
+        <Container  fluid textAlign="center">
             <Header color={house.color} as="h2" textAlign="center" attached="top" style={{border: '0px'}}>
                 <Image src={house.banner} fluid/>
                 <Header.Content>

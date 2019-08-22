@@ -1,4 +1,6 @@
-import { IGrowthRate } from "./igrowthRate";
+import { IGrowthRate } from "./iGrowthRate";
+import { Skill } from "../types/skill";
+import IRequirement from "./iRequirement";
 
 interface Lecture {
   question: string;
@@ -11,16 +13,16 @@ export interface ICharacter {
   firstName: string;
   crest: string;
   birthday?: string;
-  skill?: string;
-  stat?: string;
+  skill?: IRequirement;
+  stat?: IRequirement;
   flower: string[];
   gift: string[];
   tea: string[];
   lostItems: string[];
   trainings?: string[];
   lectures: Lecture[];
-  skillProficiencies: string[];
-  skillWeaknesses: string[];
-  hiddenTalents: string[];
+  skillProficiencies: Skill[];
+  skillWeaknesses: Skill[];
+  hiddenTalents: Skill[];
   growthRates: IGrowthRate;
 }

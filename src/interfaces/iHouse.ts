@@ -1,4 +1,4 @@
-import { ICharacter } from './icharacter';
+import { ICharacter } from './iCharacter';
 
 export class IHouse {
   name: string;

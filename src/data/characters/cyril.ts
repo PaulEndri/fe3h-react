@@ -1,12 +1,15 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Cyril: ICharacter = {
     firstName: 'Cyril',
 	alliance: 'Church of Seiros',
 	name: 'Cyril',
 	birthday: '10/25',
-	skill: '-',
-	stat: 'Level 10',
+	skill: null,
+	stat: {
+		name: 'Level',
+		value: 10
+	},
 	flower: ['Baby\'s Breath'],
 	gift: ['Hunting Dagger', 'Smoked Meat', 'Watering Can'],
 	tea: ['Almyran Pine Needles'],

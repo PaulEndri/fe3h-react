@@ -1,7 +1,7 @@
 /* tslint:disable */
 
 import React from 'react';
-import { IGrowthRate } from '../../../types/igrowthRate';
+import { IGrowthRate } from '../../../interfaces/iGrowthRate';
 import {
     Radar, RadarChart, PolarGrid, Legend,
     PolarAngleAxis, PolarRadiusAxis,

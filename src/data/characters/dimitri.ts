@@ -1,12 +1,12 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Dimitri: ICharacter = {
     firstName: 'Dimitri',
 	alliance: 'Blue Lions',
 	name: 'Dimitri Alexandre Blaiddyd',
 	birthday: '12/20',
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	flower: [],
 	tea: ['Chamomile'],
 	crest: 'Blaiddyd',

@@ -1,11 +1,11 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Jeralt: ICharacter = {
     firstName: 'Jeralt',
 	alliance: 'Church of Seiros',
 	name: 'Jeralt',
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	flower: ['-'],
 	gift: ['-'],
 	lostItems: ['Wooden Flask'],

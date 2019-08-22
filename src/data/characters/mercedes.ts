@@ -1,12 +1,18 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Mercedes: ICharacter = {
     firstName: 'Mercedes',
 	alliance: 'Blue Lions',
 	name: 'Mercedes von Martritz',
 	birthday: '5/27',
-	skill: 'C Bow',
-	stat: '15 MAG',
+	skill: {
+		name: 'Bow',
+		value: 'C'
+	},
+	stat: {
+		name: 'MAG',
+		value: 15
+	},
 	flower: ['Lavender'],
 	tea: ['Albinean Berry Blend', 'Southern Fruit Blend', 'Crescent Moon Tea'],
 	crest: 'Lamine',

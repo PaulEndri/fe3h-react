@@ -1,4 +1,4 @@
-import { ICharacter } from "../types/icharacter";
+import { ICharacter } from "../interfaces/iCharacter";
 
 export class CharacterService {
     public character? : ICharacter;
@@ -16,9 +16,20 @@ export class CharacterService {
     }
 
     getLink(stub): string {
-        return this.character ? `/house/${stub}/character/${this.character.firstName.toLowerCase()}` : ''
+        return this.character ? `/house/${stub}/character/${this.character.firstName.toLowerCase()}` : '';
     }
 
+    getHouse(): string {
+        if (this.character.alliance.includes('Blue')) {
+            return 'bluelions';
+        } else if (this.character.alliance.includes('Black')) {
+            return 'blackeagles';
+        } else if (this.character.alliance.includes('Golden')) {
+            return 'goldendeer';
+        } else {
+            return 'seiros';
+        }
+    }
     private getImage(key: "thumbnails"|"portraits"): string {
         if (!this.character) {
             return '';

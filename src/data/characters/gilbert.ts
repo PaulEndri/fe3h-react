@@ -1,11 +1,11 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Gilbert: ICharacter = {
     firstName: 'Gilbert',
 	alliance: 'Church of Seiros',
 	name: 'Gilbert',
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	flower: [],
 	tea: ['Almond Blend', 'Lavender Blend'],
 	crest: 'None',

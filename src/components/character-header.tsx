@@ -1,6 +1,6 @@
 import React from 'react';
 import houses from '../data/houses';
-import { Grid, Segment, Image, Container, Header, Button, Responsive, Divider, Rail, Icon } from 'semantic-ui-react';
+import { Segment, Image, Header, Button } from 'semantic-ui-react';
 import { HouseService } from '../services/house';
 import { Link } from 'react-router-dom';
 

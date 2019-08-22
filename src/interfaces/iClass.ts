@@ -1,7 +1,5 @@
-export interface IClassRequirement {
-    name: string;
-    level: string;
-}
+import { Skill } from "../types/skill";
+import { IRequirement } from "./iRequirement";
 
 export interface IClass {
     HP: number;
@@ -14,6 +12,7 @@ export interface IClass {
     RES: number;
     CHA: number;
     Name: string;
-    Requirements?: IClassRequirement[];
+    Gender?: "M" | "F";
+    Requirements?: IRequirement[];
     Tier: "unique" | "beginner" | "intermediate" | "advanced" | "master"
 }

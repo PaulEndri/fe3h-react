@@ -1,4 +1,4 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Linhardt: ICharacter = {
     firstName: 'Linhardt',
@@ -7,8 +7,14 @@ export const Linhardt: ICharacter = {
 	birthday: '11/7',
 	crest: 'Cethleann',
 	tea: ['Almyran Pine Needles', 'Angelica Tea'],
-	skill: 'C Reason',
-	stat: '10 MAG',
+	skill: {
+		name: 'Reason',
+		value: 'C'
+	},
+	stat: {
+		name: 'MAG',
+		value: 10
+	},
 	flower: [],
 	gift: ['Book of Crest Designs', 'Fishing Float', 'Tasty Baked Treat'],
 	lostItems: ['Animated Bait', 'Feather Pillow', 'The Saints Revealed'],

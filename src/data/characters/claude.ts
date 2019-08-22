@@ -1,12 +1,12 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Claude: ICharacter = {
     firstName: 'Claude',
 	alliance: 'Golden Deer',
 	name: 'Claude von Riegan',
 	birthday: '7/24',
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	flower: [],
 	gift: ['Board Game Piece', 'Exotic Spices', 'Riding Boots'],
 	lostItems: ['Leather Bow Sheath', 'Mild Stomach Poison', 'Board Game Piece'],

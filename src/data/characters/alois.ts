@@ -1,4 +1,4 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Alois: ICharacter = {
     firstName: 'Alois',
@@ -6,8 +6,11 @@ export const Alois: ICharacter = {
 	name: 'Alois',
 	crest: 'None',
 	birthday: '12/1',
-	skill: '-',
-	stat: 'Level 15',
+	skill: null,
+	stat: {
+		name: 'Level',
+		value: 15
+	},
 	flower: ['Sunflower'],
 	tea: ['Crescent-Moon Tea', 'Honeyed-Fruit Blend'],
 	gift: ['Ancient Coin', 'Floral Adornment', 'Fishing Float'],

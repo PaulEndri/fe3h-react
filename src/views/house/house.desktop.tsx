@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Segment, Image, Header, Table } from 'semantic-ui-react';
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 import { History } from 'history';
 import { HouseService } from '../../services/house';
 
@@ -25,7 +25,7 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
     const navAction = (name: string) => history.push(`/house/${houseName}/character/${name}`);
 
     return (
-        <Container as="div" fluid textAlign="center">
+        <Container as="div" textAlign="center">
             <Header as="h2" color={house.color} gtextAlign="center" attached="top" style={{border: '0px'}}>
                 <Image src={house.banner} fluid/>
                 <Header.Content>
@@ -39,19 +39,19 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
                 <Table collapsing celled striped structured selectable>
                     <Table.Header>
                         <Table.Row>
-                            <Table.HeaderCell rowSpan="2"></Table.HeaderCell>
+                            <Table.HeaderCell rowSpan="2" width={1}></Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={2} >Gifts</Table.HeaderCell>
-                            <Table.HeaderCell rowSpan="2" width={1} >Flowers</Table.HeaderCell>
+                            <Table.HeaderCell rowSpan="2" width={2} >Favorite Tea</Table.HeaderCell>
                             <Table.HeaderCell rowSpan="2" width={2} singleLine >Lost Items</Table.HeaderCell>
                             <Table.HeaderCell colSpan="2" width={2} singleLine textAlign="center" >Recruitment</Table.HeaderCell>
-                            <Table.HeaderCell colSpan="3" width={6} singleLine textAlign="center" >Skills</Table.HeaderCell>
+                            <Table.HeaderCell colSpan="3" width={3} singleLine textAlign="center" >Skills</Table.HeaderCell>
                         </Table.Row>
                         <Table.Row>
                             <Table.HeaderCell width={1} >Stat</Table.HeaderCell>
                             <Table.HeaderCell width={1} >Skill</Table.HeaderCell>
-                            <Table.HeaderCell width={2} >Strengths</Table.HeaderCell>
-                            <Table.HeaderCell width={2} >Weaknesses</Table.HeaderCell>
-                            <Table.HeaderCell width={2} >Hidden Talents</Table.HeaderCell>
+                            <Table.HeaderCell width={1} >Strengths</Table.HeaderCell>
+                            <Table.HeaderCell width={1} >Weaknesses</Table.HeaderCell>
+                            <Table.HeaderCell width={1} >Hidden Talents</Table.HeaderCell>
                         </Table.Row>
                     </Table.Header>
                     <Table.Body>
@@ -69,23 +69,23 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
                                 <Table.Cell textAlign="center">
                                     {student.lostItems.map((item, i) => <div key={i}>{item},</div>)}
                                 </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.stat}
+                                <Table.Cell>
+                                    {student.stat && student.stat.name} {student.stat && student.stat.value}
                                 </Table.Cell>
-                                <Table.Cell width={1} >
-                                    {student.skill}
+                                <Table.Cell>
+                                    {student.skill && student.skill.name} {student.skill && student.skill.value}
                                 </Table.Cell>
-                                <Table.Cell width={2} >
+                                <Table.Cell>
                                     {student.skillProficiencies.map((skill) =>
                                         <Image style={{marginRight: '2px'}} height="25" width="25" inline src={`${process.env.PUBLIC_URL}/assets/icons/${skill.toLowerCase().replace(' ', '-')}.png`} />
                                     )}
                                 </Table.Cell>
-                                <Table.Cell width={2} >
+                                <Table.Cell>
                                     {student.skillWeaknesses.map((skill) =>
                                         <Image style={{marginRight: '2px'}} height="25" width="25" inline src={`${process.env.PUBLIC_URL}/assets/icons/${skill.toLowerCase().replace(' ', '-')}.png`} />
                                     )}
                                 </Table.Cell>
-                                <Table.Cell width={1} >
+                                <Table.Cell>
                                     {student.hiddenTalents.map((skill) =>
                                         <Image style={{marginRight: '2px'}} height="25" width="25" inline src={`${process.env.PUBLIC_URL}/assets/icons/${skill.toLowerCase().replace(' ', '-')}.png`} />
                                     )}

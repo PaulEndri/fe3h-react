@@ -1,12 +1,12 @@
-import { ICharacter } from '../../types/icharacter';
+import { ICharacter } from '../../interfaces/iCharacter';
 
 export const Dedue: ICharacter = {
     firstName: 'Dedue',
 	alliance: 'Blue Lions',
 	name: 'Dedue Molinaro',
 	birthday: '8/31',
-	skill: '-',
-	stat: '-',
+	skill: null,
+	stat: null,
 	flower: [],
 	tea: ['Cinnamon Blend', 'Four-Spice Blend', 'Ginger Tea'],
 	crest: 'None',
