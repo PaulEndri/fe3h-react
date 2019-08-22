@@ -1,4 +1,3 @@
-import { Skill } from "../types/skill";
 import { IRequirement } from "./iRequirement";
 
 export interface IClass {

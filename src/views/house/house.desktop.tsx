@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, Segment, Image, Header, Table } from 'semantic-ui-react';
+import { Container, Segment, Image, Header, Table, Label, List } from 'semantic-ui-react';
 import { ICharacter } from '../../interfaces/iCharacter';
 import { History } from 'history';
 import { HouseService } from '../../services/house';
+import SkillIcon from '../../components/skill-icon';
 
 interface HouseDesktopViewProps {
     match: {
@@ -36,13 +37,13 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
                 </Header.Content>
             </Header>
             <Segment secondary textAlign="center" style={{display: 'flex', justifyContent: 'center'}}>
-                <Table collapsing celled striped structured selectable>
+                <Table collapsing striped structured selectable>
                     <Table.Header>
                         <Table.Row>
-                            <Table.HeaderCell rowSpan="2" width={1}></Table.HeaderCell>
-                            <Table.HeaderCell rowSpan="2" width={2} >Gifts</Table.HeaderCell>
-                            <Table.HeaderCell rowSpan="2" width={2} >Favorite Tea</Table.HeaderCell>
-                            <Table.HeaderCell rowSpan="2" width={2} singleLine >Lost Items</Table.HeaderCell>
+                            <Table.HeaderCell rowSpan="2" width={1} ></Table.HeaderCell>
+                            <Table.HeaderCell rowSpan="2" width={2} textAlign="center">Gifts</Table.HeaderCell>
+                            <Table.HeaderCell rowSpan="2" width={2} textAlign="center">Favorite Tea</Table.HeaderCell>
+                            <Table.HeaderCell rowSpan="2" width={2} singleLine textAlign="center">Lost Items</Table.HeaderCell>
                             <Table.HeaderCell colSpan="2" width={2} singleLine textAlign="center" >Recruitment</Table.HeaderCell>
                             <Table.HeaderCell colSpan="3" width={3} singleLine textAlign="center" >Skills</Table.HeaderCell>
                         </Table.Row>
@@ -60,20 +61,26 @@ const HouseDesktopView = ({match, history}: HouseDesktopViewProps) => {
                                 <Table.Cell collapsing textAlign="center">
                                     <Image rounded src={`${process.env.PUBLIC_URL}/assets/characters/thumbnails/${student.firstName.toLowerCase()}.png`} />
                                 </Table.Cell>
-                                <Table.Cell textAlign="center">
-                                    {student.gift.map((gift, i) => <div key={i}>{gift},</div>)}
+                                <Table.Cell textAlign="left">
+                                    <List bulleted>{student.gift.map((g, i) => <List.Item key={i}>{g}</List.Item>)}</List>
                                 </Table.Cell>
-                                <Table.Cell textAlign="center">
-                                    {student.tea.map((gift, i) => <div key={i}>{gift},</div>)}
+                                <Table.Cell textAlign="left">
+                                    <List bulleted>{student.tea.map((g, i) => <List.Item key={i}>{g}</List.Item>)}</List>
                                 </Table.Cell>
-                                <Table.Cell textAlign="center">
-                                    {student.lostItems.map((item, i) => <div key={i}>{item},</div>)}
-                                </Table.Cell>
-                                <Table.Cell>
-                                    {student.stat && student.stat.name} {student.stat && student.stat.value}
+                                <Table.Cell textAlign="left">
+                                    <List bulleted>{student.lostItems.map((g, i) => <List.Item key={i}>{g}</List.Item>)}</List>
                                 </Table.Cell>
                                 <Table.Cell>
-                                    {student.skill && student.skill.name} {student.skill && student.skill.value}
+                                    {student.stat && (
+                                        <Label color="grey" >
+                                            {student.stat.name}
+                                            {" "}
+                                            {student.stat.value}
+                                        </Label>
+                                    )}
+                                </Table.Cell>
+                                <Table.Cell>
+                                    {student.skill && <SkillIcon {...student.skill} label={true} />}
                                 </Table.Cell>
                                 <Table.Cell>
                                     {student.skillProficiencies.map((skill) =>

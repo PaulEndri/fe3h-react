@@ -42,5 +42,16 @@ export const Mercedes: ICharacter = {
 		DEF: 25,
 		RES: 45,
 		CHA: 40,
+	},
+	maxStats: {
+		HP: 64,
+		STR: 37,
+		MAG: 72,
+		DEX: 62,
+		SPD: 58,
+		LCK: 54,
+		DEF: 44,
+		RES: 65,
+		CHA: 58
 	}
 };

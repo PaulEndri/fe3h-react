@@ -2,7 +2,7 @@ import React from 'react';
 import { ICharacter } from '../../../interfaces/iCharacter';
 import { IClass } from '../../../interfaces/iClass';
 import JobService, { IFilteredJobs } from '../../../services/job';
-import { Grid, Segment, Header, Responsive } from 'semantic-ui-react';
+import { Grid, Segment, Header } from 'semantic-ui-react';
 import CharacterRadarChart from './character-radar-chart';
 import ClassTable from './class-table';
 import { IGrowthRate } from '../../../interfaces/iGrowthRate';
@@ -19,9 +19,6 @@ interface CharacterGrowthsSectionState {
     classes: IFilteredJobs,
     activeClasses: IActiveClasses
 }
-
-
-const IS_MOBILE = window.innerWidth <= Responsive.onlyMobile.maxWidth;
 
 class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionProps, CharacterGrowthsSectionState> {
     constructor(props: CharacterGrowthsSectionProps) {

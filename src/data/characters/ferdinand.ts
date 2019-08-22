@@ -42,5 +42,16 @@ export const Ferdinand: ICharacter = {
 		DEF: 35,
 		RES: 20,
 		CHA: 40,
+	},
+	maxStats: {
+		HP: 93,
+		STR: 64,
+		MAG: 40,
+		DEX: 56,
+		SPD: 70,
+		LCK: 56,
+		DEF: 36,
+		RES: 37,
+		CHA: 57
 	}
 };

@@ -1,8 +1,9 @@
 import React from 'react';
 import { ICharacter } from '../../../interfaces/iCharacter';
-import { Grid, Segment, Image, Header, List } from 'semantic-ui-react';
+import { Grid, Segment, Image, Header, List, Tab } from 'semantic-ui-react';
 import CharacterService from '../../../services/character';
 import InitialGrowthTable from './initial-growth-table';
+import SkillIcon from '../../../components/skill-icon';
 
 interface Props {
     color: "blue" | "yellow" | "grey" | "red",
@@ -40,7 +41,7 @@ export const CharacterSummary = ({color, character, characterService}: Props) =>
                         </List.Item>
                         <List.Item>
                             <List.Content floated="left">Recruitment Skill Required: </List.Content>
-                            <List.Content floated="right">{character.skill && getSkillIcon(character.skill.name)} {character.skill && character.skill.value}</List.Content>
+                            <List.Content floated="right">{character.skill && <SkillIcon label={true} {...character.skill} />}</List.Content>
                         </List.Item>
                         <List.Item>
                             <List.Content floated="left">
@@ -58,7 +59,7 @@ export const CharacterSummary = ({color, character, characterService}: Props) =>
                                 <Image inline src={`${process.env.PUBLIC_URL}/assets/icons/weakness.png`} />
                                 <span style={{marginLeft: '4px'}}>Skill Weaknesses:</span>
                             </List.Content>
-                            <List.Content floated="right">
+                            <List.Content floated="right" tex>
                                 {character.skillWeaknesses.map((skill) =>
                                     <Image style={{marginRight: '2px'}} height="25" width="25" inline src={getSkillIcon(skill)} />
                                 )}
@@ -80,14 +81,19 @@ export const CharacterSummary = ({color, character, characterService}: Props) =>
             </Grid.Row>
             <Grid.Row>
                 <Grid.Column stretched width={16}>
-                    <Segment.Group>
-                        <Segment color="violet" >
-                            <Header as="h4" >Base Stat Growths</Header>
-                        </Segment>
-                        <Segment>
-                            <InitialGrowthTable growths={character.growthRates} />
-                        </Segment>
-                    </Segment.Group>
+                    <Segment color="violet">
+                        <Tab panes={[
+                            {
+                                menuItem: "Base Growths",
+                                render: () => <InitialGrowthTable type="percentage" growths={character.growthRates} />
+                            },
+                            {
+                                menuItem: "Max Stats",
+                                render: () => <InitialGrowthTable type="number" growths={character.maxStats} />
+                            }
+                        ]} />
+                    </Segment>
+
                 </Grid.Column>
             </Grid.Row>
         </Grid>

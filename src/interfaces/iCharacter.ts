@@ -25,4 +25,5 @@ export interface ICharacter {
   skillWeaknesses: Skill[];
   hiddenTalents: Skill[];
   growthRates: IGrowthRate;
+  maxStats: IGrowthRate;
 }

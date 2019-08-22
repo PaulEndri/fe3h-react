@@ -1,15 +1,14 @@
 import React from 'react';
-import { Tab, Table, Checkbox, Responsive, Label, Image } from 'semantic-ui-react';
+import { Tab, Table, Checkbox } from 'semantic-ui-react';
 import { IFilteredJobs } from '../../../services/job';
 import { IClass } from '../../../interfaces/iClass';
+import SkillIcon from '../../../components/skill-icon';
 
 interface Props {
     classes: IFilteredJobs,
     selectedClasses: string[],
     updateSelectedClass: Function,
 }
-
-const getSkillIcon = (name: string) => `${process.env.PUBLIC_URL}/assets/icons/${name.toLowerCase().replace(' ', '-')}.png`
 
 const ClassTable = ({classes, selectedClasses, updateSelectedClass}: Props) => {
     const renderTab = (renderingClasses: IClass[]) => {
@@ -37,10 +36,7 @@ const ClassTable = ({classes, selectedClasses, updateSelectedClass}: Props) => {
                                     </Table.Cell>
                                         <Table.Cell>
                                             {job.Requirements && job.Requirements.map((requirement, i) => (
-                                                <Label image key={i}>
-                                                    <Image src={getSkillIcon(requirement.name)} />
-                                                    {requirement.value}
-                                                </Label>
+                                                <SkillIcon name={requirement.name} value={requirement.value} label={true} />
                                             ))}
                                         </Table.Cell>
                                 </Table.Row>

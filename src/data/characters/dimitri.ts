@@ -36,5 +36,16 @@ export const Dimitri: ICharacter = {
 		DEF: 40,
 		RES: 20,
 		CHA: 55,
+	},
+	maxStats: {
+		HP: 99,
+		STR: 87,
+		MAG: 38,
+		DEX: 69,
+		SPD: 69,
+		LCK: 42,
+		DEF: 57,
+		RES: 36,
+		CHA: 77
 	}
 };

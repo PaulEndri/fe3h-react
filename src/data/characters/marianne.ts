@@ -42,5 +42,16 @@ export const Marianne: ICharacter = {
 		DEF: 15,
 		RES: 45,
 		CHA: 40,
+	},
+	maxStats: {
+		HP: 68,
+		STR: 30,
+		MAG: 73,
+		DEX: 56,
+		SPD: 57,
+		LCK: 49,
+		DEF: 39,
+		RES: 64,
+		CHA: 57
 	}
 };

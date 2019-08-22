@@ -1,64 +1,119 @@
 import React from 'react';
-import { Segment, Table, Image } from 'semantic-ui-react';
+import DesktopTable from './desktop-table';
 import classes from '../../data/classes';
+import { Container, Segment, Button, Header, Responsive } from 'semantic-ui-react';
+import { Skill } from '../../types/skill';
+import { IClass } from '../../interfaces/iClass';
+import IRequirement from '../../interfaces/iRequirement';
+import Skills from '../../data/skills';
+import SkillIcon from '../../components/skill-icon';
+import MobileTable from './mobile-table';
 
-const getSkillIcon = (name: string) => `${process.env.PUBLIC_URL}/assets/icons/${name.toLowerCase().replace(' ', '-')}.png`
-
-export const ClassesView = () => {
-    return (
-        <Segment basic>
-            <Table structured compact celled>
-                <Table.Header>
-                    <Table.Row>
-                        <Table.HeaderCell rowSpan="2">Class Name</Table.HeaderCell>
-                        <Table.HeaderCell rowSpan="2">Tier</Table.HeaderCell>
-                        <Table.HeaderCell rowSpan="2" colSpan="3" textAlign="center">Requirements</Table.HeaderCell>
-                        <Table.HeaderCell colSpan="9" textAlign="center" >Stat Growths</Table.HeaderCell>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.HeaderCell width={1} >HP</Table.HeaderCell>
-                        <Table.HeaderCell width={1} >STR</Table.HeaderCell>
-                        <Table.HeaderCell width={1} >MAG</Table.HeaderCell>
-                        <Table.HeaderCell width={1} >DEX</Table.HeaderCell>
-                        <Table.HeaderCell width={1} >SPD</Table.HeaderCell>
-                        <Table.HeaderCell width={1} >LCK</Table.HeaderCell>
-                        <Table.HeaderCell width={1} >DEF</Table.HeaderCell>
-                        <Table.HeaderCell width={1} >RES</Table.HeaderCell>
-                        <Table.HeaderCell width={1} >CHA</Table.HeaderCell>
-                    </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                    {classes.map((job) => {
-                        return (
-                            <Table.Row key={job.Name}>
-                                <Table.Cell>{job.Name}</Table.Cell>
-                                <Table.Cell style={{textTransform: 'capitalize'}}>{job.Tier}</Table.Cell>
-                                {[0, 1, 2].map((index) => (
-                                    <Table.Cell singleLine key={index}>
-                                        {job.Requirements && job.Requirements[index] && (
-                                            <div style={{display: 'flex', justifyContent: 'center'}}>
-                                                <Image src={getSkillIcon(job.Requirements[index].name)} height={25} width={25}/>
-                                                <span style={{marginLeft: '8px'}}>{job.Requirements[index].value}</span>
-                                            </div>
-                                        )}
-                                    </Table.Cell>
-                                ))}
-                                <Table.Cell positive={job.HP > 0 ? true : false} negative={job.HP < 0 ? true : false}>{job.HP}</Table.Cell>
-                                <Table.Cell positive={job.STR > 0 ? true : false} negative={job.STR < 0 ? true : false}>{job.STR}</Table.Cell>
-                                <Table.Cell positive={job.MAG > 0 ? true : false} negative={job.MAG < 0 ? true : false}>{job.MAG}</Table.Cell>
-                                <Table.Cell positive={job.SPD > 0 ? true : false} negative={job.SPD < 0 ? true : false}>{job.SPD}</Table.Cell>
-                                <Table.Cell positive={job.DEX > 0 ? true : false} negative={job.DEX < 0 ? true : false}>{job.DEX}</Table.Cell>
-                                <Table.Cell positive={job.LCK > 0 ? true : false} negative={job.LCK < 0 ? true : false}>{job.LCK}</Table.Cell>
-                                <Table.Cell positive={job.DEF > 0 ? true : false} negative={job.DEF < 0 ? true : false}>{job.DEF}</Table.Cell>
-                                <Table.Cell positive={job.RES > 0 ? true : false} negative={job.RES < 0 ? true : false}>{job.RES}</Table.Cell>
-                                <Table.Cell positive={job.CHA > 0 ? true : false} negative={job.CHA < 0 ? true : false}>{job.CHA}</Table.Cell>
-                            </Table.Row>
-                        )
-                    })}
-                </Table.Body>
-            </Table>
-        </Segment>
-    )
+interface ClassesViewState {
+    skills: Skill[],
+    tiers: string[],
+    classes: IClass[]
 }
 
+const IS_MOBILE = window.innerWidth <= Responsive.onlyMobile.maxWidth;
+const TIERS = [
+    'beginner',
+    'unique',
+    'intermediate',
+    'advanced',
+    'master'
+];
+export class ClassesView extends React.Component<any, ClassesViewState> {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            skills: [],
+            tiers: [],
+            classes: classes
+        };
+    }
+
+    private updateTiers(value: string) {
+        const {tiers} = this.state;
+
+        if (tiers.includes(value)) {
+            this.setState({tiers: tiers.filter((t) => t !== value)});
+        } else {
+            this.setState({tiers: [...tiers, value]})
+        }
+    }
+
+    private updateSkills(value: Skill) {
+        const {skills} = this.state;
+
+        if (skills.includes(value)) {
+            this.setState({skills: skills.filter((t) => t !== value)});
+        } else {
+            this.setState({skills: [...skills, value]});
+        }
+    }
+
+    private matchToRequirement(matching: string[], requirements: IRequirement[]): boolean {
+        let matched: boolean;
+
+        return requirements && requirements.reduce((previous, current) => previous || matching.includes(current.name), matched);
+    }
+
+    private filterResults() {
+        const {skills, tiers, classes} = this.state;
+
+        if (tiers.length === 0 && skills.length === 0) {
+            return classes;
+        }
+
+        return classes.filter((job) => {
+            let match = false;
+
+            if (skills.length > 0 && !match) {
+                match = this.matchToRequirement(skills, job.Requirements);
+            }
+
+            if (tiers.length > 0 && !match) {
+                match = tiers.includes(job.Tier);
+            }
+            return match;
+        })
+    }
+
+    render() {
+        return (<Container fluid>
+            <Segment.Group raised>
+                <Segment fluid color="violet" inverted stacked textAlign="center">
+                    <Header as="h1">Class List and Information</Header>
+                </Segment>
+                <Segment basic textAlign="center" horizontal={IS_MOBILE}>
+                    <Header as="h3">Filter by Skill</Header>
+                                                    
+                    {Skills.map(skill => (
+                        <Button onClick={() => this.updateSkills(skill)} positive={this.state.skills.includes(skill)} compact>
+                            <SkillIcon name={skill} value={skill} label={!IS_MOBILE} />
+                        </Button>
+                    ))}
+
+                </Segment>
+                <Segment basic horizontal={IS_MOBILE}  textAlign="center">
+                    <Header as="h3">Filter by Tier</Header>
+                        {TIERS.map(tier => (
+                            <Button onClick={() => this.updateTiers(tier)} positive={this.state.tiers.includes(tier)} compact>
+                                <span style={{textTransform: 'capitalize'}}>{tier}</span>
+                            </Button>
+                        ))}
+                </Segment>
+                
+            </Segment.Group>
+            <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+                <MobileTable classes={this.filterResults()} />
+            </Responsive>
+            <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
+                <DesktopTable classes={this.filterResults()} />
+            </Responsive>
+        </Container>)
+    }
+}
 export default ClassesView;

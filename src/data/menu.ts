@@ -31,7 +31,7 @@ export const MenuData: IMenuItem[] = [
                 children: []
             },
             {
-                name: 'Recruitment Calculator',
+                name: 'Recruitment Guide',
                 to: '/recruitment',
                 key: 'characters-recruitment',
                 children: []

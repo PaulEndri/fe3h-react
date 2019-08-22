@@ -28,4 +28,15 @@ export const Rhea: ICharacter = {
 		RES: 25,
 		CHA: 45,
 	},
+	maxStats: {
+		HP: 83,
+		STR: 59,
+		MAG: 36,
+		DEX: 69,
+		SPD: 85,
+		LCK: 63,
+		DEF: 42,
+		RES: 35,
+		CHA: 63,
+	}
 };

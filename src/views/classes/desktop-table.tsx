@@ -1,12 +1,15 @@
 import React from 'react';
-import { Segment, Table, Image } from 'semantic-ui-react';
-import classes from '../../data/classes';
+import { Segment, Table } from 'semantic-ui-react';
+import SkillIcon from '../../components/skill-icon';
+import { IClass } from '../../interfaces/iClass';
 
-const getSkillIcon = (name: string) => `${process.env.PUBLIC_URL}/assets/icons/${name.toLowerCase().replace(' ', '-')}.png`
+interface Props {
+    classes: IClass[]
+};
 
-export const DesktopTable = () => {
+export const DesktopTable = ({classes}: Props) => {
     return (
-        <Segment basic>
+        <Segment raised>
             <Table structured compact celled>
                 <Table.Header>
                     <Table.Row>
@@ -37,8 +40,7 @@ export const DesktopTable = () => {
                                     <Table.Cell singleLine key={index}>
                                         {job.Requirements && job.Requirements[index] && (
                                             <div style={{display: 'flex', justifyContent: 'center'}}>
-                                                <Image src={getSkillIcon(job.Requirements[index].name)} height={25} width={25}/>
-                                                <span style={{marginLeft: '8px'}}>{job.Requirements[index].value}</span>
+                                                <SkillIcon label={true} {...job.Requirements[index]} />
                                             </div>
                                         )}
                                     </Table.Cell>

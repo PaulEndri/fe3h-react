@@ -42,5 +42,16 @@ export const Lysithea: ICharacter = {
 		DEF: 10,
 		RES: 25,
 		CHA: 25,
+	},
+	maxStats: {
+		HP: 48,
+		STR: 30,
+		MAG: 86,
+		DEX: 82,
+		SPD: 69,
+		LCK: 40,
+		DEF: 36,
+		RES: 41,
+		CHA: 44
 	}
 };

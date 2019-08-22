@@ -42,5 +42,16 @@ export const Ingrid: ICharacter = {
 		DEF: 30,
 		RES: 40,
 		CHA: 45,
+	},
+	maxStats: {
+		HP: 79,
+		STR: 51,
+		MAG: 49,
+		DEX: 56,
+		SPD: 83,
+		LCK: 62,
+		DEF: 51,
+		RES: 58,
+		CHA: 64
 	}
 };

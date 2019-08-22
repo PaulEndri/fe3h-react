@@ -41,5 +41,16 @@ export const Ignatz: ICharacter = {
 		DEF: 25,
 		RES: 35,
 		CHA: 25,
+	},
+	maxStats: {
+		HP: 70,
+		STR: 51,
+		MAG: 42,
+		DEX: 69,
+		SPD: 70,
+		LCK: 76,
+		DEF: 43,
+		RES: 49,
+		CHA: 45
 	}
 };

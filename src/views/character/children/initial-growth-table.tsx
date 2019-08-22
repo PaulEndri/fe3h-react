@@ -1,10 +1,11 @@
 import React from 'react'
 import { IGrowthRate } from '../../../interfaces/iGrowthRate';
-import { Grid, Progress, Responsive, } from 'semantic-ui-react';
+import { Grid, Progress, Responsive, Tab, SemanticCOLORS, } from 'semantic-ui-react';
 
 
 interface Props {
-    growths: IGrowthRate
+    growths: IGrowthRate,
+    type: 'percentage' | 'number'
 };
 
 interface iWIDTH {
@@ -19,34 +20,42 @@ const WIDTHS: iWIDTH = {
     LONG: IS_MOBILE ? 8 : 4
 };
 
-const generatePercentColor = (percent: number) => {
-    if (percent <= 33) {
-        return 'red';
-    } else if (percent <= 66) {
-        return 'yellow';
-    } else {
-        return 'green';
-    }
-}
-
-const individualStatGrid = (name: string, percent: number, value: number) => ([
+const individualStatGrid = (name: string, percent: number, color: SemanticCOLORS, value: number) => ([
         <Grid.Column width={WIDTHS.SHORT}>
             {name}
         </Grid.Column>,
         <Grid.Column width={WIDTHS.LONG}>
-            <Progress percent={percent} color={generatePercentColor(percent)} />
+            <Progress percent={percent} color={color} />
         </Grid.Column>,
         <Grid.Column width={WIDTHS.SHORT}>
             {value}
         </Grid.Column>
 ])
-export const InitialGrowthTable = ({growths}: Props) => {
+export const InitialGrowthTable = ({growths, type}: Props) => {
+    const generatePercentColor = (value: number): SemanticCOLORS => {
+        const RED = type === 'percentage' ? 24 : 39;
+        const YELLOW = type === 'percentage' ? 49 : 64;
+
+        if (value <= RED) {
+            return 'red';
+        } else if (value <= YELLOW) {
+            return 'yellow';
+        } else {
+            return 'green';
+        }
+    }
+
+    const percent = (v: number) => type === 'percentage' ? (v / 70) * 100 : v;
+
     return (
-        <Grid columns={8} className="initial-growth-table">
-            {Object.keys(growths).map((key: string) => {
-                return individualStatGrid(key, (growths[key] / 70) * 100, growths[key])
-            })}
-        </Grid>
+        <Tab.Pane>
+            <Grid columns={8} className="initial-growth-table">
+                {Object.keys(growths).map((key: string) =>
+                    individualStatGrid(key, percent(growths[key]), generatePercentColor(growths[key]), growths[key])
+                )}
+            </Grid>
+        </Tab.Pane>
+
     )
 }
 

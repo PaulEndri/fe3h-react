@@ -43,5 +43,16 @@ export const Alois: ICharacter = {
 		DEF: 40,
 		RES: 20,
 		CHA: 40
+	},
+	maxStats: {
+		HP: 86,
+		STR: 71,
+		MAG: 33,
+		DEX: 48,
+		SPD: 56,
+		LCK: 42,
+		DEF: 55,
+		RES: 37,
+		CHA: 57
 	}
 };

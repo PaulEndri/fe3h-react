@@ -42,5 +42,16 @@ export const Leonie: ICharacter = {
 		DEF: 40,
 		RES: 15,
 		CHA: 40,
+	},
+	maxStats: {
+		HP: 78,
+		STR: 59,
+		MAG: 38,
+		DEX: 76,
+		SPD: 84,
+		LCK: 56,
+		DEF: 57,
+		RES: 36,
+		CHA: 57
 	}
 };

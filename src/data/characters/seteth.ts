@@ -36,5 +36,16 @@ export const Seteth: ICharacter = {
 		DEF: 30,
 		RES: 25,
 		CHA: 45,
+	},
+	maxStats: {
+		HP: 92,
+		STR: 65,
+		MAG: 51,
+		DEX: 70,
+		SPD: 67,
+		LCK: 49,
+		DEF: 43,
+		RES: 41,
+		CHA: 65,
 	}
 };

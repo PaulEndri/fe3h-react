@@ -30,6 +30,11 @@ export class CharacterService {
             return 'seiros';
         }
     }
+
+    isRecruitable(): boolean {
+        return this.character.stat ? true : false;
+    }
+
     private getImage(key: "thumbnails"|"portraits"): string {
         if (!this.character) {
             return '';

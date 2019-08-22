@@ -36,5 +36,16 @@ export const Hubert: ICharacter = {
 		DEF: 25,
 		RES: 40,
 		CHA: 35,
+	},
+	maxStats: {
+		HP: 67,
+		STR: 43,
+		MAG: 80,
+		DEX: 62,
+		SPD: 63,
+		LCK: 51,
+		DEF: 45,
+		RES: 57,
+		CHA: 49
 	}
 };

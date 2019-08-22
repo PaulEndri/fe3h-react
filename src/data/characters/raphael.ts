@@ -42,5 +42,16 @@ export const Raphael: ICharacter = {
 		DEF: 45,
 		RES: 10,
 		CHA: 25,
+	},
+	maxStats: {
+		HP: 114,
+		STR: 73,
+		MAG: 31,
+		DEX: 48,
+		SPD: 33,
+		LCK: 49,
+		DEF: 63,
+		RES: 36,
+		CHA: 51,
 	}
 };
