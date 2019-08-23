@@ -53,5 +53,16 @@ export const Dorothea: ICharacter = {
 		DEF: 38,
 		RES: 50,
 		CHA: 58
+	},
+	baseStats: {
+		HP: 24,
+		STR: 5,
+		MAG: 11,
+		DEX: 6,
+		SPD: 7,
+		LCK: 6,
+		DEF: 4,
+		RES: 7,
+		CHA: 8
 	}
 };

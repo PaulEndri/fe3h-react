@@ -50,5 +50,16 @@ export const Hanneman: ICharacter = {
 		DEF: 36,
 		RES: 57,
 		CHA: 48
+	},
+	baseStats: {
+		HP: 25,
+		STR: 6,
+		MAG: 10,
+		DEX: 6,
+		SPD: 6,
+		LCK: 4,
+		DEF: 5,
+		RES: 7,
+		CHA: 5
 	}
 };

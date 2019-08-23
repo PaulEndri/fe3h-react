@@ -46,5 +46,16 @@ export const Edelgard: ICharacter = {
 		DEF: 61,
 		RES: 47,
 		CHA: 85
+	},
+	baseStats: {
+		HP: 29,
+		STR: 13,
+		MAG: 6,
+		DEX: 5,
+		SPD: 8,
+		LCK: 5,
+		DEF: 6,
+		RES: 4,
+		CHA: 10
 	}
 };

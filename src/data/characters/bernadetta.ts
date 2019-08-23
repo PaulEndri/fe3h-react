@@ -53,5 +53,16 @@ export const Bernadetta: ICharacter = {
 		DEF: 41,
 		RES: 39,
 		CHA: 49
+	},
+	baseStats: {
+		HP: 25,
+		STR: 8,
+		MAG: 5,
+		DEX: 7,
+		SPD: 7,
+		LCK: 5,
+		DEF: 4,
+		RES: 2,
+		CHA: 6
 	}
 };

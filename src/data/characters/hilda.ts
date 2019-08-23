@@ -53,5 +53,16 @@ export const Hilda: ICharacter = {
 		DEF: 49,
 		RES: 39,
 		CHA: 76
+	},
+	baseStats: {
+		HP: 29,
+		STR: 10,
+		MAG: 5,
+		DEX: 5,
+		SPD: 8,
+		LCK: 6,
+		DEF: 6,
+		RES: 3,
+		CHA: 7
 	}
 };

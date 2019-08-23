@@ -53,5 +53,16 @@ export const Annette: ICharacter = {
 		DEF: 40,
 		RES: 41,
 		CHA: 49
+	},
+	baseStats: {
+		HP: 23,
+		STR: 6,
+		MAG: 11,
+		DEX: 7,
+		SPD: 7,
+		LCK: 6,
+		DEF: 5,
+		RES: 4,
+		CHA: 6
 	}
 };

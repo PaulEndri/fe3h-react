@@ -47,5 +47,16 @@ export const Claude: ICharacter = {
 		DEF: 50,
 		RES: 42,
 		CHA: 76
+	},
+	baseStats: {
+		HP: 26,
+		STR:11,
+		MAG:5,
+		DEX:8,
+		SPD:8,
+		LCK: 7,
+		DEF: 6,
+		RES: 4,
+		CHA: 8
 	}
 };

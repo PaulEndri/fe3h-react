@@ -50,5 +50,16 @@ export const Manuela: ICharacter = {
 		DEF: 42,
 		RES: 44,
 		CHA: 69
+	},
+	baseStats: {
+		HP: 26,
+		STR: 10,
+		MAG: 8,
+		DEX: 6,
+		SPD: 8,
+		LCK: 6,
+		DEF: 5,
+		RES: 4,
+		CHA: 7
 	}
 };

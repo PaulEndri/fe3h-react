@@ -37,5 +37,16 @@ export const Gilbert: ICharacter = {
 		DEF: 61,
 		RES: 35,
 		CHA: 49
+	},
+	baseStats: {
+		HP: 30,
+		STR: 9,
+		MAG: 4,
+		DEX: 6,
+		SPD: 5,
+		LCK: 4,
+		DEF: 5,
+		RES: 2,
+		CHA: 6
 	}
 };

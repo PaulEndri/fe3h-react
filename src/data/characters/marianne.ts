@@ -53,5 +53,16 @@ export const Marianne: ICharacter = {
 		DEF: 39,
 		RES: 64,
 		CHA: 57
+	},
+	baseStats: {
+		HP: 23,
+		STR: 5,
+		MAG: 11,
+		DEX: 6,
+		SPD: 7,
+		LCK: 6,
+		DEF: 4,
+		RES: 8,
+		CHA: 7
 	}
 };

@@ -43,5 +43,16 @@ export const Dedue: ICharacter = {
 		DEF: 70,
 		RES: 35,
 		CHA: 41
+	},
+	baseStats: {
+		HP: 30,
+		STR:12,
+		MAG: 2,
+		DEX: 5,
+		SPD: 7,
+		LCK: 5,
+		DEF: 8,
+		RES: 1,
+		CHA: 4
 	}
 };

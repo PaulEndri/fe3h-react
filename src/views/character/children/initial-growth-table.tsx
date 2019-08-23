@@ -5,7 +5,7 @@ import { Grid, Progress, Responsive, Tab, SemanticCOLORS, } from 'semantic-ui-re
 
 interface Props {
     growths: IGrowthRate,
-    type: 'percentage' | 'number'
+    type: 'percentage' | 'number' | 'smallint'
 };
 
 interface iWIDTH {
@@ -33,25 +33,23 @@ const individualStatGrid = (name: string, percent: number, color: SemanticCOLORS
 ])
 export const InitialGrowthTable = ({growths, type}: Props) => {
     const generatePercentColor = (value: number): SemanticCOLORS => {
-        const RED = type === 'percentage' ? 24 : 39;
-        const YELLOW = type === 'percentage' ? 49 : 64;
-
-        if (value <= RED) {
+        if (value <= 40) {
             return 'red';
-        } else if (value <= YELLOW) {
+        } else if (value <= 66) {
             return 'yellow';
         } else {
             return 'green';
         }
     }
 
-    const percent = (v: number) => type === 'percentage' ? (v / 70) * 100 : v;
+    const divisor = type === 'percentage' ? 70 : 12;
+    const percent = (v: number) => type === 'percentage' || type === 'smallint' ? (v / divisor) * 100 : v;
 
     return (
         <Tab.Pane>
             <Grid columns={8} className="initial-growth-table">
                 {Object.keys(growths).map((key: string) =>
-                    individualStatGrid(key, percent(growths[key]), generatePercentColor(growths[key]), growths[key])
+                    individualStatGrid(key, percent(growths[key]), generatePercentColor(percent(growths[key])), growths[key])
                 )}
             </Grid>
         </Tab.Pane>

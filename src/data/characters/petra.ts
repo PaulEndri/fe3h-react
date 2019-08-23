@@ -53,5 +53,16 @@ export const Petra: ICharacter = {
 		DEF: 42,
 		RES: 35,
 		CHA: 63,
+	},
+	baseStats: {
+		HP: 25,
+		STR: 9,
+		MAG: 3,
+		DEX: 7,
+		SPD: 10,
+		LCK: 7,
+		DEF: 5,
+		RES: 2,
+		CHA: 6
 	}
 };

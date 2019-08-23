@@ -50,5 +50,16 @@ export const Catherine: ICharacter = {
 		DEF: 42,
 		RES: 37,
 		CHA: 35
+	},
+	baseStats: {
+		HP: 27,
+		STR:8,
+		MAG: 5,
+		DEX: 6,
+		SPD: 7,
+		LCK: 6,
+		DEF: 5,
+		RES: 2,
+		CHA: 4
 	}
 };

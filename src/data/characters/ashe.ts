@@ -53,5 +53,16 @@ export const Ashe: ICharacter = {
 		DEF: 43,
 		RES: 49,
 		CHA: 36
+	},
+	baseStats: {
+		HP: 23,
+		STR: 8,
+		MAG: 5,
+		DEX: 8,
+		SPD: 9,
+		LCK: 6,
+		DEF: 5,
+		RES: 6,
+		CHA: 5
 	}
 };

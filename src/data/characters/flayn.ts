@@ -43,5 +43,16 @@ export const Flayn: ICharacter = {
 		DEF: 36,
 		RES: 72,
 		CHA: 65
+	},
+	baseStats: {
+		HP: 24,
+		STR: 6,
+		MAG: 9,
+		DEX: 6,
+		SPD: 5,
+		LCK: 4,
+		DEF: 5,
+		RES: 10,
+		CHA: 9
 	}
 };

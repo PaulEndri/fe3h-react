@@ -37,5 +37,16 @@ export const Jeralt: ICharacter = {
 		DEF: 42,
 		RES: 35,
 		CHA: 63,
+	},
+	baseStats: {
+		HP: 22,
+		STR: 6,
+		MAG: 12,
+		DEX: 6,
+		SPD: 7,
+		LCK: 6,
+		DEF: 4,
+		RES: 7,
+		CHA: 6
 	}
 };

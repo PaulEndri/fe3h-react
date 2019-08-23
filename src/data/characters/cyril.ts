@@ -50,5 +50,16 @@ export const Cyril: ICharacter = {
 		DEF: 45,
 		RES: 41,
 		CHA: 48
+	},
+	baseStats: {
+		HP: 24,
+		STR: 7,
+		MAG: 4,
+		DEX: 6,
+		SPD: 6,
+		LCK: 6,
+		DEF: 5,
+		RES: 2,
+		CHA: 4
 	}
 };

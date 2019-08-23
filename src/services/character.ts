@@ -1,4 +1,6 @@
 import { ICharacter } from "../interfaces/iCharacter";
+import { ISkillData } from "../interfaces/iSkillData";
+import SkillData from "../data/skillData";
 
 export class CharacterService {
     public character? : ICharacter;
@@ -33,6 +35,10 @@ export class CharacterService {
 
     isRecruitable(): boolean {
         return this.character.stat ? true : false;
+    }
+
+    getPersonalSkill(): ISkillData {
+        return SkillData.find((sk) => sk.personal === this.character.firstName)
     }
 
     private getImage(key: "thumbnails"|"portraits"): string {

@@ -53,5 +53,16 @@ export const Linhardt: ICharacter = {
 		DEF: 48,
 		RES: 65,
 		CHA: 43
+	},
+	baseStats: {
+		HP: 24,
+		STR: 5,
+		MAG: 10,
+		DEX: 6,
+		SPD: 5,
+		LCK: 7,
+		DEF: 5,
+		RES: 9,
+		CHA: 3
 	}
 };

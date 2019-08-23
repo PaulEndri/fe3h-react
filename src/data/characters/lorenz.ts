@@ -53,5 +53,16 @@ export const Lorenz: ICharacter = {
 		DEF: 55,
 		RES: 56,
 		CHA: 46
+	},
+	baseStats: {
+		HP: 28,
+		STR: 8,
+		MAG: 7,
+		DEX: 6,
+		SPD: 7,
+		LCK: 5,
+		DEF: 6,
+		RES: 6,
+		CHA: 3
 	}
 };

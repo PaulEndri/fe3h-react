@@ -53,5 +53,16 @@ export const Sylvain: ICharacter = {
 		DEF: 56,
 		RES: 38,
 		CHA: 57,
+	},
+	baseStats: {
+		HP: 22,
+		STR: 9,
+		MAG: 5,
+		DEX: 5,
+		SPD: 8,
+		LCK: 6,
+		DEF: 6,
+		RES: 2,
+		CHA: 7
 	}
 };

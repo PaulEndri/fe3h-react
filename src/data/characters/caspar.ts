@@ -53,5 +53,16 @@ export const Caspar: ICharacter = {
 		DEF: 51,
 		RES: 35,
 		CHA: 46
+	},
+	baseStats: {
+		HP: 29,
+		STR: 9,
+		MAG: 3,
+		DEX: 5,
+		SPD: 6,
+		LCK: 8,
+		DEF: 6,
+		RES: 2,
+		CHA: 4
 	}
 };

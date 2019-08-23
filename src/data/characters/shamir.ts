@@ -49,5 +49,16 @@ export const Shamir: ICharacter = {
 		DEF: 37,
 		RES: 35,
 		CHA: 43,
+	},
+	baseStats: {
+		HP: 26,
+		STR: 8,
+		MAG: 42,
+		DEX: 7,
+		SPD: 6,
+		LCK: 8,
+		DEF: 5,
+		RES: 2,
+		CHA: 6
 	}
 };

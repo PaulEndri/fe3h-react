@@ -53,5 +53,16 @@ export const Felix: ICharacter = {
 		DEF: 51,
 		RES: 35,
 		CHA: 42
+	},
+	baseStats: {
+		HP: 26,
+		STR: 10,
+		MAG: 5,
+		DEX: 6,
+		SPD: 9,
+		LCK: 5,
+		DEF: 5,
+		RES: 3,
+		CHA: 5
 	}
 };
