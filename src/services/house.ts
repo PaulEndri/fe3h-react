@@ -1,4 +1,3 @@
-
 import { ICharacter } from "../interfaces/iCharacter";
 import { IHouse } from "../interfaces/iHouse";
 import houses from "../data/houses";
@@ -9,11 +8,11 @@ export class HouseService {
     public house?: IHouse;
 
     static getAll(): HouseService[] {
-        return houses.map((house) => new HouseService(house));
+        return houses.map(house => new HouseService(house));
     }
 
-    static getHouse(name: string): HouseService|undefined {
-        const house = HouseService.HOUSES.find(({stub}: IHouse) => stub.toLowerCase() === name.toLowerCase());
+    static getHouse(name: string): HouseService | undefined {
+        const house = HouseService.HOUSES.find(({ stub }: IHouse) => stub.toLowerCase() === name.toLowerCase());
 
         if (house) {
             return new HouseService(house);
@@ -27,24 +26,26 @@ export class HouseService {
     }
 
     getLink() {
-        return this.house ? `/house/${this.house.stub.toLowerCase()}` : '';
+        return this.house ? `/house/${this.house.stub.toLowerCase()}` : "";
     }
 
-    getStudent(name: string): CharacterService|undefined {
+    getStudent(name: string): CharacterService | undefined {
         if (!this.house) {
             return;
         }
 
-        const student = this.house.students.find(({firstName}: ICharacter) => firstName.toLowerCase() === name.toLowerCase());
+        const student = this.house.students.find(
+            ({ firstName }: ICharacter) => firstName.toLowerCase() === name.toLowerCase()
+        );
 
         return new CharacterService(student);
     }
 
-    getStudents(): CharacterService[]|undefined {
+    getStudents(): CharacterService[] | undefined {
         if (!this.house) {
             return;
         }
 
-        return this.house.students.map((student) => new CharacterService(student));
+        return this.house.students.map(student => new CharacterService(student));
     }
 }

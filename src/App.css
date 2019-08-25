@@ -1,45 +1,45 @@
 .app-base-content {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  margin-top: 8px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    margin-top: 8px;
 }
 
 .ui.menu.app-header {
-  margin: 0px !important;
-  border-radius: 0px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
 }
 
 .app-home-view {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
 }
 
 img.child-view-portrait {
-  background-color: #b4a18a !important;
-  padding: 5px;
-  border: 2px solid #815fa9!important;
-  max-width: 200px !important;
+    background-color: #b4a18a !important;
+    padding: 5px;
+    border: 2px solid #815fa9 !important;
+    max-width: 200px !important;
 }
 
 .justified-content {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .initial-growth-table .column {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;  
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 .initial-growth-table {
-  margin-top: 4px !important;
+    margin-top: 4px !important;
 }

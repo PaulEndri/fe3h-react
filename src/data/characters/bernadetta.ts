@@ -1,68 +1,70 @@
-import { ICharacter } from '../../interfaces/iCharacter';
+import { ICharacter } from "../../interfaces/iCharacter";
 
 export const Bernadetta: ICharacter = {
-    firstName: 'Bernadetta',
-	alliance: 'Black Eagles',
-	name: 'Bernadetta von Varley',
-	birthday: '12/12',
-	crest: 'Indech',
-	tea: ['Albinean Berry Blend', 'Honeyed-Fruit Blend'],
-	skill: {
-		name: 'Bow',
-		value: 'C'
-	},
-	stat: {
-		name: 'STR',
-		value: 20
-	},
-	flower: ['Pitcher Plant'],
-	gift: ['Armored Bear Stuffy', 'Book of Sheet Music', 'Dapper Handkerchief', 'Landscape Painting', 'Watering Can'],
-	lostItems: ['Hedgehog Case', 'Needle And Thread', 'Still-Life Picture'],
-	trainings: [],
-	lectures: [
-		{
-			question: 'Um. Sorry, but you should probably just skip me. I don’t have a question to ask. How would I even think of one?',
-			 answer: 'You just did.'
-		},
-		{
-			question: 'I want to knit an animal doll for someone, but I\'m not sure what kind to make. They love eagles, lions, and deer equally! I don\'t know what to do...',
-			answer: 'Try using an eagle\'s head, a lion\'s body, and a deer\'s tail.'
-		}
-	],
-	skillProficiencies: ['Lance', 'Bow'],
-	skillWeaknesses: ['Sword', 'Axe', 'Brawling', 'Heavy Armor'],
-	hiddenTalents: ['Riding'],
-	growthRates: {
-		HP: 35,
-		STR: 35,
-		MAG: 20,
-		DEX: 55,
-		SPD: 50,
-		LCK: 25,
-		DEF: 20,
-		RES: 30,
-		CHA: 35,
-	},
-	maxStats: {
-		HP: 70,
-		STR: 51,
-		MAG: 40,
-		DEX: 75,
-		SPD: 69,
-		LCK: 41,
-		DEF: 41,
-		RES: 39,
-		CHA: 49
-	},
-	baseStats: {
-		HP: 25,
-		STR: 8,
-		MAG: 5,
-		DEX: 7,
-		SPD: 7,
-		LCK: 5,
-		DEF: 4,
-		RES: 2,
-		CHA: 6
-	}
+    firstName: "Bernadetta",
+    alliance: "Black Eagles",
+    name: "Bernadetta von Varley",
+    birthday: "12/12",
+    crest: "Indech",
+    tea: ["Albinean Berry Blend", "Honeyed-Fruit Blend"],
+    skill: {
+        name: "Bow",
+        value: "C"
+    },
+    stat: {
+        name: "STR",
+        value: 20
+    },
+    flower: ["Pitcher Plant"],
+    gift: ["Armored Bear Stuffy", "Book of Sheet Music", "Dapper Handkerchief", "Landscape Painting", "Watering Can"],
+    lostItems: ["Hedgehog Case", "Needle And Thread", "Still-Life Picture"],
+    trainings: [],
+    lectures: [
+        {
+            question:
+                "Um. Sorry, but you should probably just skip me. I don’t have a question to ask. How would I even think of one?",
+            answer: "You just did."
+        },
+        {
+            question:
+                "I want to knit an animal doll for someone, but I'm not sure what kind to make. They love eagles, lions, and deer equally! I don't know what to do...",
+            answer: "Try using an eagle's head, a lion's body, and a deer's tail."
+        }
+    ],
+    skillProficiencies: ["Lance", "Bow"],
+    skillWeaknesses: ["Sword", "Axe", "Brawling", "Heavy Armor"],
+    hiddenTalents: ["Riding"],
+    growthRates: {
+        HP: 35,
+        STR: 35,
+        MAG: 20,
+        DEX: 55,
+        SPD: 50,
+        LCK: 25,
+        DEF: 20,
+        RES: 30,
+        CHA: 35
+    },
+    maxStats: {
+        HP: 70,
+        STR: 51,
+        MAG: 40,
+        DEX: 75,
+        SPD: 69,
+        LCK: 41,
+        DEF: 41,
+        RES: 39,
+        CHA: 49
+    },
+    baseStats: {
+        HP: 25,
+        STR: 8,
+        MAG: 5,
+        DEX: 7,
+        SPD: 7,
+        LCK: 5,
+        DEF: 4,
+        RES: 2,
+        CHA: 6
+    }
 };

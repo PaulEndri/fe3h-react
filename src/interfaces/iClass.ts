@@ -13,5 +13,5 @@ export interface IClass {
     Name: string;
     Gender?: "M" | "F";
     Requirements?: IRequirement[];
-    Tier: "unique" | "beginner" | "intermediate" | "advanced" | "master"
+    Tier: "unique" | "beginner" | "intermediate" | "advanced" | "master";
 }

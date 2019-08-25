@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from './views/home/';
+import Home from "./views/home/";
 import HouseView from "./views/house";
 import Layout from "./components/layout";
-import CharacterView from "./views/character"
+import CharacterView from "./views/character";
 import About from "./views/about";
 import CharactersView from "./views/characters";
 import ClassesView from "./views/classes";
 import RecruitmentTable from "./views/recruitment";
 import LostItemsView from "./views/lostItems";
+import CharacterPlanner from "./views/characterPlanner";
 
 class AppRouter extends React.Component<any, any> {
     render() {
@@ -23,6 +24,7 @@ class AppRouter extends React.Component<any, any> {
                     <Route exact path="/classes" component={ClassesView} />
                     <Route exact path="/recruitment" component={RecruitmentTable} />
                     <Route exact path="/lostItems" component={LostItemsView} />
+                    <Route exact path="/characterPlanner" component={CharacterPlanner} />
                 </Layout>
             </Router>
         );

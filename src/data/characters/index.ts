@@ -33,6 +33,10 @@ import { Shamir } from "./shamir";
 import { Sylvain } from "./sylvain";
 import CharacterService from "../../services/character";
 
+interface ICharacters {
+    [key: string]: CharacterService;
+}
+
 const characters = [
     Alois,
     Annette,
@@ -69,4 +73,12 @@ const characters = [
     Sylvain
 ];
 
-export default characters.map((c) => new CharacterService(c));
+const Characters: ICharacters = characters
+    .map(c => new CharacterService(c))
+    .reduce((total, cs) => {
+        total[cs.character.name] = cs;
+
+        return total;
+    }, {});
+
+export default Characters;

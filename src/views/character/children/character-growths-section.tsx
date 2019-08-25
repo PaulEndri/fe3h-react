@@ -1,23 +1,23 @@
-import React from 'react';
-import { ICharacter } from '../../../interfaces/iCharacter';
-import { IClass } from '../../../interfaces/iClass';
-import JobService, { IFilteredJobs } from '../../../services/job';
-import { Grid, Segment, Header } from 'semantic-ui-react';
-import CharacterRadarChart from './character-radar-chart';
-import ClassTable from './class-table';
-import { IGrowthRate } from '../../../interfaces/iGrowthRate';
+import React from "react";
+import { ICharacter } from "../../../interfaces/iCharacter";
+import { IClass } from "../../../interfaces/iClass";
+import JobService, { IFilteredJobs } from "../../../services/job";
+import { Grid, Segment, Header } from "semantic-ui-react";
+import CharacterRadarChart from "./character-radar-chart";
+import ClassTable from "./class-table";
+import { IGrowthRate } from "../../../interfaces/iGrowthRate";
 
 interface CharacterGrowthsSectionProps {
-    character: ICharacter
+    character: ICharacter;
 }
 
 interface IActiveClasses {
-    [key: string]: IGrowthRate
+    [key: string]: IGrowthRate;
 }
 
 interface CharacterGrowthsSectionState {
-    classes: IFilteredJobs,
-    activeClasses: IActiveClasses
+    classes: IFilteredJobs;
+    activeClasses: IActiveClasses;
 }
 
 class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionProps, CharacterGrowthsSectionState> {
@@ -28,7 +28,7 @@ class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionPro
             activeClasses: {
                 "Base Growth": props.character.growthRates
             },
-            classes: JobService.getAll()
+            classes: JobService.GetAll()
         };
 
         this.generateGrowthRate.bind(this);
@@ -36,12 +36,12 @@ class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionPro
     }
 
     componentDidUpdate() {
-        if (this.state.activeClasses['Base Growth'] !== this.props.character.growthRates) {
+        if (this.state.activeClasses["Base Growth"] !== this.props.character.growthRates) {
             this.setState({
                 activeClasses: {
                     "Base Growth": this.props.character.growthRates
                 }
-            })
+            });
         }
     }
     generateGrowthRate(job: IClass): IGrowthRate {
@@ -63,18 +63,18 @@ class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionPro
     }
 
     updateSelectedClass(selectedClassName: string, job: IClass) {
-        const {activeClasses} = this.state;
-        
+        const { activeClasses } = this.state;
+
         if (Object.keys(activeClasses).includes(selectedClassName)) {
-            const newClassObject: IActiveClasses = {}
+            const newClassObject: IActiveClasses = {};
 
             Object.keys(activeClasses).forEach((key: string) => {
                 if (key !== selectedClassName) {
                     newClassObject[key] = activeClasses[key];
                 }
-            })
+            });
 
-            console.log(newClassObject)
+            console.log(newClassObject);
             this.setState({
                 activeClasses: newClassObject
             });
@@ -90,29 +90,36 @@ class CharacterGrowthsSection extends React.Component<CharacterGrowthsSectionPro
         }
     }
 
-
     render() {
-        const {activeClasses} = this.state;
+        const { activeClasses } = this.state;
         const classNames = Object.keys(activeClasses);
- 
+
         return (
             <Grid.Row>
                 <Grid.Column stretched computer={8} mobile={16}>
                     <Segment color="violet">
-                        <Header as="h4" textAlign="center">Growth Rates</Header>
+                        <Header as="h4" textAlign="center">
+                            Growth Rates
+                        </Header>
                         <CharacterRadarChart statBlocks={Object.values(activeClasses)} statBlockNames={classNames} />
-                        {Object.keys(activeClasses).length >= 10 && <Segment color="red" inverted>
-                            You may only have up to 10 classes selected, please remove some to add more
-                        </Segment>}
+                        {Object.keys(activeClasses).length >= 10 && (
+                            <Segment color="red" inverted>
+                                You may only have up to 10 classes selected, please remove some to add more
+                            </Segment>
+                        )}
                     </Segment>
                 </Grid.Column>
                 <Grid.Column stretched computer={8} mobile={16}>
                     <Segment basic>
-                        <ClassTable selectedClasses={classNames} classes={this.state.classes} updateSelectedClass={(v: string, c: IClass) => this.updateSelectedClass(v, c)} />
+                        <ClassTable
+                            selectedClasses={classNames}
+                            classes={this.state.classes}
+                            updateSelectedClass={(v: string, c: IClass) => this.updateSelectedClass(v, c)}
+                        />
                     </Segment>
                 </Grid.Column>
             </Grid.Row>
-        )
+        );
     }
 }
 
