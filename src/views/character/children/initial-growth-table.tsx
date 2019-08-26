@@ -20,11 +20,15 @@ const WIDTHS: iWIDTH = {
 };
 
 const individualStatGrid = (name: string, percent: number, color: SemanticCOLORS, value: number) => [
-    <Grid.Column width={WIDTHS.SHORT}>{name}</Grid.Column>,
-    <Grid.Column width={WIDTHS.LONG}>
+    <Grid.Column key={0} width={WIDTHS.SHORT}>
+        {name}
+    </Grid.Column>,
+    <Grid.Column key={1} width={WIDTHS.LONG}>
         <Progress percent={percent} color={color} />
     </Grid.Column>,
-    <Grid.Column width={WIDTHS.SHORT}>{value}</Grid.Column>
+    <Grid.Column key={2} width={WIDTHS.SHORT}>
+        {value}
+    </Grid.Column>
 ];
 export const InitialGrowthTable = ({ growths, type }: Props) => {
     const generatePercentColor = (value: number): SemanticCOLORS => {
@@ -43,14 +47,16 @@ export const InitialGrowthTable = ({ growths, type }: Props) => {
     return (
         <Tab.Pane>
             <Grid columns={8} className="initial-growth-table">
-                {Object.keys(growths).map((key: string) =>
-                    individualStatGrid(
-                        key,
-                        percent(growths[key]),
-                        generatePercentColor(percent(growths[key])),
-                        growths[key]
-                    )
-                )}
+                {Object.keys(growths).map((key: string) => (
+                    <React.Fragment key={key}>
+                        {individualStatGrid(
+                            key,
+                            percent(growths[key]),
+                            generatePercentColor(percent(growths[key])),
+                            growths[key]
+                        )}
+                    </React.Fragment>
+                ))}
             </Grid>
         </Tab.Pane>
     );

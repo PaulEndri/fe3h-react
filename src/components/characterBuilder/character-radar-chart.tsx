@@ -1,8 +1,8 @@
 /* tslint:disable */
 
 import React from "react";
-import { IGrowthRate } from "../../../interfaces/iGrowthRate";
 import { Radar, RadarChart, PolarGrid, Legend, PolarAngleAxis, PolarRadiusAxis } from "recharts";
+import { IGrowthRate } from "../../interfaces/iGrowthRate";
 
 const COLORS = ["red", "blue", "cyan", "green", "yellow", "orange", "purple", "pink", "teal", "aqua"];
 
@@ -49,7 +49,7 @@ const CharacterRadarChart = ({ statBlocks, statBlockNames }: Props) => {
             <PolarAngleAxis dataKey="statName" />
             <PolarRadiusAxis angle={Math.PI * 9} domain={[0, 75]} />
             {statBlockNames.map((name, idx) => (
-                <Radar name={name} dataKey={idx + 1} fill={COLORS[idx]} fillOpacity={0.6} />
+                <Radar key={idx} name={name} dataKey={idx + 1} fill={COLORS[idx]} fillOpacity={0.6} />
             ))}
             <Legend />
         </RadarChart>

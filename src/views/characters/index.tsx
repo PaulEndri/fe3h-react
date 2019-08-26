@@ -14,7 +14,7 @@ export const CharactersView = () => {
     return (
         <Segment>
             <Segment basic textAlign="center">
-                <Header as="h2">Character List</Header>
+                <Header as="h2"> Character List </Header>
                 <Input
                     icon={{ name: "search", circular: true }}
                     placeholder="Search for a Character"
@@ -29,8 +29,8 @@ export const CharactersView = () => {
                         <Image wrapped ui={false} src={character.getThumbnail()} />
                         <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
                             <Card.Content>
-                                <Card.Header>{character.character.name}</Card.Header>
-                                <Card.Meta>{character.character.alliance}</Card.Meta>
+                                <Card.Header> {character.character.name} </Card.Header>
+                                <Card.Meta> {character.character.alliance} </Card.Meta>
                             </Card.Content>
                         </Responsive>
                     </Card>

@@ -38,7 +38,14 @@ class CharacterHeader extends React.Component<Props, any> {
                 </Header.Content>
                 <Segment color={house.color} inverted>
                     {students.map(student => (
-                        <Button color={house.color} inverted scompact as={Link} to={student.getLink(house.stub)}>
+                        <Button
+                            key={student.character.name}
+                            color={house.color}
+                            inverted
+                            compact
+                            as={Link}
+                            to={student.getLink(house.stub)}
+                        >
                             <Image height="75" width="75" src={student.getThumbnail()} />
                         </Button>
                     ))}

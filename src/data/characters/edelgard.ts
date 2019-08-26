@@ -6,7 +6,7 @@ export const Edelgard: ICharacter = {
     name: "Edelgard von Hresvelg",
     skill: null,
     stat: null,
-    crest: "Seiros, Flames",
+    crest: "Seiros",
     flower: ["Carnation"],
     gift: ["Armored Bear Stuffy", "Board Game", "Monarch Studies Book"],
     lostItems: ["Eastern Porcelain", "Time-worn Quill Pen", "White Glove"],

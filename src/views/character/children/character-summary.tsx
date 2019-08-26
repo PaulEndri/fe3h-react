@@ -64,8 +64,9 @@ export const CharacterSummary = ({ color, character, characterService }: Props) 
                                     <span style={{ marginLeft: "4px" }}>Skill Proficiencies:</span>
                                 </List.Content>
                                 <List.Content floated="right">
-                                    {character.skillProficiencies.map(skill => (
+                                    {character.skillProficiencies.map((skill, idx) => (
                                         <Image
+                                            key={idx}
                                             style={{ marginRight: "2px" }}
                                             height="25"
                                             width="25"
@@ -80,10 +81,11 @@ export const CharacterSummary = ({ color, character, characterService }: Props) 
                                     <Image inline src={`${process.env.PUBLIC_URL}/assets/icons/weakness.png`} />
                                     <span style={{ marginLeft: "4px" }}>Skill Weaknesses:</span>
                                 </List.Content>
-                                <List.Content floated="right" tex>
-                                    {character.skillWeaknesses.map(skill => (
+                                <List.Content floated="right">
+                                    {character.skillWeaknesses.map((skill, idx) => (
                                         <Image
                                             style={{ marginRight: "2px" }}
+                                            key={idx}
                                             height="25"
                                             width="25"
                                             inline
@@ -103,8 +105,9 @@ export const CharacterSummary = ({ color, character, characterService }: Props) 
                                     <span style={{ marginLeft: "4px" }}>Hidden Talents:</span>
                                 </List.Content>
                                 <List.Content floated="right">
-                                    {character.hiddenTalents.map(skill => (
+                                    {character.hiddenTalents.map((skill, idx) => (
                                         <Image
+                                            key={idx}
                                             style={{ marginRight: "2px" }}
                                             height="25"
                                             width="25"

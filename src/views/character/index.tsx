@@ -3,10 +3,10 @@ import { Grid, Container, Responsive, Divider } from "semantic-ui-react";
 import { HouseService } from "../../services/house";
 import CharacterSummary from "./children/character-summary";
 import TabListContents from "./children/tab-list-contents";
-import CharacterGrowthsSection from "./children/character-growths-section";
 import LectureQuestions from "./children/lecture-questions";
 import CharacterHeader from "../../components/character-header";
 import SegmentOrDiv from "../../components/segment-or-div";
+import CharacterBuilder from "../../components/characterBuilder";
 
 interface CharacterViewProps {
     match: {
@@ -65,7 +65,13 @@ export const CharacterView = ({ match }: CharacterViewProps) => {
                             </Grid.Column>
                         </Grid.Row>
                     )}
-                    <CharacterGrowthsSection character={character} />
+                    <Grid.Row>
+                        {!IS_MOBILE && <Grid.Column width={1} />}
+                        <Grid.Column mobile={16} computer={14}>
+                            <CharacterBuilder character={characterService} />
+                        </Grid.Column>
+                        {!IS_MOBILE && <Grid.Column width={1} />}
+                    </Grid.Row>
                 </Grid>
             </SegmentOrDiv>
         </Container>

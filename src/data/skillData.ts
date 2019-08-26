@@ -965,7 +965,7 @@ export const SkillData: ISkillData[] = [
     },
     {
         ability: "Hunter’s Boon",
-        description: "Grants Crit +20 when foe’s HP is ? 50%.",
+        description: "Grants Crit +20 when foe’s HP is < 50%.",
         classes: [],
         notes: null,
         personal: "Petra"

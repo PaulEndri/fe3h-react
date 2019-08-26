@@ -36,15 +36,15 @@ export const Petra: ICharacter = {
     skillWeaknesses: ["Reason", "Faith"],
     hiddenTalents: [],
     growthRates: {
-        HP: 83,
-        STR: 59,
-        MAG: 36,
-        DEX: 69,
-        SPD: 85,
-        LCK: 63,
-        DEF: 42,
-        RES: 35,
-        CHA: 63
+        HP: 45,
+        STR: 40,
+        MAG: 25,
+        DEX: 50,
+        SPD: 60,
+        LCK: 45,
+        DEF: 30,
+        RES: 15,
+        CHA: 35
     },
     maxStats: {
         HP: 83,

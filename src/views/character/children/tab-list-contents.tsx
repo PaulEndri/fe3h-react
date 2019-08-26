@@ -19,7 +19,7 @@ const TabListContents = ({ name, displayItems }: Props) => {
             <Segment>
                 <List>
                     {displayItems.map(item => (
-                        <List.Item>{item}</List.Item>
+                        <List.Item key={item}>{item}</List.Item>
                     ))}
                 </List>
             </Segment>

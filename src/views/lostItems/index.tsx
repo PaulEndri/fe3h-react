@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { Segment, Image, Header, Card, Input, Responsive, List, Label } from "semantic-ui-react";
 import characters from "../../data/characters";
+import { SemanticCOLORS } from "semantic-ui-react/dist/commonjs/generic";
+import CharacterService from "../../services/character";
+import LostItemModal from "./lostItem.modal";
+
+const IS_MOBILE = window.innerWidth <= Responsive.onlyMobile.maxWidth;
 
 export const LostItemsView = () => {
     const [itemSearchTerm, newItemSearchTerm] = useState("");
     const [characterSearchTerm, newCharacterSearchTerm] = useState("");
+    const [modalData, updateModal] = useState([]);
 
     let localCharacters = Object.values(characters);
 
@@ -19,6 +25,24 @@ export const LostItemsView = () => {
             c.character.lostItems.some(item => item.toLowerCase().includes(itemSearchTerm.toLowerCase()))
         );
     }
+
+    const getColor = (character: CharacterService): SemanticCOLORS => {
+        if (!IS_MOBILE) {
+            return "violet";
+        }
+
+        return itemSearchTerm && character.character.lostItems.some(item => item.toLowerCase().includes(itemSearchTerm))
+            ? "green"
+            : "grey";
+    };
+
+    const onCardClick = (character: CharacterService) => {
+        if (!IS_MOBILE) {
+            return null;
+        }
+
+        return updateModal(character.character.lostItems);
+    };
 
     return (
         <Segment textAlign="left">
@@ -41,7 +65,7 @@ export const LostItemsView = () => {
             </Segment>
             <Card.Group textAlign="left" itemsPerRow={window.innerWidth <= Responsive.onlyMobile.maxWidth ? 3 : 7}>
                 {localCharacters.map((character, index) => (
-                    <Card key={index} raised>
+                    <Card key={index} raised color={getColor(character)} onClick={() => onCardClick(character)}>
                         <Image wrapped ui={false} src={character.getThumbnail()} />
                         <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
                             <Card.Content>
@@ -70,6 +94,9 @@ export const LostItemsView = () => {
                     </Card>
                 ))}
             </Card.Group>
+            <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+                <LostItemModal closeModal={() => updateModal([])} isOpen={modalData.length > 0} items={modalData} />
+            </Responsive>
         </Segment>
     );
 };
