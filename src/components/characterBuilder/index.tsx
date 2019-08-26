@@ -35,7 +35,7 @@ class CharacterBuilder extends React.Component<CharacterBuilderProps, CharacterB
     }
 
     calculateLevelAvearge(total: number, levels: number): number {
-        return Math.ceil((total / 100) * levels);
+        return Math.round((total / 100) * levels);
     }
 
     calculateJobAverage(levels: number, job: IClass, character: CharacterService): IGrowthRate {
