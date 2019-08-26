@@ -94,7 +94,7 @@ class CharacterBuilder extends React.Component<CharacterBuilderProps, CharacterB
         const base = character.character.growthRates;
 
         const generatedGrowthRate: IGrowthRate = {
-            HP: base.HP + job.HP,
+            HP: +base.HP + +job.HP,
             STR: +base.STR + +job.STR,
             MAG: +base.MAG + +job.MAG,
             SPD: +base.SPD + +job.SPD,
@@ -202,7 +202,7 @@ class CharacterBuilder extends React.Component<CharacterBuilderProps, CharacterB
                                         <Table.Cell>{key}</Table.Cell>
                                         <Table.Cell>{jobs[key].levels}</Table.Cell>
                                         {!IS_MOBILE &&
-                                            Object.values(this.generateGrowthRate(key)).map((keyVal, idx) => (
+                                            Object.values(jobs[key].growths).map((keyVal, idx) => (
                                                 <Table.Cell key={idx}>{keyVal}</Table.Cell>
                                             ))}
                                     </Table.Row>
