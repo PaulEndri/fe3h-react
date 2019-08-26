@@ -95,14 +95,14 @@ class CharacterBuilder extends React.Component<CharacterBuilderProps, CharacterB
 
         const generatedGrowthRate: IGrowthRate = {
             HP: base.HP + job.HP,
-            STR: base.STR + job.STR,
-            MAG: base.MAG + job.MAG,
-            SPD: base.SPD + job.SPD,
-            DEX: base.DEX + job.DEX,
-            LCK: base.LCK + job.LCK,
-            DEF: base.DEF + job.DEF,
-            RES: base.RES + job.RES,
-            CHA: base.CHA + job.CHA
+            STR: +base.STR + +job.STR,
+            MAG: +base.MAG + +job.MAG,
+            SPD: +base.SPD + +job.SPD,
+            DEX: +base.DEX + +job.DEX,
+            LCK: +base.LCK + +job.LCK,
+            DEF: +base.DEF + +job.DEF,
+            RES: +base.RES + +job.RES,
+            CHA: +base.CHA + +job.CHA
         };
 
         return generatedGrowthRate;
