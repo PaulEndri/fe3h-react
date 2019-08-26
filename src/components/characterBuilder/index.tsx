@@ -44,7 +44,7 @@ class CharacterBuilder extends React.Component<CharacterBuilderProps, CharacterB
 
         return statKeys.reduce(
             (newGrowthRate, stat) => {
-                newGrowthRate[stat] = this.calculateLevelAvearge(baseGrowths[stat] + job[stat], levels);
+                newGrowthRate[stat] = this.calculateLevelAvearge(+baseGrowths[stat] + +job[stat], levels);
 
                 return newGrowthRate;
             },
