@@ -1,14 +1,14 @@
-import React from 'react';
-import {  Responsive } from 'semantic-ui-react';
-import { History } from 'history';
-import HouseMobileView from './house.mobile';
-import HouseDesktopView from './house.desktop';
+import React from "react";
+import { Responsive } from "semantic-ui-react";
+import { History } from "history";
+import HouseMobileView from "./house.mobile";
+import HouseDesktopView from "./house.desktop";
 
 interface HouseViewProps {
     match: {
         params: {
-            house: string
-        }
+            house: string;
+        };
     };
     history: History;
 }
@@ -22,7 +22,6 @@ const HouseView = (props: HouseViewProps) => (
             <HouseDesktopView {...props} />
         </Responsive>
     </React.Fragment>
-
-)
+);
 
 export default HouseView;

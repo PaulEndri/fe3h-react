@@ -2,11 +2,11 @@ import { IClass } from "../interfaces/iClass";
 import classes from "../data/classes";
 
 export interface IFilteredJobs {
-    beginner: IClass[],
-    unique: IClass[],
-    advanced: IClass[],
-    master: IClass[],
-    intermediate: IClass[],
+    beginner: IClass[];
+    unique: IClass[];
+    advanced: IClass[];
+    master: IClass[];
+    intermediate: IClass[];
 }
 
 class JobService {
@@ -17,31 +17,31 @@ class JobService {
     }
 
     get beginnerClasses() {
-        return this.filterClassByTier('beginner');
+        return this.filterClassByTier("beginner");
     }
-    
+
     get uniqueClasses() {
-        return this.filterClassByTier('unique');
+        return this.filterClassByTier("unique");
     }
-    
+
     get advancedClasses() {
-        return this.filterClassByTier('advanced');
+        return this.filterClassByTier("advanced");
     }
-    
+
     get masterClasses() {
-        return this.filterClassByTier('master');
+        return this.filterClassByTier("master");
     }
-    
+
     get intermediateClasses() {
-        return this.filterClassByTier('intermediate');
+        return this.filterClassByTier("intermediate");
     }
 
     filterClassByTier(tier: string): IClass[] {
         return this.classes.filter(c => c.Tier === tier);
     }
 
-    static getAll(): IFilteredJobs {
-        const service = new JobService(classes);
+    static GetAll(): IFilteredJobs {
+        const service = new JobService(Object.values(classes));
 
         return {
             unique: service.uniqueClasses,
@@ -49,7 +49,7 @@ class JobService {
             intermediate: service.intermediateClasses,
             advanced: service.advancedClasses,
             master: service.masterClasses
-        }
+        };
     }
 }
 

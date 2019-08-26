@@ -1,9 +1,9 @@
-import React from 'react';
-import { Segment, Table, Image, Label, Header } from 'semantic-ui-react';
-import characters from '../../data/characters';
-import CharacterService from '../../services/character';
-import SkillIcon from '../../components/skill-icon';
-import { History } from 'history';
+import React from "react";
+import { Segment, Table, Image, Label, Header } from "semantic-ui-react";
+import characters from "../../data/characters";
+import CharacterService from "../../services/character";
+import SkillIcon from "../../components/skill-icon";
+import { History } from "history";
 
 interface Props {
     history: History;
@@ -12,33 +12,30 @@ interface State {
     filter: string;
     characters: CharacterService[];
     sorting: {
-        col: string,
-        dir: string
+        col: string;
+        dir: string;
     };
-};
+}
 
 class RecruitmentTable extends React.Component<Props, State> {
     constructor(props) {
         super(props);
 
         this.state = {
-            filter: '',
-            characters: characters.filter(c => c.isRecruitable()),
+            filter: "",
+            characters: Object.values(characters).filter(c => c.isRecruitable()),
             sorting: {
-                col: '',
-                dir: ''
+                col: "",
+                dir: ""
             }
-        }
+        };
     }
-
 
     render() {
         return (
             <Segment fluid>
                 <Segment raised piled inverted color="violet">
-                    <Header as="h1">
-                        Character Recruitment List
-                    </Header>
+                    <Header as="h1">Character Recruitment List</Header>
                 </Segment>
                 <Table structured striped selectable>
                     <Table.Header>
@@ -52,32 +49,35 @@ class RecruitmentTable extends React.Component<Props, State> {
                         </Table.Row>
                     </Table.Header>
                     <Table.Body>
-                        {this.state.characters.map((chara) => (
-                            <Table.Row key={chara.character.name} onClick={() => this.props.history.push(chara.getLink(chara.getHouse()))}>
+                        {this.state.characters.map(chara => (
+                            <Table.Row
+                                key={chara.character.name}
+                                onClick={() => this.props.history.push(chara.getLink(chara.getHouse()))}
+                            >
                                 <Table.Cell>
-                                    <Image src={chara.getThumbnail()} height="75" width="75"/>
+                                    <Image src={chara.getThumbnail()} height="75" width="75" />
                                 </Table.Cell>
                                 <Table.Cell singleLine>{chara.character.name}</Table.Cell>
                                 <Table.Cell singleLine>{chara.character.alliance}</Table.Cell>
                                 <Table.Cell singleLine>
                                     <Label color="grey">
-                                        {chara.character.stat.name}
-                                        {" "}
-                                        {chara.character.stat.value}
+                                        {chara.character.stat.name} {chara.character.stat.value}
                                     </Label>
                                 </Table.Cell>
                                 <Table.Cell>
                                     {chara.character.skill && <SkillIcon {...chara.character.skill} label={true} />}
                                 </Table.Cell>
                                 <Table.Cell>
-                                    {chara.character.gift.map((g, i) => <Label key={i}>{g}</Label>)}
+                                    {chara.character.gift.map((g, i) => (
+                                        <Label key={i}>{g}</Label>
+                                    ))}
                                 </Table.Cell>
                             </Table.Row>
                         ))}
                     </Table.Body>
                 </Table>
             </Segment>
-        )
+        );
     }
 }
 

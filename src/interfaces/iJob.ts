@@ -1,3 +1,3 @@
 import { IClass } from "./iClass";
 
-export interface iJob extends IClass {};
+export interface iJob extends IClass {}
