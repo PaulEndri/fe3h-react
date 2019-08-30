@@ -66,5 +66,83 @@ export const Hilda: ICharacter = {
         DEF: 6,
         RES: 3,
         CHA: 7
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gardening mishaps…",
+        "School uniforms…",
+        "A place you’d like to visit…",
+        "Gifts you’d like to receive…",
+        "Shareable snacks…",
+        "Classes you might enjoy…",
+        "Guessing someone’s age…",
+        "Tell me about yourself…",
+        "Close calls…",
+        "Heart-racing memories…",
+        "Thanks for everything…",
+        "Cute accessories…",
+        "Hopes for your future…",
+        "The courtyard couple…",
+        "Cute monks…",
+        "I heard some gossip…",
+        "The ideal relationship…",
+        "Dining partners…",
+        "Likable allies…",
+        "The opera…",
+        "Dreamy knights…",
+        "Our first meeting…",
+        "Things that bother you…",
+        "Evaluating allies…",
+        "Past laughs…",
+        "Things you find romantic…",
+        "Fashion…",
+        "Plans for the future…",
+        "You seem different…",
+        "Favorite sweets…",
+        "Relaxing at the sauna…",
+        "You seem well…",
+        "First crushes…",
+        "Reliable allies…",
+        "You’re doing great work…",
+        "Food in the dining hall…",
+        "School days…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "You know? I love hearing myself talk!",
+            answers: ["Nod", "Sip tea"]
+        },
+        {
+            comment: "Have you ever cried, Professor? It’s hard to imagine you crying.",
+            answers: ["Sip tea", "Praise"]
+        },
+        {
+            comment: "You don’t say much, so you’re easy to talk to.",
+            answers: ["Laugh", "Admonish"]
+        },
+        {
+            comment: "My mind keeps drifting today…",
+            answers: ["Nod", "Laugh"]
+        },
+        {
+            comment: "No matter what happens in this crazy world, I know I’ll be safe if I stay by your side.",
+            answers: ["Nod", "Chat"]
+        },
+        {
+            comment: "Everyone’s so serious all the time. Boooooring.",
+            answers: ["Nod", "Laugh"]
+        },
+        {
+            comment: "We should go on a trip together someday, when it’s peaceful.",
+            answers: ["Nod", "Laugh", "Blush"]
+        },
+        {
+            comment: "Your room’s so neat! You should clean mine too.",
+            answers: ["Nod", "Disagree"]
+        },
+        {
+            comment: "I wish I could stay here and chat all day. Time to go back to the real world though.",
+            answers: ["Laugh", "Praise"]
+        }
+    ]
 };

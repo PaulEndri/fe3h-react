@@ -49,5 +49,7 @@ export const Rhea: ICharacter = {
         DEF: 4,
         RES: 7,
         CHA: 6
-    }
+    },
+    teaTimeTopics: [],
+    teaTimeComments: []
 };

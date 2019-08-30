@@ -66,5 +66,79 @@ export const Raphael: ICharacter = {
         DEF: 7,
         RES: 1,
         CHA: 4
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gardening mishaps…",
+        "Strange fish in the pond…",
+        "A strong battalion…",
+        "Gifts you’d like to receive…",
+        "Tell me about yourself…",
+        "A word of advice…",
+        "I’m counting on you…",
+        "Thanks for everything…",
+        "Cats…",
+        "Muscle growth…",
+        "The last battle…",
+        "Children at the market…",
+        "Overcoming weaknesses…",
+        "The opera…",
+        "Classes you might enjoy…",
+        "Past laughs…",
+        "Things that bother you…",
+        "Close calls…",
+        "Perfect recipes…",
+        "Working together…",
+        "Cooking mishaps…",
+        "Plans for the future…",
+        "You seem well…",
+        "Dining partners…",
+        "Potential training partners…",
+        "You’re doing great work…",
+        "Dreamy knights…",
+        "School days…",
+        "Your ambitions…",
+        "Favorite sweets…",
+        "Shareable snacks…",
+        "Food in the dining hall…",
+        "Someone you look up to…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "I gotta become a proper knight so I can take care of my little sis!",
+            answers: ["Commend", "Praise"]
+        },
+        {
+            comment: "No one else comes close to having muscles like me, but that’s not good enough, is it?",
+            answers: ["Laugh", "Chat"]
+        },
+        {
+            comment: "Is there anything to eat, Professor? My stomach’s saying it’s snack time!",
+            answers: ["Laugh", "Commend", "Admonish"]
+        },
+        {
+            comment: "I can’t miss a single lecture if I wanna become a proper knight!",
+            answers: ["Nod", "Praise", "Chat"]
+        },
+        {
+            comment: "My grandpa used to be real strong when he was younger. I obviously take after the guy!",
+            answers: ["Commend", "Laugh"]
+        },
+        {
+            comment: "You’re pretty strong for being so shrimpy. You’d be unstoppable if you put on some muscle!",
+            answers: ["Laugh", "Blush", "Disagree"]
+        },
+        {
+            comment: "Wanna train together? I can show you some new techniques I thought up!",
+            answers: ["Sip tea", "Nod"]
+        },
+        {
+            comment: "I wouldn’t have come here if my parents were still alive. That means I never woulda met you!",
+            answers: ["Nod", "Sigh"]
+        },
+        {
+            comment: "You seem tired, Professor. The best cure for sleepiness is sleep!",
+            answers: ["Disagree", "Laugh"]
+        }
+    ]
 };

@@ -63,5 +63,77 @@ export const Cyril: ICharacter = {
         DEF: 5,
         RES: 2,
         CHA: 4
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gifts you’d like to receive…",
+        "Tell me about yourself…",
+        "Cats…",
+        "Guessing someone’s age…",
+        "Thanks for everything…",
+        "Children at the market…",
+        "I heard some gossip…",
+        "The view from the bridge…",
+        "Classes you might enjoy…",
+        "I’m counting on you…",
+        "Things that bother you…",
+        "Close calls…",
+        "Lady Rhea…",
+        "Working hours for guards…",
+        "Cute monks…",
+        "Likable allies…",
+        "You seem different…",
+        "Equipment upkeep…",
+        "Monastery security…",
+        "You seem well…",
+        "Exploring the monastery…",
+        "Overcoming weaknesses…",
+        "You’re doing great work…",
+        "Favorite sweets…",
+        "Perfect recipes…",
+        "Your ambitions…",
+        "Food in the dining hall…",
+        "Shareable snacks…",
+        "Gardening mishaps…",
+        "Strange fish in the pond…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "Lady Rhea sure seems to like you, Professor. I don’t know why…",
+            answers: ["Nod", "Sip tea"]
+        },
+        {
+            comment: "If I got kicked out of the monastery, I’d have no other place to go.",
+            answers: ["Disagree", "Commend", "Blush"]
+        },
+        {
+            comment: "I like working. Feels real good to be needed.",
+            answers: ["Commend", "Praise"]
+        },
+        {
+            comment: "If there’s anything ’bout Lady Rhea you wanna know, I can probably tell ya.",
+            answers: ["Nod", "Sip tea"]
+        },
+        {
+            comment: "I’m the best at cleaning. I never miss any smudge or spot or dirt or grime or even…filth.",
+            answers: ["Commend"]
+        },
+        {
+            comment: "Even if the goddess really does exist, I wonder if she’d protect Almyrans…",
+            answers: ["Disagree", "Chat", "Praise"]
+        },
+        {
+            comment:
+                "I think you’re an amazing person, Professor. I mean, Lady Rhea is still the best, but I like ya well enough.",
+            answers: ["Nod", "Laugh"]
+        },
+        {
+            comment: "I’m real busy all the time, but talking with you like this gets me excited to do more!",
+            answers: ["Laugh", "Blush"]
+        },
+        {
+            comment: "I’m getting sleepy… Busy day and all.",
+            answers: ["Nod", "Laugh"]
+        }
+    ]
 };

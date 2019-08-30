@@ -63,5 +63,82 @@ export const Catherine: ICharacter = {
         DEF: 5,
         RES: 2,
         CHA: 4
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gardening mishaps…",
+        "Strange fish in the pond…",
+        "A new gambit…",
+        "Hopes for your future…",
+        "Tell me about yourself…",
+        "A strong battalion…",
+        "I heard some gossip…",
+        "Thanks for everything…",
+        "A word of advice…",
+        "I’m counting on you…",
+        "The existence of Crests…",
+        "Academy memories…",
+        "Likable allies…",
+        "The ideal relationship…",
+        "Capable comrades…",
+        "Mighty weapons…",
+        "The last battle…",
+        "Classes you might enjoy…",
+        "Monastery security…",
+        "Working hours for guards…",
+        "Close calls…",
+        "Our first meeting…",
+        "Working together…",
+        "Cooking mishaps…",
+        "Past laughs…",
+        "You seem well…",
+        "Equipment upkeep…",
+        "Potential training partners…",
+        "You’re doing great work…",
+        "Evaluating allies…",
+        "School days…",
+        "Your ambitions…",
+        "Exploring the monastery…",
+        "Shareable snacks…",
+        "Food in the dining hall…",
+        "Someone you look up to…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "I hear your nickname is “Ashen Demon.” It’s good, but not as good as “Thunder Catherine.”",
+            answers: ["Sip tea", "Blush", "Disagree"]
+        },
+        {
+            comment: "I’m always watching you. I guess this is your way of returning the favor.",
+            answers: ["Nod", "Sigh"]
+        },
+        {
+            comment: "You know war strategy, not just how to wield a sword. Maybe I should study that too.",
+            answers: ["Admonish", "Sip tea"]
+        },
+        {
+            comment: "I’m not going to hurt you. No need to look so nervous.",
+            answers: ["Sigh", "Sip tea"]
+        },
+        {
+            comment: "I’m a little restless. I don’t much care for waiting around.",
+            answers: ["Disagree", "Chat"]
+        },
+        {
+            comment: "You look calm, as usual. I wonder what you look like when you’re nervous.",
+            answers: ["Admonish", "Sip tea", "Blush"]
+        },
+        {
+            comment: "I have zero desire to go back to Faerghus. Can you imagine me as a noble?",
+            answers: ["Laugh", "Nod"]
+        },
+        {
+            comment: "We should train together.",
+            answers: ["Sip tea", "Laugh"]
+        },
+        {
+            comment: "You and I both have sword Relics. We should spar with them soon.",
+            answers: ["Nod", "Commend", "Praise"]
+        }
+    ]
 };

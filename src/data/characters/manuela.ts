@@ -63,5 +63,91 @@ export const Manuela: ICharacter = {
         DEF: 5,
         RES: 4,
         CHA: 7
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gardening mishaps…",
+        "School days…",
+        "A strong battalion…",
+        "Gifts you’d like to receive…",
+        "Shareable snacks…",
+        "A word of advice…",
+        "Guessing someone’s age…",
+        "Tell me about yourself…",
+        "Best performance venues…",
+        "Heart-racing memories…",
+        "Thanks for everything…",
+        "Children at the market…",
+        "Hopes for your future…",
+        "The courtyard couple…",
+        "Classes you might enjoy…",
+        "I heard some gossip…",
+        "The ideal professor…",
+        "Close calls…",
+        "I’m counting on you…",
+        "The ideal relationship…",
+        "Cooking mishaps…",
+        "Likable allies…",
+        "The opera…",
+        "Cute monks…",
+        "Monastery security…",
+        "Things that bother you…",
+        "Dining partners…",
+        "Our first meeting…",
+        "Things you find romantic…",
+        "Dreamy knights…",
+        "Overcoming weaknesses…",
+        "Working hours for guards…",
+        "Exploring the monastery…",
+        "Past laughs…",
+        "Working together…",
+        "Fashion…",
+        "Perfect recipes…",
+        "You seem well…",
+        "Favorite sweets…",
+        "Plans for the future…",
+        "You’re doing great work…",
+        "First crushes…",
+        "Relaxing at the sauna…",
+        "Food in the dining hall…",
+        "Reliable allies…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "There’s no alcohol in here. It’s better if you can sleep without it, but… All you have is tea?",
+            answers: ["Admonish", "Sip tea"]
+        },
+        {
+            comment: "Am I that terrible of a woman? So, I’m a little unkempt, what of it?",
+            answers: ["Disagree", "Admonish"]
+        },
+        {
+            comment: "Who are you really? Such a mystery. I don’t really understand you… Tell me everything.",
+            answers: ["Sigh", "Chat"]
+        },
+        {
+            comment: "What should I do to find love, Professor? I don’t want to spend my days alone.",
+            answers: ["Praise", "Chat"]
+        },
+        {
+            comment: "You think I complain too much, don’t you? I know I do, but I can’t help it.",
+            answers: ["Disagree", "Praise"]
+        },
+        {
+            comment: "Sometimes I think back to when I used to shine as a songstress.",
+            answers: ["Nod", "Sip tea"]
+        },
+        {
+            comment: "I must thank you for spending so much time with me. Your company helps me keep sane.",
+            answers: ["Laugh", "Praise"]
+        },
+        {
+            comment: "Your room is so nice and clean. How do you keep it like this?",
+            answers: ["Disagree", "Chat"]
+        },
+        {
+            comment: "You are always so kind to me, Professor. I love it, but that, too, is its own vice, isn’t it?",
+            answers: ["Sip tea", "Blush"]
+        }
+    ]
 };

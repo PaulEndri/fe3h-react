@@ -66,5 +66,82 @@ export const Bernadetta: ICharacter = {
         DEF: 4,
         RES: 2,
         CHA: 6
-    }
+    },
+    teaTimeTopics: [
+        "A place you’d like to visit…",
+        "I heard some gossip…",
+        "Thanks for everything…",
+        "A word of advice…",
+        "I’m counting on you…",
+        "The courtyard couple…",
+        "Books you’ve read recently…",
+        "Insectivorous plants…",
+        "The ideal relationship…",
+        "Cats…",
+        "Likable allies…",
+        "The last battle…",
+        "Children at the market…",
+        "Our first meeting…",
+        "The library’s collection…",
+        "Close calls…",
+        "Overcoming weaknesses…",
+        "The view from the bridge…",
+        "Cooking mishaps…",
+        "Past laughs…",
+        "Things that bother you…",
+        "Cute monks…",
+        "Perfect recipes…",
+        "Things you find romantic…",
+        "Exploring the monastery…",
+        "Plans for the future…",
+        "You seem different…",
+        "Fashion…",
+        "School days…",
+        "You seem well…",
+        "Favorite sweets…",
+        "School uniforms…",
+        "You’re doing great work…",
+        "Food in the dining hall…",
+        "Shareable snacks…",
+        "Gifts you’d like to receive…",
+        "Tell me about yourself…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "My mother works in the Imperial capital. People there say she’s a genius.",
+            answers: ["Laugh", "Commend"]
+        },
+        {
+            comment: "Please don’t eavesdrop on my singing anymore, OK?",
+            answers: ["Nod", "Praise"]
+        },
+        {
+            comment: "I was worried you called me here to punish me for something. I’m glad I was wrong.",
+            answers: ["Admonish"]
+        },
+        {
+            comment: "If two people decide to be recluses together…does that even still count?",
+            answers: ["Laugh", "Chat"]
+        },
+        {
+            comment: "I like to hide out in the greenhouse, but I always have to leave eventually. No place to sleep.",
+            answers: ["Nod"]
+        },
+        {
+            comment: "It’s relaxing here! Should’ve brought my sewing kit.",
+            answers: ["Nod"]
+        },
+        {
+            comment: "You’re spoiling me. I don’t want to go out on my own anymore.",
+            answers: ["Admonish", "Praise"]
+        },
+        {
+            comment: "My room at the monastery is my home away from home, but this is cozy too.",
+            answers: ["Disagree", "Laugh", "Admonish"]
+        },
+        {
+            comment: "The room feels a little…empty. Needs more cuteness.",
+            answers: ["Laugh", "Admonish"]
+        }
+    ]
 };

@@ -66,5 +66,72 @@ export const Felix: ICharacter = {
         DEF: 5,
         RES: 3,
         CHA: 5
-    }
+    },
+    teaTimeTopics: [
+        "A new gambit…",
+        "Exploring the monastery…",
+        "Reliable allies…",
+        "A new sword technique…",
+        "Food in the dining hall…",
+        "Shareable snacks…",
+        "A strong battalion…",
+        "I’m counting on you…",
+        "Someone you look up to…",
+        "Capable comrades…",
+        "Mighty weapons…",
+        "The last battle…",
+        "Cats…",
+        "Monastery security…",
+        "The opera…",
+        "Children at the market…",
+        "Our first meeting…",
+        "Working together…",
+        "Classes you might enjoy…",
+        "Overcoming weaknesses…",
+        "You’re doing great work…",
+        "Equipment upkeep…",
+        "Plans for the future…",
+        "Your ambitions…",
+        "Evaluating allies…",
+        "Potential training partners…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "Crests, lineage, knighthood… Trifles. Skill and survival are the only things that matter.",
+            answers: ["Nod", "Commend", "Chat"]
+        },
+        {
+            comment: "You intrigue me. What made you so strong?",
+            answers: ["Chat", "Blush"]
+        },
+        {
+            comment:
+                "I’m glad I was born into a family of soldiers. I’ve been wielding a sword for as long as I can remember.",
+            answers: ["Commend"]
+        },
+        {
+            comment: "I know it’s important to take a break, but if you rest too long, your muscles wither.",
+            answers: ["Nod", "Chat"]
+        },
+        {
+            comment: "Some people like to snack when they take a break. No willpower.",
+            answers: ["Nod", "Sip tea"]
+        },
+        {
+            comment: "Spending time with you is…not bad.",
+            answers: ["Laugh", "Blush"]
+        },
+        {
+            comment: "Join me for sword training again. I want to know my victory isn’t a fluke.",
+            answers: ["Nod", "Commend"]
+        },
+        {
+            comment: "I’m always thinking about wars, but this room feels so peaceful.",
+            answers: ["Laugh"]
+        },
+        {
+            comment: "Well…I appreciate all that you do for me.",
+            answers: ["Blush", "Laugh"]
+        }
+    ]
 };

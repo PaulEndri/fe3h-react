@@ -66,5 +66,74 @@ export const Marianne: ICharacter = {
         DEF: 4,
         RES: 8,
         CHA: 7
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gardening mishaps…",
+        "Strange fish in the pond…",
+        "A new gambit…",
+        "Hopes for your future…",
+        "Tell me about yourself…",
+        "A word of advice…",
+        "I heard some gossip…",
+        "Thanks for everything…",
+        "Books you’ve read recently…",
+        "Likable allies…",
+        "The existence of Crests…",
+        "Cats…",
+        "Monastery mysteries…",
+        "The ideal professor…",
+        "Children at the market…",
+        "Our first meeting…",
+        "The last battle…",
+        "Close calls…",
+        "Overcoming weaknesses…",
+        "The library’s collection…",
+        "Exploring the monastery…",
+        "Plans for the future…",
+        "The view from the bridge…",
+        "Fodlan’s future…",
+        "Relaxing at the sauna…",
+        "You seem different…",
+        "Forest birds…",
+        "School days…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "Spending time with me must be boring, isn’t it?",
+            answers: ["Admonish", "Disagree"]
+        },
+        {
+            comment: "I-I’m sorry… I don’t know what to say…",
+            answers: ["Chat", "Praise"]
+        },
+        {
+            comment: "It’s a waste to spend your time with me…",
+            answers: ["Disagree"]
+        },
+        {
+            comment: "You’ll be met with misfortune if you spend too much time with me…",
+            answers: ["Disagree", "Admonish", "Chat"]
+        },
+        {
+            comment: "You don’t seem to be very good at talking… At least you’re not as bad as me.",
+            answers: ["Nod", "Sigh"]
+        },
+        {
+            comment: "It’s not like I can go home… My adoptive father doesn’t want me there…",
+            answers: ["Chat", "Praise"]
+        },
+        {
+            comment: "Thanks to you, I’m beginning to feel more comfortable talking to people.",
+            answers: ["Nod", "Disagree"]
+        },
+        {
+            comment: "I’m all right now. I think I can look forward to living my life.",
+            answers: ["Nod", "Laugh", "Commend"]
+        },
+        {
+            comment: "I hope you never leave…oh! Never mind… Ignore me.",
+            answers: ["Laugh", "Blush"]
+        }
+    ]
 };

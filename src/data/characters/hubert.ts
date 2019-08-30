@@ -60,5 +60,67 @@ export const Hubert: ICharacter = {
         DEF: 4,
         RES: 7,
         CHA: 6
-    }
+    },
+    teaTimeTopics: [
+        "A new gambit…",
+        "Fodlan’s future…",
+        "Reliable allies…",
+        "A place you’d like to visit…",
+        "Guessing someone’s age…",
+        "Someone you look up to…",
+        "A strong battalion…",
+        "I heard some gossip…",
+        "Successful plots…",
+        "Books you’ve read recently…",
+        "I’m counting on you…",
+        "The last battle…",
+        "Capable comrades…",
+        "Mighty weapons…",
+        "The library’s collection…",
+        "Close calls…",
+        "Monastery mysteries…",
+        "Working together…",
+        "Equipment upkeep…",
+        "Monastery rules…",
+        "Your ambitions…"
+    ],
+    teaTimeComments: [
+        {
+            comment:
+                "While I am quite busy, this is not a waste of my time. I’m grateful for the opportunity to observe you.",
+            answers: ["Sigh", "Sip Tea"]
+        },
+        {
+            comment: "The head of House Vestra has always been a minister to the emperor.",
+            answers: ["Praise", "Commend"]
+        },
+        {
+            comment: "Lady Edelgard has taken a liking to you. She will want to hear all about this.",
+            answers: ["Nod", "Disagree"]
+        },
+        {
+            comment: "Most who spend time around me seem to become bored and depressed. Heh. Can’t imagine why.",
+            answers: ["Praise", "Admonish", "Disagree"]
+        },
+        {
+            comment: "Sometimes your insights are so keen they seem to border on precognition.",
+            answers: ["Disagree", "Sip Tea"]
+        },
+        {
+            comment: "House Vestra is one of few noble houses not to lay claim to any territory.",
+            answers: ["Commend", "Chat"]
+        },
+        {
+            comment: "As a humble servant to Her Majesty, I sometimes envy the status she has given you.",
+            answers: ["Disagree", "Chat", "Praise"]
+        },
+        {
+            comment: "For choosing to walk this path with Her Majesty, you have my eternal gratitude.",
+            answers: ["Nod", "Blush"]
+        },
+        {
+            comment: "Sometimes I like to imagine that you were sent to us by a rival of the goddess to bring her low.",
+            answers: ["Blush", "Chat"]
+        }
+    ]
 };

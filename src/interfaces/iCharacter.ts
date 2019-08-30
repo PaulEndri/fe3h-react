@@ -27,4 +27,9 @@ export interface ICharacter {
     growthRates: IGrowthRate;
     maxStats: IGrowthRate;
     baseStats: IGrowthRate;
+    teaTimeTopics: string[];
+    teaTimeComments: {
+        comment: string;
+        answers: string[];
+    }[];
 }

@@ -63,5 +63,88 @@ export const Hanneman: ICharacter = {
         DEF: 5,
         RES: 7,
         CHA: 5
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gifts you’d like to receive…",
+        "School days…",
+        "A new gambit…",
+        "Heart-racing memories…",
+        "Shareable snacks…",
+        "A place you’d like to visit…",
+        "Hopes for your future…",
+        "Tell me about yourself…",
+        "A word of advice…",
+        "I heard some gossip…",
+        "Thanks for everything…",
+        "Books you’ve read recently…",
+        "I’m counting on you…",
+        "The existence of Crests…",
+        "Capable comrades…",
+        "Likable allies…",
+        "The ideal professor…",
+        "Cooking mishaps…",
+        "Monastery mysteries…",
+        "The last battle…",
+        "Equipment upkeep…",
+        "Monastery rules…",
+        "The library’s collection…",
+        "Evaluating allies…",
+        "Monastery security…",
+        "Things that bother you…",
+        "Exploring the monastery…",
+        "Our first meeting…",
+        "You seem well…",
+        "Fashion…",
+        "Overcoming weaknesses…",
+        "You’re doing great work…",
+        "Favorite sweets…",
+        "Past laughs…",
+        "Your research…",
+        "Fodlan’s future…",
+        "Plans for the future…",
+        "Food in the dining hall…",
+        "Relaxing at the sauna…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "The “Ashen Demon.” What an unbelievable title, knowing who you are now…",
+            answers: ["Disagree", "Sip tea"]
+        },
+        {
+            comment: "Since I have never found out the secret of your birth, I am exceptionally intrigued.",
+            answers: ["Blush", "Chat"]
+        },
+        {
+            comment: "Why don’t you come by later? I’d very much like to dive into some research together.",
+            answers: ["Commend", "Sip tea"]
+        },
+        {
+            comment:
+                "The Crest of Flames shares many traits with other Crests. Yet, it also has many unique characteristics.",
+            answers: ["Nod", "Chat"]
+        },
+        {
+            comment: "It was my own choice to leave behind my noble title and holdings. I’ll not be going back.",
+            answers: ["Commend", "Praise"]
+        },
+        {
+            comment: "The monastery holds so many documents in its library, yet certain facts continue to elude me.",
+            answers: ["Commend", "Chat", "Praise"]
+        },
+        {
+            comment:
+                "All of my hard work, my unrelenting study of Crests, is all in the name of my sister, rest her soul.",
+            answers: ["Sigh", "Praise"]
+        },
+        {
+            comment: "I never can stop talking about Crests, can I? Don’t you dare laugh at me.",
+            answers: ["Laugh", "Admonish"]
+        },
+        {
+            comment:
+                "Can’t be helped. I’ll tell you about my favorite food again. Or perhaps we should talk about drinks?",
+            answers: ["Admonish", "Laugh", "Sip tea"]
+        }
+    ]
 };

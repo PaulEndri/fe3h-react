@@ -66,5 +66,88 @@ export const Caspar: ICharacter = {
         DEF: 6,
         RES: 2,
         CHA: 4
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gardening mishaps…",
+        "Someone you look up to…",
+        "A new gambit…",
+        "Hopes for your future…",
+        "Strange fish in the pond…",
+        "A place you’d like to visit…",
+        "I’m counting on you…",
+        "Tell me about yourself…",
+        "A strong battalion…",
+        "Methods for growing taller…",
+        "Thanks for everything…",
+        "A word of advice…",
+        "Mighty weapons…",
+        "The last battle…",
+        "Cats…",
+        "Our first meeting…",
+        "The view from the bridge…",
+        "Children at the market…",
+        "Overcoming weaknesses…",
+        "Things that bother you…",
+        "Classes you might enjoy…",
+        "Past laughs…",
+        "Working hours for guards…",
+        "Close calls…",
+        "Perfect recipes…",
+        "Working together…",
+        "Cooking mishaps…",
+        "Plans for the future…",
+        "You seem well…",
+        "Dreamy knights…",
+        "Potential training partners…",
+        "You’re doing great work…",
+        "Equipment upkeep…",
+        "Relaxing at the sauna…",
+        "Your ambitions…",
+        "Exploring the monastery…",
+        "School days…",
+        "Food in the dining hall…",
+        "Shareable snacks…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "Hey, are you getting hungry?",
+            answers: ["Laugh", "Sigh"]
+        },
+        {
+            comment: "I’m gonna keep training until I can beat you!",
+            answers: ["Disagree", "Blush"]
+        },
+        {
+            comment:
+                "I just wanna go wild and let it all out! Come on, Professor, send me out front in our next battle!",
+            answers: ["Chat", "Admonish"]
+        },
+        {
+            comment: "I usually don’t get hung up on things, but when I do, I feel stuck!",
+            answers: ["Praise"]
+        },
+        {
+            comment: "What is justice really? I’m not so sure I know anymore…",
+            answers: ["Commend", "Chat"]
+        },
+        {
+            comment: "Who was that guy? You don’t know who I’m talking about? The suspicious guy who killed himself!",
+            answers: ["Nod", "Chat"]
+        },
+        {
+            comment:
+                "They say hard work pays off, but I don’t think that’s always true. Either way, I’m gonna keep trying!",
+            answers: ["Commend", "Praise"]
+        },
+        {
+            comment: "I really love fighting alongside you. I can always count on your commands to get us through!",
+            answers: ["Nod", "Laugh", "Blush"]
+        },
+        {
+            comment:
+                "I’m always gonna do things my way. If there’s a wall blocking my path, I’ll punch a hole right through it!",
+            answers: ["Laugh", "Commend", "Praise"]
+        }
+    ]
 };

@@ -59,5 +59,89 @@ export const Edelgard: ICharacter = {
         DEF: 6,
         RES: 4,
         CHA: 10
-    }
+    },
+    teaTimeTopics: [
+        "A new gambit…",
+        "Gifts you’d like to receive…",
+        "Tell me about yourself…",
+        "A strong battalion…",
+        "Hopes for your future…",
+        "Thanks for everything…",
+        "A word of advice…",
+        "I heard some gossip…",
+        "The existence of Crests…",
+        "Books you’ve read recently…",
+        "I’m counting on you…",
+        "The ideal professor…",
+        "Capable comrades…",
+        "Monastery mysteries…",
+        "The last battle…",
+        "Cats…",
+        "Monastery rules…",
+        "The library’s collection…",
+        "Classes you might enjoy…",
+        "Monastery security…",
+        "The opera…",
+        "Close calls…",
+        "Our first meeting…",
+        "The view from the bridge…",
+        "Dreaming of lazy days…",
+        "Overcoming weaknesses…",
+        "Things that bother you…",
+        "Equipment upkeep…",
+        "Past laughs…",
+        "Things you find romantic…",
+        "Evaluating allies…",
+        "Plans for the future…",
+        "You seem different…",
+        "Exploring the monastery…",
+        "Reliable allies…",
+        "You’re doing great work…",
+        "Favorite sweets…",
+        "School days…",
+        "Your ambitions…",
+        "Fodlan’s future…",
+        "School uniforms…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "It upsets Hubert when I spend time alone with you. I’ll refrain from telling him about this.",
+            answers: ["Nod", "Laugh"]
+        },
+        {
+            comment: "If I hadn’t been born to House Hresvelg, I imagine life would have been much simpler.",
+            answers: ["Praise", "Laugh"]
+        },
+        {
+            comment: "You’re much more meticulous than I would have guessed.",
+            answers: ["Nod", "Disagree", "Blush"]
+        },
+        {
+            comment:
+                "A moment of relaxation… It has been a while. I find spending these quiet moments with you rather comforting.",
+            answers: ["Sip Tea", "Blush"]
+        },
+        {
+            comment: "Do you remember the day we met? You protected me from those bandits.",
+            answers: ["Nod", "Blush"]
+        },
+        {
+            comment: "You’re always so calm.",
+            answers: ["Disagree", "Sigh", "Sip tea"]
+        },
+        {
+            comment: "One day, I’ll show you around the palace in Enbarr. It has a lovely garden.",
+            answers: ["Nod"]
+        },
+        {
+            comment:
+                "Here I can take a break from the burden of being emperor. Perhaps that’s why I’m so comfortable with you.",
+            answers: ["Nod", "Laugh", "Blush"]
+        },
+        {
+            comment:
+                "I have no intention of handing the Imperial throne over to any child I might have. Instead, I’ll choose an outsider who’s brilliant and kind.",
+            answers: ["Commend", "Chat", "Praise"]
+        }
+    ]
 };

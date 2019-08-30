@@ -55,5 +55,73 @@ export const Dedue: ICharacter = {
         DEF: 8,
         RES: 1,
         CHA: 4
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Food in the dining hall…",
+        "Shareable snacks…",
+        "A strong battalion…",
+        "Gardening mishaps…",
+        "Someone you look up to…",
+        "A word of advice…",
+        "Gifts you’d like to receive…",
+        "Strange fish in the pond…",
+        "Capable comrades…",
+        "I’m counting on you…",
+        "Thanks for everything…",
+        "Cooking mishaps…",
+        "Monastery security…",
+        "The last battle…",
+        "Dimitri…",
+        "Our first meeting…",
+        "Working hours for guards…",
+        "Equipment upkeep…",
+        "Overcoming weaknesses…",
+        "Working together…",
+        "Exploring the monastery…",
+        "Perfect recipes…",
+        "Your ambitions…",
+        "Favorite sweets…",
+        "Potential training partners…",
+        "Fodlan’s future…",
+        "Reliable allies…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "Was there something you wanted to discuss?",
+            answers: ["Nod", "Sip tea", "Blush"]
+        },
+        {
+            comment: "I do not like classrooms. I would rather learn at my own pace.",
+            answers: ["Disagree", "Praise"]
+        },
+        {
+            comment: "I am the sword and shield of His Highness. I must constantly work to improve.",
+            answers: ["Commend", "Praise"]
+        },
+        {
+            comment: "Should I have brought sweets?",
+            answers: ["Disagree", "Nod"]
+        },
+        {
+            comment: "This life was given to me by His Highness. I do not intend to give it to anyone else.",
+            answers: ["Commend", "Chat"]
+        },
+        {
+            comment: "The flowers in the greenhouse are in bloom. You should have a look later.",
+            answers: ["Nod", "Laugh"]
+        },
+        {
+            comment: "I feel comfortable here.",
+            answers: ["Laugh", "Blush"]
+        },
+        {
+            comment: "Next time, you should visit me. I will prepare tea and cake.",
+            answers: ["Nod", "Blush"]
+        },
+        {
+            comment: "Long ago, I once held a grudge against the blood of Duscur. Now, I… Well, it is not important.",
+            answers: ["Chat", "Praise"]
+        }
+    ]
 };

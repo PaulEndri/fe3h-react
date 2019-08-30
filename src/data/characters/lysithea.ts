@@ -66,5 +66,88 @@ export const Lysithea: ICharacter = {
         DEF: 3,
         RES: 4,
         CHA: 5
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gifts you’d like to receive…",
+        "School uniforms…",
+        "A new gambit…",
+        "Hopes for your future…",
+        "Shareable snacks…",
+        "A place you’d like to visit…",
+        "I heard some gossip…",
+        "Someone you look up to…",
+        "Books you’ve read recently…",
+        "I’m counting on you…",
+        "Strange fish in the pond…",
+        "Capable comrades…",
+        "Likable allies…",
+        "Tell me about yourself…",
+        "Cats…",
+        "Monastery mysteries…",
+        "Thanks for everything…",
+        "Classes you might enjoy…",
+        "Monastery rules…",
+        "The existence of Crests…",
+        "Close calls…",
+        "Our first meeting…",
+        "The ideal professor…",
+        "Cooking mishaps…",
+        "Overcoming weaknesses…",
+        "The last battle…",
+        "Evaluating allies…",
+        "Past laughs…",
+        "The library’s collection…",
+        "Fashion…",
+        "Perfect recipes…",
+        "The thrill of sweets…",
+        "Favorite sweets…",
+        "Plans for the future…",
+        "Working together…",
+        "Fodlan’s future…",
+        "Relaxing at the sauna…",
+        "You seem different…",
+        "Food in the dining hall…",
+        "School days…",
+        "Your ambitions…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "I know I could stand to lighten up from time to time.",
+            answers: ["Admonish", "Chat", "Praise"]
+        },
+        {
+            comment: "One of the few pleasures I find is in eating sweets. It’s…kind of embarrassing.",
+            answers: ["Nod", "Laugh"]
+        },
+        {
+            comment: "Do you believe in ghosts, Professor? Just wondering.",
+            answers: ["Laugh", "Chat"]
+        },
+        {
+            comment: "If I hadn’t met you, I don’t think I’d be who I am today.",
+            answers: ["Laugh", "Disagree"]
+        },
+        {
+            comment: "It’s not in me to put energy into things that won’t yield results. I just don’t see the point.",
+            answers: ["Admonish", "Chat"]
+        },
+        {
+            comment: "Talking to you feels worth my time. I feel there’s a lot I can learn from you.",
+            answers: ["Laugh", "Blush"]
+        },
+        {
+            comment:
+                "I wonder what I’d do, who I’d be, if I gave everything up for freedom. I think about that all the time.",
+            answers: ["Nod", "Chat"]
+        },
+        {
+            comment: "If not for Crests, the world might’ve been a more peaceful place.",
+            answers: ["Sigh", "Chat", "Praise"]
+        },
+        {
+            comment: "I’m exhausted by all my incessant thoughts. I just want to empty my mind for now.",
+            answers: ["Nod", "Laugh", "Sip tea"]
+        }
+    ]
 };

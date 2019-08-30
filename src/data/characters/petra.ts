@@ -67,5 +67,93 @@ export const Petra: ICharacter = {
         DEF: 5,
         RES: 2,
         CHA: 6
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Guessing someone’s age…",
+        "Someone you look up to…",
+        "A new gambit…",
+        "Heart-racing memories…",
+        "Strange fish in the pond…",
+        "A place you’d like to visit…",
+        "Hopes for your future…",
+        "Swimming in the ocean…",
+        "A strong battalion…",
+        "I’m counting on you…",
+        "Tell me about yourself…",
+        "A word of advice…",
+        "Likable allies…",
+        "Thanks for everything…",
+        "Books you’ve read recently…",
+        "Mighty weapons…",
+        "The ideal relationship…",
+        "Capable comrades…",
+        "Monastery mysteries…",
+        "The last battle…",
+        "Cats…",
+        "Monastery rules…",
+        "The library’s collection…",
+        "Classes you might enjoy…",
+        "Monastery security…",
+        "The view from the bridge…",
+        "Close calls…",
+        "Overcoming weaknesses…",
+        "Things you find romantic…",
+        "Equipment upkeep…",
+        "Past laughs…",
+        "Working hours for guards…",
+        "Evaluating allies…",
+        "Plans for the future…",
+        "Working together…",
+        "Exploring the monastery…",
+        "Potential training partners…",
+        "You seem different…",
+        "Fashion…",
+        "Relaxing at the sauna…",
+        "You seem well…",
+        "Fodlan’s future…",
+        "School days…",
+        "You’re doing great work…",
+        "Gifts you’d like to receive…",
+        "Shareable snacks…",
+        "Your ambitions…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "If you are having problems, I am happy to be listening.",
+            answers: ["Chat"]
+        },
+        {
+            comment: "The ocean is far from Garreg Mach… I am feeling a bit lonely at times.",
+            answers: ["Sigh", "Praise"]
+        },
+        {
+            comment: "Next I will be studying, training, researching, sparring… I am having a lot to do!",
+            answers: ["Admonish", "Praise"]
+        },
+        {
+            comment: "You are working with much…diligence. I am admiring of you.",
+            answers: ["Laugh", "Disagree"]
+        },
+        {
+            comment: "You are not remembering where your homeland is? I am thinking that is strange…",
+            answers: ["Sigh", "Chat"]
+        },
+        {
+            comment: "One day I am wanting to show you the wonderful land of Brigid and its abundant nature.",
+            answers: ["Nod", "Blush"]
+        },
+        {
+            comment: "It gives me great pleasure to be speaking with you like this.",
+            answers: ["Sip tea", "Blush"]
+        },
+        {
+            comment: "In Enbarr, I was a hostage. I was spending much time locked away. Books gave me great comfort.",
+            answers: ["Sigh", "Praise"]
+        },
+        {
+            comment: "I am requiring much sleep to be staying alert. At least a quarter of each day.",
+            answers: ["Laugh", "Admonish"]
+        }
+    ]
 };

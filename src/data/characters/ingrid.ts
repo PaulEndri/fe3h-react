@@ -66,5 +66,91 @@ export const Ingrid: ICharacter = {
         DEF: 5,
         RES: 8,
         CHA: 8
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Food in the dining hall…",
+        "Strange fish in the pond…",
+        "A new gambit…",
+        "Gifts you’d like to receive…",
+        "Tell me about yourself…",
+        "A strong battalion…",
+        "I’m counting on you…",
+        "Thanks for everything…",
+        "A word of advice…",
+        "Mighty weapons…",
+        "The existence of Crests…",
+        "Books you’ve read recently…",
+        "Monastery rules…",
+        "The ideal professor…",
+        "Cats…",
+        "Monastery security…",
+        "The last battle…",
+        "Classes you might enjoy…",
+        "Our first meeting…",
+        "The library’s collection…",
+        "Cooking mishaps…",
+        "Overcoming weaknesses…",
+        "The view from the bridge…",
+        "Dreamy knights…",
+        "Past laughs…",
+        "Things you find romantic…",
+        "Equipment upkeep…",
+        "Perfect recipes…",
+        "Working hours for guards…",
+        "Evaluating allies…",
+        "Plans for the future…",
+        "Working together…",
+        "Exploring the monastery…",
+        "Potential training partners…",
+        "You seem well…",
+        "Favorite sweets…",
+        "Reliable allies…",
+        "You’re doing great work…",
+        "First crushes…",
+        "School days…",
+        "Your ambitions…",
+        "Fodlan’s future…",
+        "Shareable snacks…",
+        "Food for life…",
+        "Someone you look up to…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "As a child, my father and brother used to yell at me for spending so much time with my horse.",
+            answers: ["Laugh", "Admonish"]
+        },
+        {
+            comment: "I’m already thinking of my next meal…",
+            answers: ["Laugh"]
+        },
+        {
+            comment: "It’s warm around the monastery and the soil is rich… Honestly, I’m envious.",
+            answers: ["Chat", "Praise"]
+        },
+        {
+            comment: "Being here calms my nerves… Oh! But I’ll leave if I’m in your way.",
+            answers: ["Disagree", "Blush"]
+        },
+        {
+            comment: "I wonder what your favorite food is. Meat? Veggies? Fish, perhaps? Oh, or maybe sweets…",
+            answers: ["Laugh", "Chat"]
+        },
+        {
+            comment: "When did you start sword training? I was five when I began…",
+            answers: ["Chat"]
+        },
+        {
+            comment: "When I’m here, I feel like I can forget about fighting, even if just for a moment.",
+            answers: ["Laugh", "Praise"]
+        },
+        {
+            comment: "Would you like to have a meal with me? Though…it wasn’t long ago that I ate.",
+            answers: ["Admonish", "Laugh"]
+        },
+        {
+            comment: "Speaking with you helps me realize I can’t hesitate in life!",
+            answers: ["Disagree", "Blush"]
+        }
+    ]
 };

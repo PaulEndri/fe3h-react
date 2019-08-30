@@ -63,5 +63,89 @@ export const Alois: ICharacter = {
         DEF: 5,
         RES: 2,
         CHA: 7
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gardening mishaps…",
+        "Someone you look up to…",
+        "A new gambit…",
+        "Gifts you’d like to receive…",
+        "Strange fish in the pond…",
+        "A place you’d like to visit…",
+        "Good jokes…",
+        "Tell me about yourself…",
+        "A strong battalion…",
+        "I heard some gossip…",
+        "Thanks for everything…",
+        "A word of advice…",
+        "I’m counting on you…",
+        "The ideal professor…",
+        "Cats…",
+        "Mighty weapons…",
+        "The last battle…",
+        "Children at the market…",
+        "Monastery rules…",
+        "The opera…",
+        "Close calls…",
+        "Monastery security…",
+        "The view from the bridge…",
+        "Cooking mishaps…",
+        "Our first meeting…",
+        "Things that bother you…",
+        "Equipment upkeep…",
+        "Overcoming weaknesses…",
+        "Working hours for guards…",
+        "Exploring the monastery…",
+        "Past laughs…",
+        "Working together…",
+        "Favorite sweets…",
+        "Perfect recipes…",
+        "You seem well…",
+        "First crushes…",
+        "Plans for the future…",
+        "You’re doing great work…",
+        "Fodlan’s future…",
+        "School days…",
+        "Your ambitions…",
+        "Food in the dining hall…",
+        "Shareable snacks…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "You don’t look much like Captain Jeralt, but you remind me of him.",
+            answers: ["Nod", "Commend", "Disagree"]
+        },
+        {
+            comment: "There’s nothing worse than trying to explain a joke.",
+            answers: ["Commend"]
+        },
+        {
+            comment: "Ghosts, sailing, spicy foods… These are the fears I have yet to conquer.",
+            answers: ["Laugh"]
+        },
+        {
+            comment: "You should go fishing with me soon! The other day, I almost caught one.",
+            answers: ["Laugh", "Chat", "Praise"]
+        },
+        {
+            comment: "Don’t forget, if you ever need anything, just let me know.",
+            answers: ["Nod", "Chat"]
+        },
+        {
+            comment: "No judge, not even the goddess herself, will bring me to justice. Though I deserve it.",
+            answers: ["Sigh", "Praise"]
+        },
+        {
+            comment: "The other night, I felt a ghostly presence in my bed. I leapt to my feet, but…no one was there.",
+            answers: ["Laugh"]
+        },
+        {
+            comment: "I’m your big brother Alois! You can ask me anything you want.",
+            answers: ["Nod", "Laugh", "Commend"]
+        },
+        {
+            comment: "When the war’s over, I can finally go home to my wife and daughter…",
+            answers: ["Nod", "Praise"]
+        }
+    ]
 };

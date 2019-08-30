@@ -11,7 +11,7 @@ export const SegmentOrDiv = ({ children }: Props) => {
     }
 
     return (
-        <Segment secondary compact>
+        <Segment secondary compact style={{ flex: "1 0 auto" }}>
             {children}
         </Segment>
     );

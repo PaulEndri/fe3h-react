@@ -66,5 +66,86 @@ export const Mercedes: ICharacter = {
         DEF: 5,
         RES: 9,
         CHA: 8
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Food in the dining hall…",
+        "School uniforms…",
+        "A place you’d like to visit…",
+        "Gardening mishaps…",
+        "Shareable snacks…",
+        "A word of advice…",
+        "Ghost stories…",
+        "Tell me about yourself…",
+        "Books you’ve read recently…",
+        "Gifts you’d like to receive…",
+        "Thanks for everything…",
+        "Cats…",
+        "Heart-racing memories…",
+        "The courtyard couple…",
+        "Children at the market…",
+        "I heard some gossip…",
+        "The ideal relationship…",
+        "Cooking mishaps…",
+        "I’m counting on you…",
+        "The last battle…",
+        "Cute monks…",
+        "Likable allies…",
+        "The library’s collection…",
+        "Dining partners…",
+        "Monastery rules…",
+        "The opera…",
+        "Dreamy knights…",
+        "Overcoming weaknesses…",
+        "Things that bother you…",
+        "Exploring the monastery…",
+        "Past laughs…",
+        "You seem different…",
+        "Fashion…",
+        "Perfect recipes…",
+        "You’re doing great work…",
+        "Favorite sweets…",
+        "Relaxing at the sauna…",
+        "First crushes…",
+        "School days…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "I baked a cake earlier today. Should I have brought some with me?",
+            answers: ["Nod", "Sip tea"]
+        },
+        {
+            comment: "The cathedral is nice and quiet. It’s so relaxing!",
+            answers: ["Disagree", "Blush"]
+        },
+        {
+            comment: "I’m actually quite skilled at drawing. I wouldn’t mind using you as a model!",
+            answers: ["Nod", "Commend", "Blush"]
+        },
+        {
+            comment: "I baked a cake earlier today. Should I have brought some with me?",
+            answers: ["Nod", "Sip tea"]
+        },
+        {
+            comment: "I used to live in a quiet and beautiful church…but it’s not bad here either!",
+            answers: ["Commend"]
+        },
+        {
+            comment: "I should probably write to my mother soon…",
+            answers: ["Nod", "Chat", "Praise"]
+        },
+        {
+            comment:
+                "You should really brighten this room up a bit. Have you considered putting flowers in the window?",
+            answers: ["Nod", "Commend"]
+        },
+        {
+            comment: "As I continue to grow, I’ve learned not to regret the choices I’ve made!",
+            answers: ["Commend", "Praise"]
+        },
+        {
+            comment: "Not to be a bother, but do you mind if I stay just a little longer?",
+            answers: ["Nod", "Blush", "Praise"]
+        }
+    ]
 };

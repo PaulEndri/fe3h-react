@@ -66,5 +66,73 @@ export const Linhardt: ICharacter = {
         DEF: 5,
         RES: 9,
         CHA: 3
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gifts you’d like to receive…",
+        "Thanks for everything…",
+        "A place you’d like to visit…",
+        "I heard some gossip…",
+        "The art of napping…",
+        "A word of advice…",
+        "Monastery mysteries…",
+        "The existence of Crests…",
+        "Books you’ve read recently…",
+        "Our first meeting…",
+        "The library’s collection…",
+        "Capable comrades…",
+        "Overcoming weaknesses…",
+        "The view from the bridge…",
+        "Cats…",
+        "Past laughs…",
+        "Things that bother you…",
+        "Exploring the monastery…",
+        "Plans for the future…",
+        "Working hours for guards…",
+        "Favorite sweets…",
+        "Strange fish in the pond…",
+        "Gardening mishaps…",
+        "Tell me about yourself…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "You are full of mysteries and yet offer no answers. How unfair.",
+            answers: ["Disagree", "Chat"]
+        },
+        {
+            comment: "Being surrounded by all these Crest-bearers makes me want to better understand Crestology.",
+            answers: ["Praise", "Nod"]
+        },
+        {
+            comment:
+                "Crest versus nurture. Which causes a noble’s personality disorder? There’s a research project, eh?",
+            answers: ["Chat"]
+        },
+        {
+            comment:
+                "I always feel as if I cannot keep up with other people. Everyone else seems to have a destination in mind.",
+            answers: ["Laugh", "Praise"]
+        },
+        {
+            comment: "Please wake me if I fall asleep. I don’t wish to be a rude guest.",
+            answers: ["Admonish", "Sip tea"]
+        },
+        {
+            comment: "They say the Crest’s power dwells in blood. So why does it have to be so disgusting?",
+            answers: ["Admonish", "Chat"]
+        },
+        {
+            comment: "If I don’t become a scholar then perhaps librarian is the job for me.",
+            answers: ["Nod", "Praise"]
+        },
+        {
+            comment: "You bear the legendary Crest of Flames. You simply must allow me to study it–please, Professor.",
+            answers: ["Commend"]
+        },
+        {
+            comment:
+                "We should explore ways to utilize the power of Relics and Crests for something other than combat.",
+            answers: ["Nod", "Commend", "Chat"]
+        }
+    ]
 };

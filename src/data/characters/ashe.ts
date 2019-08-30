@@ -66,5 +66,80 @@ export const Ashe: ICharacter = {
         DEF: 5,
         RES: 6,
         CHA: 5
-    }
+    },
+    teaTimeTopics: [
+        "A dinner invitation…",
+        "Gardening mishaps…",
+        "Thanks for everything…",
+        "A place you’d like to visit…",
+        "Gifts you’d like to receive…",
+        "The existence of Crests…",
+        "A strong battalion…",
+        "I’m counting on you…",
+        "The ideal professor…",
+        "A word of advice…",
+        "Monastery security…",
+        "The last battle…",
+        "Being the perfect knight…",
+        "Past laughs…",
+        "The library’s collection…",
+        "Books you’ve read recently…",
+        "Perfect recipes…",
+        "Things that bother you…",
+        "Cats…",
+        "Plans for the future…",
+        "Working hours for guards…",
+        "Children at the market…",
+        "School days…",
+        "Working together…",
+        "Close calls…",
+        "Shareable snacks…",
+        "You seem well…",
+        "Dreamy knights…",
+        "Someone you look up to…",
+        "Your ambitions…",
+        "Equipment upkeep…",
+        "Strange fish in the pond…",
+        "Favorite sweets…",
+        "Tell me about yourself…"
+    ],
+    teaTimeComments: [
+        {
+            comment: "I still have a lot to learn. I need to work harder.",
+            answers: ["Disagree", "Praise"]
+        },
+        {
+            comment: "Have you ever seen a ghost? Probably for the best if you haven’t…",
+            answers: ["Disagree", "Sip tea"]
+        },
+        {
+            comment: "I’m good with children. I’ve taken care of my younger siblings since I was a kid.",
+            answers: ["Commend", "Laugh"]
+        },
+        {
+            comment: "It’s nice in here. I feel like I can relax.",
+            answers: ["Laugh", "Sip tea"]
+        },
+        {
+            comment: "The years I had with Lonato…those were some of the best of my life.",
+            answers: ["Nod", "Sigh", "Praise"]
+        },
+        {
+            comment: "I’m confident in my speed. No one can outrun me!",
+            answers: ["Commend"]
+        },
+        {
+            comment:
+                "I get letters from my brother and sister every once in a while. They have it tough, but they’re getting by.",
+            answers: ["Laugh", "Praise"]
+        },
+        {
+            comment: "Time flies when I’m with you.",
+            answers: ["Nod", "Blush"]
+        },
+        {
+            comment: "A lot’s happened, but none of it’s been in vain. That’s what I believe.",
+            answers: ["Nod", "Commend"]
+        }
+    ]
 };
